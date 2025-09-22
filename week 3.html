@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -69,14 +69,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="./week 2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-23102fe0f0b5b1a9f09cc09ebcc8fe5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d58359eb3ecc31d3bec1ed479c2cbb3a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -119,7 +120,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -159,7 +160,9 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Markup Languages and Reproducible Programming in Statistics</a> 
         <div class="sidebar-tools-main">
@@ -319,7 +322,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lecture Week 3
+<span class="screen-reader-only">Tip</span>Lecture Week 3
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -404,8 +407,8 @@ Lecture Week 3
 <p><code>GitHub</code>’s ability to branch, fork and clone is very useful as it allows other people and yourself to experiment on (the code in) a repository before any definitive changes are <a href="https://help.github.com/articles/github-glossary/#merge"><code>merged</code></a> with the <code>master</code>. If you’re working in a forked repository, you can submit a <a href="https://help.github.com/articles/github-glossary/#pull-request"><code>pull request</code></a> to the repository collaborators to accept (or reject) any suggested changes.</p>
 <p>For now, this may be confusing, but I hope you recognize the benefits <code>GitHub</code> can have on the process of development and bug-fixing. For example, the most up-to-date version of the <code>mice</code> package in <code>R</code> can be directly installed from the <code>mice</code> repository with the following code:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>install.packages("devtools")</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>devtools::install_github(repo = "stefvanbuuren/mice")</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>install.packages("devtools")</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>devtools::install_github(repo = "stefvanbuuren/mice")</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>You can see that this process requires package <code>devtools</code> that expands the <code>R</code> functionality with essential development tools. Loading packages in <code>R</code> directly from their respective <code>GitHub</code> repositories, allows you to obtain the latest - often improved and less buggy - iteration of that software even before it is published on <a href="https://cran.r-project.org"><code>CRAN</code></a>.</p>
 <hr>
@@ -490,7 +493,7 @@ Lecture Week 3
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Monte Carlo simulation exercise (no need to hand in)
+<span class="screen-reader-only">Tip</span>Monte Carlo simulation exercise (no need to hand in)
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -518,12 +521,12 @@ Monte Carlo simulation exercise (no need to hand in)
 </div>
 </div>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-My solutions to the exercises
+<span class="screen-reader-only">Caution</span>My solutions to the exercises
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -558,17 +561,17 @@ My solutions to the exercises
 <li>Type <code>git pull</code> to make sure that you obtain the latest state from the remote on <code>GitHub</code></li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>% git pull</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Already up to date.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>% git pull</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Already up to date.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Don’t type the <code>%</code>; that is just the command prompt indicator on my machine. Yours may be different, such as <code>&gt;</code> or <code>$</code>. We see that <code>Git</code> reminds me that I already have the latest state. I am up to date.</p>
 <ol start="3" type="1">
 <li>Change the branch to the <code>Exercise_wk4</code> branch.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>% git checkout Exercise_wk4</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>% git checkout Exercise_wk4</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Switched to branch 'Exercise_wk4'</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Your branch is up to date with 'origin/Exercise_wk4'.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Your branch is up to date with 'origin/Exercise_wk4'.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>I’ve now been switched to the <code>Exercise_wk4</code> branch. It is up to date with <code>origin/Exercise_wk4</code>, meaning that GitHub and my local copy are in sync. <code>origin</code> is a shorthand name for the remote repository that a project was originally cloned from. It is useful that <code>origin</code> is referenced instead of the original repo’s URL –&gt; This makes referencing much more convenient.</p>
 <hr>
@@ -577,7 +580,7 @@ My solutions to the exercises
 <h3 data-number="3.6.3" class="anchored" data-anchor-id="inspect-the-current-state"><span class="header-section-number">3.6.3</span> Inspect the current state</h3>
 <p>Make sure you are in the <code>Exercise_wk4</code> branch. Then Use <code>git log --graph</code> to inspect the current Git branch and its commits.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>% git log --graph          </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>% git log --graph          </span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ss">*   </span>commit 176137b1667cc6903f7a9eead5723892ef1a77a7 (HEAD -&gt; master, origin/master, origin/HEAD)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>|\  Merge: 0e67723 c902093</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>| | Author: Gerko Vink <span class="ot">&lt;g.vink@uu.nl&gt;</span></span>
@@ -599,12 +602,12 @@ My solutions to the exercises
 <span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>\ \  Merge: 4134b75 1f488c6</span>
 <span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="pp">|</span> <span class="pp">|</span> Author: Gerko Vink <span class="ot">&lt;g.vink@uu.nl&gt;</span></span>
 <span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="pp">|</span> <span class="pp">|</span> Date:   Thu Oct 29 11<span class="sc">:27:</span>16 2020 +0100</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="pp">|</span> <span class="pp">|</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="pp">|</span> <span class="pp">|</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>We see information about the history that brought us to this point in time. We see commit messages, the author, the dates, the SHA-1 hash and the graph tree. We asked for the graph tree with <code>--graph</code>.</p>
 <p>You can scroll up and down the graph. To exit the graph window, type <code>q</code>. For help, type <code>h</code>. To obtain a more condensed graph, use</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>% git log --oneline --graph</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>% git log --oneline --graph</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ss">*   </span>176137b (HEAD -&gt; Exercise_wk4, origin/master, origin/HEAD, origin/Exercise_wk4, master) Merge pull request #38 from thomasjwise/wisedev</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>|\  </span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>| * c902093 Assignment 3 - Beamer PDF</span>
@@ -625,12 +628,12 @@ My solutions to the exercises
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> * <span class="pp">|</span> <span class="pp">|</span> <span class="pp">|</span> 75d9293 Add assignment 2</span>
 <span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="pp">|</span> <span class="pp">|</span> <span class="pp">|</span> <span class="pp">|</span>   d3df110 Merge pull request #33 from gerkovink/gerkodev</span>
 <span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>\ \ \ \ \  </span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> * \ \ \ \   34954f8 (origin/gerkodev, gerkodev) Merge pull request #22 from Goorbergh/ruben_assignment_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> * \ \ \ \   34954f8 (origin/gerkodev, gerkodev) Merge pull request #22 from Goorbergh/ruben_assignment_1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>This graph view is much more condensed. The nice thing about this view is the direct depiction of each action’s abbreviated SHA-1 key.</p>
 <p>We can use the SHA-1 keys to instruct <code>Git</code>. For example, to obtain the history on commit <code>c902093</code>, we only need to refer the SHA-1 hash.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>% git log c902093          </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>% git log c902093          </span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>commit c9020931678d90d91cfe21778e6ce5b4943e46cb</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>Author: Thomas Wise &lt;48682160+thomasjwise@users.noreply.github.com&gt;</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>Date:   Wed Oct 28 13<span class="sc">:59:</span>23 2020 +0100</span>
@@ -653,11 +656,11 @@ My solutions to the exercises
 <span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="in">    This image is too large</span></span>
 <span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>commit f4a11cbed729bc8454c01866aab4291b3b580d6f</span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>Author: Gerko Vink <span class="ot">&lt;g.vink@uu.nl&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>Author: Gerko Vink <span class="ot">&lt;g.vink@uu.nl&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Or, a more condensed version of the same</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>% git log c902093 --pretty=oneline</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>% git log c902093 --pretty=oneline</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>c9020931678d90d91cfe21778e6ce5b4943e46cb Assignment 3 - Beamer PDF</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>db649539738bb30b63d93053b67891ef6c55037e Assignment 1</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>21a3b5ac1535703f4ce0d6feb2ccf3703f95eee3 Merge pull request #2 from gerkovink/gerkodev</span>
@@ -674,7 +677,7 @@ My solutions to the exercises
 <span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>e7b78b592a8000d3a647de3a265c69496adebfe5 Update .gitignore</span>
 <span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>fdd923ad2b522d6e4357229ea801d23ec5b16717 update readme</span>
 <span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>7e14559d7f7e8676d557c9b73fc43fb3a66a0c3c added sticker</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>493609efa7ce659ebebf5a0d0300f23788397e68 Initial commit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>493609efa7ce659ebebf5a0d0300f23788397e68 Initial commit</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Please note that we only reference the short hash. There is no need to reference the longer hash as long as the sequence of the shorter reference is unique.</p>
 <p>From this <code>--pretty=oneline</code> view it is now easy to spot the origin of our course repository - the initial commit that initiated the <code>Git</code> goodness. You can also see that I updated the <code>.gitignore</code>, a hidden file that specifies which files and directories to be ignored by <code>Git</code>. And I did some cosmetic changes and file deletions. This is very insightfull because of the detailed, but consice commit messages.</p>
@@ -685,7 +688,7 @@ My solutions to the exercises
 <p>Go back in time to <code>21a3b5ac1535703f4ce0d6feb2ccf3703f95eee3 Merge pull request #2 from gerkovink/gerkodev</code>.</p>
 <p>To do so, we only need to refer the start of the SHA-1 key.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>% git checkout 21a3b5a</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>% git checkout 21a3b5a</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>Note: switching to '21a3b5a'.</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>You are in 'detached HEAD' state. You can look around, make experimental</span>
@@ -703,7 +706,7 @@ My solutions to the exercises
 <span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>Turn off this advice by setting config variable advice.detachedHead to false</span>
 <span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>HEAD is now at 21a3b5a Merge pull request #2 from gerkovink/gerkodev</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>HEAD is now at 21a3b5a Merge pull request #2 from gerkovink/gerkodev</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>We are now at the old state. So we went back in time. The current state where we are is independent from all later commits, but is built exactly on all preceding commits as per the tree.</p>
 <p>There are a couple of terms that are <em>new</em>:</p>
@@ -725,10 +728,10 @@ My solutions to the exercises
 <h4 data-number="3.6.4.2" class="anchored" data-anchor-id="leave-the-detached-head"><span class="header-section-number">3.6.4.2</span> leave the detached HEAD</h4>
 <p>Go back to the branch HEAD</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>% git switch -                    </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>% git switch -                    </span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>Previous HEAD position was 21a3b5a Merge pull request #2 from gerkovink/gerkodev</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>Switched to branch 'Exercise_wk4'</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>Your branch is up to date with 'origin/Exercise_wk4'.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>Your branch is up to date with 'origin/Exercise_wk4'.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <hr>
 </section>
@@ -737,8 +740,8 @@ My solutions to the exercises
 <h3 data-number="3.6.5" class="anchored" data-anchor-id="make-a-new-branch-of-the-old-state"><span class="header-section-number">3.6.5</span> Make a new branch of the old state</h3>
 <p>Let’s take that old state and make it into a proper point of departure for new things. Again, reference <code>21a3b5ac1535703f4ce0d6feb2ccf3703f95eee3 Merge pull request #2 from gerkovink/gerkodev</code>, but now we make the state of <code>21a3b5a</code> into a new branch. We call that branch <code>Wk4_markup</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>% git checkout -b Wk4_markup 21a3b5a </span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>Switched to a new branch 'Wk4_markup'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>% git checkout -b Wk4_markup 21a3b5a </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>Switched to a new branch 'Wk4_markup'</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>We now have checked out an old state and made it into a new branch. The cool thing is that we can now commit all we want and everything will be properly logged. Just remember that if you’d like to go back in time and play around with an old state of your project –&gt; <strong>Merge the old state into a new branch</strong> like I demonstrated above.</p>
 <hr>
@@ -747,20 +750,20 @@ My solutions to the exercises
 <h3 data-number="3.6.6" class="anchored" data-anchor-id="add-a-new-commit"><span class="header-section-number">3.6.6</span> Add a new commit</h3>
 <p>We start by creating an empty text file</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>% touch add_text_file.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>% touch add_text_file.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>If the <code>touch</code> command does not work on your machine, you may also create this file by hand. In a Windows-terminal, you can also use the command:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>PS C:\GitHub\Markup2020&gt; New-Item .\add_text_file.txt -type file</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>PS C:\GitHub\Markup2020&gt; New-Item .\add_text_file.txt -type file</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Now, if we would like to commit the addition of this file to our repo, we get the following:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>% git commit -a -m 'add text file'</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>% git commit -a -m 'add text file'</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>On branch Wk4_markup</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>Untracked files:</span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    add_text_file.txt</span>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>nothing added to commit but untracked files present</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>nothing added to commit but untracked files present</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>The commit was not succesfull, because the file <code>add_text_file.txt</code> is not yet tracked. Note that I use <code>-a</code> to specify to commit <strong>all</strong> changed files and folders that are tracked. I use <code>-m</code> to indicate that I would like to add the message <code>add text file</code>.</p>
 <p>You see that using a GUI to <code>Git</code> like GitHub desktop or RStudio is quite convenient if you would not like to indicate which files to track. It is also less flexible.</p>
@@ -769,7 +772,7 @@ My solutions to the exercises
 <h4 data-number="3.6.6.1" class="anchored" data-anchor-id="add-files-to-tracking"><span class="header-section-number">3.6.6.1</span> Add files to tracking</h4>
 <p>To track all untracked files and folders</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>git add -A</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>git add -A</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <hr>
 </section>
@@ -777,10 +780,10 @@ My solutions to the exercises
 <h4 data-number="3.6.6.2" class="anchored" data-anchor-id="commit-with-a-message"><span class="header-section-number">3.6.6.2</span> commit with a message</h4>
 <p>Now if we revisit the commit command</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>% git commit -a -m 'add text file'</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>% git commit -a -m 'add text file'</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Wk4_markup 8d30c46</span><span class="co">]</span> add text file</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a> 1 file changed, 0 insertions(+), 0 deletions(-)</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a> create mode 100644 add_text_file.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a> create mode 100644 add_text_file.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <hr>
 </section>
@@ -788,7 +791,7 @@ My solutions to the exercises
 <section id="study-the-log-again" class="level3" data-number="3.6.7">
 <h3 data-number="3.6.7" class="anchored" data-anchor-id="study-the-log-again"><span class="header-section-number">3.6.7</span> Study the log again</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>% git log --pretty=oneline</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>% git log --pretty=oneline</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>8d30c4698b9761d650de2f5288389257762753ce (HEAD -&gt; Wk4_markup) add text file</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>21a3b5ac1535703f4ce0d6feb2ccf3703f95eee3 (old-state) Merge pull request #2 from gerkovink/gerkodev</span>
 <span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>f4a11cbed729bc8454c01866aab4291b3b580d6f resize image</span>
@@ -804,27 +807,27 @@ My solutions to the exercises
 <span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>e7b78b592a8000d3a647de3a265c69496adebfe5 Update .gitignore</span>
 <span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>fdd923ad2b522d6e4357229ea801d23ec5b16717 update readme</span>
 <span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>7e14559d7f7e8676d557c9b73fc43fb3a66a0c3c added sticker</span>
-<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>493609efa7ce659ebebf5a0d0300f23788397e68 Initial commit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>493609efa7ce659ebebf5a0d0300f23788397e68 Initial commit</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>We can see that the HEAD is now at the latest commit and that this commit comes after the old-state from which we created the branch.</p>
 <hr>
 <section id="now-add-another-empty-text-file." class="level4" data-number="3.6.7.1">
 <h4 data-number="3.6.7.1" class="anchored" data-anchor-id="now-add-another-empty-text-file."><span class="header-section-number">3.6.7.1</span> Now add another empty text file.</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>% touch add_another_text_file.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>% touch add_another_text_file.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Let’s say that we rather would have included this file in the previous commit, we can achieve this by</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>% git add -A</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>% git add -A</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>% git commit --amend -m "add two text files"</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Wk4_markup 9e6c38c</span><span class="co">]</span> add two text files</span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a> Date: Tue Nov 3 23<span class="sc">:09:</span>11 2020 +0100</span>
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a> 1 file changed, 0 insertions(+), 0 deletions(-)</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a> create mode 100644 add_text_file.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a> create mode 100644 add_text_file.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>We have effectively ammended the previous commit. We’ve also changed the commit message into <code>add two text files</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>% git log --pretty=oneline</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>% git log --pretty=oneline</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>9e6c38c2288f7e7fce75de3bd1ffb522de112a8b (HEAD -&gt; Wk4_markup) add two text files</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>21a3b5ac1535703f4ce0d6feb2ccf3703f95eee3 (old-state) Merge pull request #2 from gerkovink/gerkodev</span>
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>f4a11cbed729bc8454c01866aab4291b3b580d6f resize image</span>
@@ -840,7 +843,7 @@ My solutions to the exercises
 <span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>e7b78b592a8000d3a647de3a265c69496adebfe5 Update .gitignore</span>
 <span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>fdd923ad2b522d6e4357229ea801d23ec5b16717 update readme</span>
 <span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>7e14559d7f7e8676d557c9b73fc43fb3a66a0c3c added sticker</span>
-<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>493609efa7ce659ebebf5a0d0300f23788397e68 Initial commit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>493609efa7ce659ebebf5a0d0300f23788397e68 Initial commit</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <hr>
 </section>
@@ -849,8 +852,8 @@ My solutions to the exercises
 <h3 data-number="3.6.8" class="anchored" data-anchor-id="undo-a-commit"><span class="header-section-number">3.6.8</span> Undo a commit</h3>
 <p>When shit hits the fan, we can always undo a commit. For example, the following command reverts all changes to the inital commit</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>% git reset --hard 493609e  </span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>HEAD is now at 493609e Initial commit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>% git reset --hard 493609e  </span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>HEAD is now at 493609e Initial commit</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>We are now back at the first commit in the project.</p>
 </section>
@@ -858,7 +861,7 @@ My solutions to the exercises
 <h3 data-number="3.6.9" class="anchored" data-anchor-id="undo-undoing-a-commit"><span class="header-section-number">3.6.9</span> Undo undoing a commit</h3>
 <p>To properly do this without making mistakes, it is best to study the history of the HEAD</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>% git reflog                </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>% git reflog                </span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>493609e (HEAD -&gt; Wk4_markup) HEAD@{0}: reset: moving to 493609e</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>9e6c38c HEAD@{1}: commit (amend): add two text files</span>
 <span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>8d30c46 HEAD@{2}: commit: add text file</span>
@@ -878,21 +881,21 @@ My solutions to the exercises
 <span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>176137b (origin/master, origin/HEAD, origin/Exercise_wk4, master, Exercise_wk4) HEAD@{16}: checkout: moving from master to Exercise_wk4</span>
 <span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>176137b (origin/master, origin/HEAD, origin/Exercise_wk4, master, Exercise_wk4) HEAD@{17}: checkout: moving from SofieIssue to master</span>
 <span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>1f488c6 (SofieIssue) HEAD@{18}: commit: remove pipe operator</span>
-<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>4ead406 HEAD@{19}: commit: update readme.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>4ead406 HEAD@{19}: commit: update readme.md</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>We are now looking at the reflog - the log of where the HEAD has been. It used to be at</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>9e6c38c HEAD@{1}: commit (amend): add two text files</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>9e6c38c HEAD@{1}: commit (amend): add two text files</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>but is now at</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>493609e (HEAD -&gt; Wk4_markup) HEAD@{0}: reset: moving to 493609e</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>493609e (HEAD -&gt; Wk4_markup) HEAD@{0}: reset: moving to 493609e</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>We can use this history of where the head has been to go back to the previous step. In other words, if we would like to undo a commit, we can always go back to the previous HEAD stage –&gt; the HEAD has been moved one step forward by the commit. Likewise, if we would like to undo a hard reset, we can also go back to the previous HEAD stage –&gt; the HEAD has been moved one step forward by the reset.</p>
 <p>To undo it all, we can use the indicator that is referenced by the <code>reflog</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>% git reset --hard HEAD@{1}</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>HEAD is now at 9e6c38c add two text files</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>% git reset --hard HEAD@{1}</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>HEAD is now at 9e6c38c add two text files</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Using <code>reflog</code> and HEAD is in this case more flexible than using <code>log</code> and the SHA-1 hash. <code>reflog</code> yields the log of all changes in the pointer HEAD, while <code>log</code> only gives you the history of the logged commits. Once a commit is undone, it is gone from the <code>log</code>. Moreover, using <code>reflog</code> and HEAD allows you to go back into the future, like in the above example.</p>
 <p><strong>NOTE: Do not wait too long to undo your resets. After a few days/weeks garbage collection may kick in and <code>Git</code> will eventually see old commit as unreferenced. This makes them irretrievable</strong></p>
@@ -902,24 +905,24 @@ My solutions to the exercises
 <h3 data-number="3.6.10" class="anchored" data-anchor-id="redo-a-commit"><span class="header-section-number">3.6.10</span> Redo a commit</h3>
 <p>A hard reset brings you back to a previous state. It loses all changes that have been committed since. If you’d like to undo a single commit and erase the commit message, but not throw out the modifications:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>git reset --soft 493609e </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>git reset --soft 493609e </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>We are now back at the initial commit, but all changes since have been staged. We can commit these changes as</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>% git commit -a -m 'everything in a single commit'</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>% git commit -a -m 'everything in a single commit'</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Wk4_markup 525efa5</span><span class="co">]</span> everything in a single commit</span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a> 7 files changed, 36 insertions(+), 1 deletion(-)</span>
 <span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a> create mode 100644 Gerko/Assignment 1/Vink.jpg</span>
 <span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a> create mode 100644 Gerko/Assignment 1/Vink.pdf</span>
 <span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a> create mode 100644 README.Rmd</span>
 <span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a> create mode 100644 add_text_file.txt</span>
-<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a> create mode 100644 markup_sticker_SMALL.png</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a> create mode 100644 markup_sticker_SMALL.png</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>If we study the log, we find that there are now only two commits.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>% git log --pretty=oneline                        </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>% git log --pretty=oneline                        </span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>5fe2c1bd44b1dbc92172b85dec3d87ced7073deb (HEAD -&gt; Wk4_markup) everything in a single commit</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>493609efa7ce659ebebf5a0d0300f23788397e68 Initial commit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>493609efa7ce659ebebf5a0d0300f23788397e68 Initial commit</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <hr>
 </section>
@@ -928,19 +931,19 @@ My solutions to the exercises
 <p>Let’s see if we can merge the <code>Wk4_markup</code> branch into the <code>Exercise_wk4</code> branch.</p>
 <p>First we need to checkout the branch we would like to merge into:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>% git checkout Exercise_wk4</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>% git checkout Exercise_wk4</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>Updating files: 100% (174/174), done.</span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>Switched to branch 'Exercise_wk4'</span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>Your branch is up to date with 'origin/Exercise_wk4'.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>Your branch is up to date with 'origin/Exercise_wk4'.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Then we can attempt to merge:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>% git merge Wk4_markup   </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>% git merge Wk4_markup   </span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>Auto-merging README.md</span>
 <span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>CONFLICT (content): Merge conflict in README.md</span>
 <span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>CONFLICT (add/add): Merge conflict in README.Rmd</span>
 <span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>Auto-merging README.Rmd</span>
-<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>Automatic merge failed; fix conflicts and then commit the result.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>Automatic merge failed; fix conflicts and then commit the result.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>We’ve now effectively created a conflict. A conflict must be resolved before a merge is possible. If you switch to GiHub desktop, you’ll see this pop-up</p>
 <p><img src="images/wk3/conflict.png" class="img-fluid" style="width:50.0%"></p>
@@ -956,8 +959,8 @@ My solutions to the exercises
 <p><img src="images/wk3/dropdown.png" class="img-fluid" style="width:80.0%"></p>
 <p>After that, we can stage the changes and commit them in the <code>Exercise_wk4</code> branch:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>% git add <span class="sc">-</span>A</span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>% git commit <span class="sc">-</span>m <span class="st">'conflict resolved'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>% git add <span class="sc">-</span>A</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>% git commit <span class="sc">-</span>m <span class="st">'conflict resolved'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <hr>
 </section>
@@ -980,7 +983,7 @@ My solutions to the exercises
 <section id="solution" class="level3" data-number="3.6.13">
 <h3 data-number="3.6.13" class="anchored" data-anchor-id="solution"><span class="header-section-number">3.6.13</span> Solution</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>% git branch Wk4_gerkovink </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>% git branch Wk4_gerkovink </span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>% git checkout Wk4_gerkovink</span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>Switched to branch 'Wk4_gerkovink'</span>
 <span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>% mv add_text_file.txt gerkovink.txt</span>
@@ -1002,7 +1005,7 @@ My solutions to the exercises
 <span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a>remote:      https://github.com/gerkovink/markup2020/pull/new/Wk4_gerkovink</span>
 <span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a>remote: </span>
 <span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a>To https://github.com/gerkovink/markup2020.git</span>
-<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a><span class="ss"> * </span><span class="co">[</span><span class="ot">new branch</span><span class="co">]</span>      Wk4_gerkovink -&gt; Wk4_gerkovink</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a><span class="ss"> * </span><span class="co">[</span><span class="ot">new branch</span><span class="co">]</span>      Wk4_gerkovink -&gt; Wk4_gerkovink</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 
@@ -1069,13 +1072,14 @@ for (let i = 0; i < custom_title.length; i++ ) {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
