@@ -106,6 +106,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -286,7 +315,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><strong>Also known as: <code>Git</code> and GitHub</strong></p>
+<p><strong>Also known as: <code>Git</code>, GitHub and avoiding potential <code>Git</code>shows</strong></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -297,7 +326,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This week has no slides. We discuss the flow of development with <code>Git</code> in class. You can find a 3-slide presentation exercise from week 2 <a href="slides/lec-3.html">here</a>.</p>
+<p>This week has no lecture. We discussed the flow of development with <code>Git</code> in class. You can find a 3-slide presentation exercise from week 2 <a href="slides/lec-3.html">here</a></p>
 </div>
 </div>
 <hr>
@@ -314,8 +343,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>How to go about development with <code>Git</code> and <code>GitHub</code></li>
 <li>How to solve scenarios where <code>Git</code> hits the fan.</li>
 </ol>
-<p>And in the meanwhile we’ll also Monte-Carlo-simulate one of the most important concepts in statistics:</p>
-<ol start="5" type="1">
+<p>And in the meanwhile we’ll also Monte Carlo simulate one of the most important concepts in statistics:</p>
+<ol start="4" type="1">
 <li>Confidence Validity</li>
 </ol>
 <p>Use the appropriate channels to ask questions and hand-in your work.</p>
@@ -345,10 +374,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="supplementary-material" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="supplementary-material"><span class="header-section-number">3.3</span> Supplementary material</h2>
 <ul>
-<li><a href="https://git-scm.com">Git</a></li>
-</ul>
-<p>The following links are very useful:</p>
-<ul>
+<li><p><a href="https://git-scm.com">Git</a> The following links are very useful:</p></li>
 <li><p>An <a href="https://www.gerkovink.com/oldmarkup/Archive/2019/Wk5/Solution%20Ex6.mp4">old video walkthrough</a> about <code>Git</code> and <code>Rstudio</code></p></li>
 <li><p><a href="https://help.github.com/articles/github-glossary">GitHub Glossary</a> for all terminology</p></li>
 <li><p><a href="https://www.atlassian.com/git/tutorials">become a <code>Git</code> Guru</a></p></li>
@@ -376,9 +402,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="github" class="level3" data-number="3.4.2">
 <h3 data-number="3.4.2" class="anchored" data-anchor-id="github"><span class="header-section-number">3.4.2</span> <code>GitHub</code></h3>
-<p><code>GitHub</code> is the social and user interface to <code>Git</code> that allows you to work in <a href="https://help.github.com/articles/github-glossary/#repository">repositories</a>. These repositories can be seen as project folders in which you publish your work, but you can also use them as test sites for development, testing, etcetera. There is a distinction between <a href="https://help.github.com/articles/github-glossary/#private-repository">private repositories</a> (only for you and those you grant access) and public repositories.</p>
-<p>Your public repositories can be viewed and <a href="https://help.github.com/articles/github-glossary/#fork">forked</a> by everyone. <code>Forking</code> is when other people create a copy of your repository on their own account. This allows them to work on a repository without affecting the <a href="https://docs.github.com/en/get-started/learning-about-github/github-glossary#master">master</a>. You can also do this to your own repository, but then the process is called <a href="https://help.github.com/articles/github-glossary/#branch"><code>branching</code></a> instead of forking. If you create an offline copy of a repository, the process is called <a href="https://help.github.com/articles/github-glossary/#clone"><code>cloning</code></a>.</p>
-<p><code>GitHub</code>’s ability to branch, fork and clone is very useful as it allows other people and yourself to experiment on a repository before any definitive changes are <a href="https://help.github.com/articles/github-glossary/#merge"><code>merged</code></a> with the <code>master</code>. If you’re working in a forked repository, you can submit a <a href="https://help.github.com/articles/github-glossary/#pull-request"><code>pull request</code></a> to the repository collaborators to accept or reject any suggested changes.</p>
+<p><code>GitHub</code> is the social and user interface to <code>Git</code> that allows you to work in <a href="https://help.github.com/articles/github-glossary/#repository">repositories</a>. These repositories can be seen as project folders in which you publish your work, but you can also use them as test sites for development, testing, etcetera. There is a distinction between <a href="https://help.github.com/articles/github-glossary/#private-repository">private repositories</a> (only for you and those you grant access) and public repositories (visible for everyone).</p>
+<p>Your public repositories can be viewed and <a href="https://help.github.com/articles/github-glossary/#fork">forked</a> by everyone. <code>Forking</code> is when other people create a copy of your repository on their own account. This allows them to work on a repository without affecting the <code>master</code>. You can also do this yourself, but then the process is called <a href="https://help.github.com/articles/github-glossary/#branch"><code>branching</code></a> instead of forking. If you create a copy of a repository that is offline, the process is called <a href="https://help.github.com/articles/github-glossary/#clone"><code>cloning</code></a>.</p>
+<p><code>GitHub</code>’s ability to branch, fork and clone is very useful as it allows other people and yourself to experiment on (the code in) a repository before any definitive changes are <a href="https://help.github.com/articles/github-glossary/#merge"><code>merged</code></a> with the <code>master</code>. If you’re working in a forked repository, you can submit a <a href="https://help.github.com/articles/github-glossary/#pull-request"><code>pull request</code></a> to the repository collaborators to accept (or reject) any suggested changes.</p>
 <p>For now, this may be confusing, but I hope you recognize the benefits <code>GitHub</code> can have on the process of development and bug-fixing. For example, the most up-to-date version of the <code>mice</code> package in <code>R</code> can be directly installed from the <code>mice</code> repository with the following code:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>install.packages("devtools")</span>
@@ -391,22 +417,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 data-number="3.4.3" class="anchored" data-anchor-id="installing-git"><span class="header-section-number">3.4.3</span> Installing <code>Git</code></h3>
 <section id="installing-on-mac" class="level4" data-number="3.4.3.1">
 <h4 data-number="3.4.3.1" class="anchored" data-anchor-id="installing-on-mac"><span class="header-section-number">3.4.3.1</span> Installing on Mac</h4>
-<p>I suggest you go full-nerd and use <code>Git</code> entirely from the terminal. All you need to do is to install <a href="https://git-scm.com/downloads/mac"><code>git</code></a>. After that, you can work from the terminal using <a href="https://git-scm.com/docs">git commands</a>.</p>
-<p>If you’re not quite ready for that, I suggest you install <code>Git</code> by downloading and installing <a href="https://desktop.github.com"><code>GitHub Desktop</code></a>. <code>GitHub</code>’s desktop application is a nice GUI and, naturally, integrates well into the repository workflow on <code>GitHub</code>. When installed, you can go to <code>GitHub Desktop &gt; Install Command Line Tool</code>. After a reboot, all should be set.</p>
+<p>I suggest you install <code>Git</code> by downloading and installing <a href="https://desktop.github.com"><code>GitHub Desktop</code></a>. <code>GitHub</code>’s desktop application is a nice GUI and, naturally, integrates well into the repository workflow on <code>GitHub</code>.</p>
+<p>When installed, you can go to <code>GitHub Desktop &gt; Install Command Line Tool</code></p>
+<p>After a reboot, all should be set.</p>
 </section>
 <section id="installing-on-windows" class="level4" data-number="3.4.3.2">
 <h4 data-number="3.4.3.2" class="anchored" data-anchor-id="installing-on-windows"><span class="header-section-number">3.4.3.2</span> Installing on Windows</h4>
-<p>Download and install <a href="https://gitforwindows.org"><code>Git for Windows</code></a>. Then, download and install <a href="https://desktop.github.com"><code>GitHub Desktop</code></a>. <code>GitHub</code>’s desktop application is a nice GUI and, naturally, integrates well into the repository workflow on <code>GitHub</code>. After a reboot, all should be set.</p>
-</section>
-<section id="installing-on-linux" class="level4" data-number="3.4.3.3">
-<h4 data-number="3.4.3.3" class="anchored" data-anchor-id="installing-on-linux"><span class="header-section-number">3.4.3.3</span> Installing on Linux</h4>
-<p>If you’re reading this, first of all, congratulations. You have my respect. I don’t know any GUI-based tools for <code>Git</code>, so let’s stick to the classics. Install <a href="https://git-scm.com/downloads/linux"><code>Git</code></a>. After that, you can work from the terminal using <a href="https://git-scm.com/docs">git commands</a>.</p>
+<p>Download and install <a href="https://gitforwindows.org"><code>Git for Windows</code></a>, Then download and install <a href="https://desktop.github.com"><code>GitHub Desktop</code></a>. <code>GitHub</code>’s desktop application is a nice GUI and, naturally, integrates well into the repository workflow on <code>GitHub</code>.</p>
+<p>After a reboot, all should be set.</p>
 <hr>
 </section>
 </section>
 <section id="command-line-interface-vs.-gui" class="level3" data-number="3.4.4">
 <h3 data-number="3.4.4" class="anchored" data-anchor-id="command-line-interface-vs.-gui"><span class="header-section-number">3.4.4</span> Command line interface vs.&nbsp;GUI</h3>
-<p>Ultimately, you’ll want to learn how to use <code>Git</code> through the command line interface (CLI). It offers better and more comprehensive functionality. Again, <a href="https://learngitbranching.js.org">take this 15-minute course</a> to get a gentle introduction. Later we’ll explore in detail how to handle <code>Git</code> when things go wrong. You’ll be a CLI-wizard by then.</p>
+<p>Ultimately, you’ll want to learn how to use <code>Git</code> through the command line interface (CLI). It offers better and more comprehensive functionality. Again, <a href="https://learngitbranching.js.org">take this 15-minute course</a> to get a gentle introduction. But do not be afraid that you miss out on the CLI if you don’t study this link: In week 4 we’ll explore in detail how to handle <code>Git</code> when things go haywire. You’ll be a CLI-wizard by then.</p>
 <hr>
 </section>
 <section id="gitignore" class="level3" data-number="3.4.5">
@@ -417,24 +441,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>untracked files</strong> that have not been staged or committed</li>
 <li><strong>ignored files</strong> that have been explicitly ignored</li>
 </ul>
-<p>It may be wise to instruct <code>Git</code> to ignore changes in some files. For example, compiled files (think about <code>.com</code>, <code>.exe</code>, <code>.o</code>, <code>.so</code>, etc), archives (e.g.&nbsp;<code>.zip</code>, <code>.tar</code>, <code>.rar</code>), logs (<code>.log</code>) and files generated in runtime (<code>.temp</code>) do not have to be tracked by <code>Git</code>. The same holds for hidden system files (e.g.&nbsp;<code>.DS_Store</code> or <code>Thumbs.db</code>). Adding such filetypes to a file named <code>.gitignore</code> and placing that file in the root of your repository will take care of focusing <code>Git</code>’s energy on useful files only. For common <code>.gitignore</code> examples, see <a href="https://github.com/github/gitignore">this repository</a>. There are many examples inside, such as <a href="https://github.com/github/gitignore/blob/master/R.gitignore">this <code>.gitignore</code> example for <code>R</code></a>. When you create a new repository on GitHub, you have the option of creating a default .gitignore file for your language of choice.</p>
+<p>It may be wise to instruct <code>Git</code> to ignore changes in some files. For example, compiled files (think about <code>.com</code>, <code>.exe</code>, <code>.o</code>, <code>.so</code>, etc), archives (e.g.&nbsp;<code>.zip</code>, <code>.tar</code>, <code>.rar</code>), logs (<code>.log</code>) and files generated in runtime (<code>.temp</code>) do not have to be tracked by <code>Git</code>. The same holds for hidden system files (e.g.&nbsp;<code>.DS_Store</code> or <code>Thumbs.db</code>). Adding such filetypes to a file named <code>.gitignore</code> and placing that file in the root of your repository will take care of focusing <code>Git</code>’s energy on useful files only. For common <code>.gitignore</code> examples, see <a href="https://github.com/github/gitignore">this repository</a>. There are many examples inside, such as <a href="https://github.com/github/gitignore/blob/master/R.gitignore">this <code>.gitignore</code> example for <code>R</code></a></p>
 <hr>
 </section>
 <section id="linking-github-and-rstudio" class="level3" data-number="3.4.6">
 <h3 data-number="3.4.6" class="anchored" data-anchor-id="linking-github-and-rstudio"><span class="header-section-number">3.4.6</span> Linking <code>GitHub</code> and <code>RStudio</code></h3>
-<p><strong>Securely</strong> linking your local machine to the remote repository is vital when collaborating with other people. You would not want a potential hacker to have contributor access to any of your projects. <a href="https://www.gerkovink.com/oldmarkup/Wk1/Link%20Git%20and%20RStudio.mp4">This walkthrough video</a> details the process of linking <code>GitHub</code> to your machine and <code>RStudio</code>. Below we explain the rationale of using both an SSH key and a personal access token.</p>
-<p>If you still experience problems after following the aforementioned walkthrough, check <a href="https://happygitwithr.com/troubleshooting.html">this chapter</a></p>
+<p>Securely linking your local machine to the remote repository is vital when collaborating with other people. In short; you would not want a potential hacker to have contributor access to any of your projects. I have prepared <a href="https://www.gerkovink.com/oldmarkup/Wk1/Link%20Git%20and%20RStudio.mp4">this walkthrough video</a> that details the process of linking <code>GitHub</code> to your machine and <code>RStudio</code>. Below I explain the rationale of using both an SSH key and a personal access token.</p>
+<p>If you still experience problems after following my walkthrough, check <a href="https://happygitwithr.com/troubleshooting.html">this chapter</a></p>
 <p>To learn more about maintaining a package as <code>GitHub</code> repository within <code>RStudio</code>, have a look at <a href="http://r-pkgs.had.co.nz/git.html">this guide</a> by <a href="http://hadley.nz">Hadley Wickham</a>.</p>
 <hr>
 </section>
 <section id="ssh-keys" class="level3" data-number="3.4.7">
 <h3 data-number="3.4.7" class="anchored" data-anchor-id="ssh-keys"><span class="header-section-number">3.4.7</span> SSH keys</h3>
-<p>With an SSH key you can identify yourself to an online server (in this case the <code>GitHub</code> server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes <em>hash code</em> is communicated every time. You can use an SSH key to link <code>RStudio</code> to your <code>GitHub</code> repository, but it is better to use a personal access token for this. See below.</p>
+<p>With an SSH key you can identify yourself to an online server (in this case the <code>GitHub</code> server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes hash code is communicated every time. You can use an SSH key to link <code>RStudio</code> to your <code>GitHub</code> repository, but it is better to use a personal access token for this. See below.</p>
 <hr>
 </section>
 <section id="personal-access-tokens" class="level3" data-number="3.4.8">
 <h3 data-number="3.4.8" class="anchored" data-anchor-id="personal-access-tokens"><span class="header-section-number">3.4.8</span> Personal access tokens</h3>
-<p>Because <code>GitHub</code> requires Two-Factor Authentication (2FA), your username and password are not sufficient to <code>push</code> <code>commits</code> to <code>GitHub</code> through <code>RStudio</code>. To solve this follow these steps on <a href="https://github.com">github.com</a> as detailed in <a href="https://www.gerkovink.com/oldmarkup/Wk1/Link%20Git%20and%20RStudio.mp4">this walkthrough video</a>:</p>
+<p>If you use <code>GitHub</code>’s 2FA functionality - <strong>you should!</strong> - your username and password are not sufficient to <code>push</code> <code>commits</code> to <code>GitHub</code> through <code>RStudio</code>. To solve this follow these steps on <a href="https://github.com">github.com</a> like I detail in <a href="https://www.gerkovink.com/oldmarkup/Wk1/Link%20Git%20and%20RStudio.mp4">this walkthrough video</a>:</p>
 <ol type="1">
 <li>Log in to your account</li>
 <li>Click on your profile photo (upper right corner) and select <code>Settings</code></li>
@@ -442,10 +466,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Select <code>Personal access tokens</code> in the left sidebar. The classic token as it is now called is sufficient</li>
 <li>Click <code>Generate new token</code></li>
 <li>Give the token a name</li>
-<li>Select at least the <code>repo</code> scope; you’ll need these permissions to access repositories. Also choose a relevant expiration: the longer the more convenient, the shorter the safer. You can always generate a new token if you need to.</li>
+<li>Select at least the <code>repo</code> scope; you’ll need these permissions to access repositories. Also choose a relevant expiration: the longer the better, the shorter the safer. Remember that you can always generate a new token if you need to.</li>
 <li>Click Generate token</li>
 </ol>
-<p>Copy the token. The token <strong>will not be displayed again</strong>, so paste it directly where it is needed. Remember that you can always generate a new token if you need to.</p>
+<p>Copy the token. The token will not be displayed again, so copy-paste it directly where it is needed. Remember that you can always generate a new token if you need to.</p>
 <p>In <code>RStudio</code>, paste the generated token in the password field when <code>RStudio</code> asks for your credentials. The token will now serve as the unique authenticated link instead of your password.</p>
 <hr>
 </section>
@@ -458,7 +482,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Create a new branch called <code>wk3</code></li>
 <li>Update the file <code>story.qmd</code> by adding three words to the sentence and commit the changes. You can do this by clicking on the <code>Git</code> tab in <code>RStudio</code>, selecting the files you want to commit (only one in this case!), writing a commit message and clicking the <code>Commit</code> button.</li>
 <li>Push to your <code>GitHub</code> fork. You can do this by clicking the green <code>Push</code> button in the <code>Git</code> tab in <code>RStudio</code> or by using</li>
-<li>Send a pull request (PR) to incorporate your changes into the <code>upstream/main</code> branch (i.e.&nbsp;<code>mlarpis/markup@main</code>). You can do this by going to your fork on <code>GitHub</code> and clicking the <code>Pull request</code> button. Make sure to select the correct branches.</li>
+<li>Send a pull request (PR) to incorporate your changes into the <code>upstream/main</code> branch (i.e.&nbsp;<code>gerkovink/markup@main</code>). You can do this by going to your fork on <code>GitHub</code> and clicking the <code>Pull request</code> button. Make sure to select the correct branches.</li>
 <li>If you’re fast enough, your commit will not result in a conflict. We will merge the PR’s in the order they are presented in, as long as there are no conflicts.</li>
 <li>If need be, update your PR by simply submitting another commit and pushing it to your fork. This will update the PR automatically.</li>
 </ol>
@@ -473,7 +497,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Perform a small simulation that does the following:</p>
+<ol type="1">
+<li>Perform a small simulation that does the following:</li>
+</ol>
 <!-- -->
 <ol type="a">
 <li>Sample 100 samples from a standard normal distribution.</li>
@@ -500,15 +526,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Solutions to the exercise
+<span class="screen-reader-only">Caution</span>My solutions to the exercises
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li><a href="https://www.gerkovink.com/oldmarkup/Wk1/Solution_to_Ex1.html">Gerko’s old solution to the MC exercise</a></li>
-<li><a href="https://www.gerkovink.com/oldmarkup/Wk1/Solution_to_Ex1_future.html">Gerko’s new solution to the MC exercise</a></li>
+<li><a href="https://www.gerkovink.com/oldmarkup/Wk1/Solution_to_Ex1.html">My old solution to the MC exercise</a></li>
+<li><a href="https://www.gerkovink.com/oldmarkup/Wk1/Solution_to_Ex1_future.html">My solution to the MC exercise as I would do it now</a></li>
 </ul>
 </div>
 </div>
@@ -517,20 +543,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="exercise-2-git-it-done" class="level2" data-number="3.6">
 <h2 data-number="3.6" class="anchored" data-anchor-id="exercise-2-git-it-done"><span class="header-section-number">3.6</span> Exercise 2: <code>Git</code> it done</h2>
-<p>This week we will also learn how to use <code>git</code> properly when we mess up. But let’s not learn that on this year’s repo ;-). Fork <a href="https://github.com/mlarpis/markup2020">this older course repository</a>, deselect <code>Copy the master branch only</code> in order to copy all branches.</p>
+<p>This week we will also learn how to use <span class="math inline">\(git\)</span> properly when we mess up. But let’s not learn that on this year’s repo ;-). Fork <a href="https://github.com/gerkovink/markup2020">this older course repository</a>, deselect <code>Copy the master branch only</code> in order to copy all branches and checkout the <code>Exercise_wk4</code> branch.</p>
+<p>Let’s continue this week with this second exercise.</p>
 <hr>
 <section id="disclaimer" class="level3" data-number="3.6.1">
 <h3 data-number="3.6.1" class="anchored" data-anchor-id="disclaimer"><span class="header-section-number">3.6.1</span> Disclaimer</h3>
-<p>I’ll take you by the hand through the exercise. So if you follow this manual step by step, you’ll be done at the end and you will have a good notion of troubleshooting with <code>Git</code>.</p>
+<p>I’ll take you by the hand through the exercise. So if you follow this manual step by step, you’ll be done at the end and you will have a good notion of troubleshooting with <code>Git</code> [or a reference thereof].</p>
 <p>This exercise is a summary of important commands. A full and comprehensive overview can be found in <a href="https://git-scm.com/book/en/v2">the <code>pro Git</code> book</a>.</p>
-<p>Oh, and we forgot to tell you: you’ll need the terminal for this exercise. You may use the one in <code>RStudio</code>, or the dedicated terminal on UNIX/Linux/Mac or the command prompt or <a href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab">Windows Terminal</a> on Windows.</p>
+<p>O, and we forgot to tell you: you’ll need the terminal for this exercise. You may use the one in <code>RStudio</code>, or the dedicated terminal on UNIX systems or the command prompt or <a href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab">Windows Terminal</a> on Windows.</p>
 <hr>
 </section>
 <section id="prepare" class="level3" data-number="3.6.2">
 <h3 data-number="3.6.2" class="anchored" data-anchor-id="prepare"><span class="header-section-number">3.6.2</span> Prepare</h3>
 <p>Before we continue it is good to all start from the point of departure.</p>
 <ol type="1">
-<li>Use the terminal to navigate to the <code>Git</code> repository (the location of the git repo on your computer)</li>
+<li>Use the terminal to navigate to the <code>Git</code> repository (the location of the git repo on your HDD)</li>
 <li>Type <code>git pull</code> to make sure that you obtain the latest state from the remote on <code>GitHub</code></li>
 </ol>
 <div class="cell">
@@ -546,12 +573,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Switched to branch 'Exercise_wk4'</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Your branch is up to date with 'origin/Exercise_wk4'.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>My local <code>Exercise_wk4</code> is up to date with <code>origin/Exercise_wk4</code>, meaning that GitHub and my local copy are in sync. <code>origin</code> is a shorthand name for the remote repository that a project was originally cloned from. It is useful that <code>origin</code> is referenced instead of the original repo’s URL –&gt; This makes referencing much more convenient. Note that this <em>does not mean</em> that they will remain in sync automatically from now on. Only that there is a reference between the two. But you still need to <code>push</code> and <code>pull</code> to keep them in sync in the future.</p>
+<p>I’ve now been switched to the <code>Exercise_wk4</code> branch. It is up to date with <code>origin/Exercise_wk4</code>, meaning that GitHub and my local copy are in sync. <code>origin</code> is a shorthand name for the remote repository that a project was originally cloned from. It is useful that <code>origin</code> is referenced instead of the original repo’s URL –&gt; This makes referencing much more convenient.</p>
 <hr>
 </section>
 <section id="inspect-the-current-state" class="level3" data-number="3.6.3">
 <h3 data-number="3.6.3" class="anchored" data-anchor-id="inspect-the-current-state"><span class="header-section-number">3.6.3</span> Inspect the current state</h3>
-<p>Make sure you are in the <code>Exercise_wk4</code> branch. Then use <code>git log --graph</code> to inspect the current Git branch and its commits.</p>
+<p>Make sure you are in the <code>Exercise_wk4</code> branch. Then Use <code>git log --graph</code> to inspect the current Git branch and its commits.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>% git log --graph          </span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ss">*   </span>commit 176137b1667cc6903f7a9eead5723892ef1a77a7 (HEAD -&gt; master, origin/master, origin/HEAD)</span>
@@ -653,7 +680,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>493609efa7ce659ebebf5a0d0300f23788397e68 Initial commit</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Please note that we only reference the short hash. There is no need to reference the longer hash as long as the sequence of the shorter reference is unique.</p>
-<p>From this <code>--pretty=oneline</code> view it is now easy to spot the origin of our course repository - the initial commit that initiated the <code>Git</code> goodness. You can also see that Gerko updated the <code>.gitignore</code>, a hidden file that specifies which files and directories to be ignored by <code>Git</code>. And he did some cosmetic changes and file deletions. This is very insightful because of the detailed, but concise commit messages.</p>
+<p>From this <code>--pretty=oneline</code> view it is now easy to spot the origin of our course repository - the initial commit that initiated the <code>Git</code> goodness. You can also see that I updated the <code>.gitignore</code>, a hidden file that specifies which files and directories to be ignored by <code>Git</code>. And I did some cosmetic changes and file deletions. This is very insightfull because of the detailed, but consice commit messages.</p>
 <hr>
 </section>
 <section id="checkout-an-old-state" class="level3" data-number="3.6.4">
@@ -684,7 +711,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>We are now at the old state. So we went back in time. The current state where we are is independent from all later commits, but is built exactly on all preceding commits as per the tree.</p>
 <p>There are a couple of terms that are <em>new</em>:</p>
 <ul>
-<li>HEAD: <em>The HEAD in <code>Git</code> is the pointer to the current branch reference. It is the last commit you have made or [in our case] checked out.</em> <strong>REMEMBER that the head will always serve as the parent to the next commit</strong></li>
+<li>HEAD: <em>The HEAD in <code>Git</code> is the pointer to the current branch reference. It is the last commit you have made or checked out [in our case].</em> <strong>REMEMBER that the head will always serve as the parent to the next commit</strong></li>
 <li>detached HEAD: <em>The same as the head, but now the pointer references a specific commit and not a branch.</em></li>
 </ul>
 <hr>
@@ -716,7 +743,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>% git checkout -b Wk4_markup 21a3b5a </span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>Switched to a new branch 'Wk4_markup'</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>We now have checked out an old state and made it into a new branch. The cool thing is that we can now commit all we want and everything will be properly logged. Just remember that if you’d like to go back in time and play around with an old state of your project –&gt; <strong>Merge the old state into a new branch</strong> as demonstrated above.</p>
+<p>We now have checked out an old state and made it into a new branch. The cool thing is that we can now commit all we want and everything will be properly logged. Just remember that if you’d like to go back in time and play around with an old state of your project –&gt; <strong>Merge the old state into a new branch</strong> like I demonstrated above.</p>
 <hr>
 </section>
 <section id="add-a-new-commit" class="level3" data-number="3.6.6">
@@ -823,7 +850,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="undo-a-commit" class="level3" data-number="3.6.8">
 <h3 data-number="3.6.8" class="anchored" data-anchor-id="undo-a-commit"><span class="header-section-number">3.6.8</span> Undo a commit</h3>
-<p>We can always undo a commit. For example, the following command reverts all changes to the initial commit</p>
+<p>When shit hits the fan, we can always undo a commit. For example, the following command reverts all changes to the inital commit</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>% git reset --hard 493609e  </span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>HEAD is now at 493609e Initial commit</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -871,7 +898,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>HEAD is now at 9e6c38c add two text files</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Using <code>reflog</code> and HEAD is in this case more flexible than using <code>log</code> and the SHA-1 hash. <code>reflog</code> yields the log of all changes in the pointer HEAD, while <code>log</code> only gives you the history of the logged commits. Once a commit is undone, it is gone from the <code>log</code>. Moreover, using <code>reflog</code> and HEAD allows you to go back into the future, like in the above example.</p>
-<p><strong>NOTE: Do not wait too long to undo your resets. After a few days/weeks garbage collection may kick in and <code>Git</code> will eventually see old commits as unreferenced. This makes them irretrievable</strong></p>
+<p><strong>NOTE: Do not wait too long to undo your resets. After a few days/weeks garbage collection may kick in and <code>Git</code> will eventually see old commit as unreferenced. This makes them irretrievable</strong></p>
 <hr>
 </section>
 <section id="redo-a-commit" class="level3" data-number="3.6.10">
@@ -918,7 +945,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>Auto-merging README.Rmd</span>
 <span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>Automatic merge failed; fix conflicts and then commit the result.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>We’ve now effectively created a conflict. A conflict must be resolved before a merge is possible. If you switch to GitHub desktop, you’ll see this pop-up</p>
+<p>We’ve now effectively created a conflict. A conflict must be resolved before a merge is possible. If you switch to GiHub desktop, you’ll see this pop-up</p>
 <p><img src="images/wk3/conflict.png" class="img-fluid" style="width:50.0%"></p>
 <p>You can use the drop-down menu to choose either modified file version as the one to keep after merging (which means you’ll throw out the other version from the other branch)</p>
 <p><img src="images/wk3/resolve.png" class="img-fluid" style="width:80.0%"></p>
@@ -955,45 +982,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="solution" class="level3" data-number="3.6.13">
 <h3 data-number="3.6.13" class="anchored" data-anchor-id="solution"><span class="header-section-number">3.6.13</span> Solution</h3>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>% git checkout -b Wk3_pablo</span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>Switched to a new branch 'Wk3_pablo'</span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>% git mv add_text_file.txt pablo.txt</span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>% git commit -m 'pablo`s commit'</span>
-<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Wk3_pablo 0211826</span><span class="co">]</span> pablo`s commit</span>
-<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a> 1 file changed, 0 insertions(+), 0 deletions(-)</span>
-<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a> rename add_text_file.txt =&gt; pablo.txt (100%)</span>
-<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>% git push --set-upstream origin Wk3_pablo</span>
-<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>Enumerating objects: 14, done.</span>
-<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>Counting objects: 100% (14/14), done.</span>
-<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>Delta compression using up to 8 threads</span>
-<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>Compressing objects: 100% (7/7), done.</span>
-<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>Writing objects: 100% (9/9), 876 bytes | 876.00 KiB/s, done.</span>
-<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>Total 9 (delta 5), reused 2 (delta 1), pack-reused 0</span>
-<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>remote: Resolving deltas: 100% (5/5), completed with 2 local objects.</span>
-<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>remote: </span>
-<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>remote: Create a pull request for 'Wk3_pablo' on GitHub by visiting:</span>
-<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a>remote:      https://github.com/PabloMosUU/markup2020/pull/new/Wk3_pablo</span>
-<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a>remote: </span>
-<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a>To github.com:PabloMosUU/markup2020.git</span>
-<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a><span class="ss"> * </span><span class="co">[</span><span class="ot">new branch</span><span class="co">]</span>      Wk3_pablo -&gt; Wk3_pablo</span>
-<span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a>branch 'Wk3_pablo' set up to track 'origin/Wk3_pablo'.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>Note that <code>git mv</code> both renames the file and stages the changes.</p>
-</div>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>% git branch Wk4_gerkovink </span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>% git checkout Wk4_gerkovink</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>Switched to branch 'Wk4_gerkovink'</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>% mv add_text_file.txt gerkovink.txt</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>% git add -A</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>% git commit -m 'gerko`s commit'    </span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Wk4_gerkovink fb26e75</span><span class="co">]</span> gerko`s commit</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a> 1 file changed, 0 insertions(+), 0 deletions(-)</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a> rename add_text_file.txt =&gt; gerkovink.txt (100%)</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>% git push origin Wk4_gerkovink</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>Enumerating objects: 15, done.</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>Counting objects: 100% (15/15), done.</span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>Delta compression using up to 8 threads</span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>Compressing objects: 100% (10/10), done.</span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>Writing objects: 100% (10/10), 1002 bytes | 1002.00 KiB/s, done.</span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>Total 10 (delta 7), reused 0 (delta 0)</span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>remote: Resolving deltas: 100% (7/7), completed with 3 local objects.</span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a>remote: </span>
+<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a>remote: Create a pull request for 'Wk4_gerkovink' on GitHub by visiting:</span>
+<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a>remote:      https://github.com/gerkovink/markup2020/pull/new/Wk4_gerkovink</span>
+<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a>remote: </span>
+<span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a>To https://github.com/gerkovink/markup2020.git</span>
+<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a><span class="ss"> * </span><span class="co">[</span><span class="ot">new branch</span><span class="co">]</span>      Wk4_gerkovink -&gt; Wk4_gerkovink</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 
@@ -1001,14 +1013,6 @@ Caution
 </section>
 
 </main> <!-- /main -->
-<script>
-var custom_title = document.querySelectorAll('.custom .theorem-title');
-
-for (let i = 0; i < custom_title.length; i++ ) {
-   var mod_name = custom_title[i].innerHTML;
-   custom_title[i].innerHTML = mod_name.replace("Example", "Exercise");
-};
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
