@@ -369,10 +369,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="preparing-the-package-structure" class="level4" data-number="6.4.1.2">
 <h4 data-number="6.4.1.2" class="anchored" data-anchor-id="preparing-the-package-structure"><span class="header-section-number">6.4.1.2</span> Preparing the package structure</h4>
-<p>We need a location for our <code>R</code>-package. The simplest approach to creating the skeleton for an <code>R</code>-package is to use <code>RStudio</code>. The following gif outlines this procedure:</p>
+<p>We need a location for our <code>R</code>-package. The simplest approach to creating the skeleton for an <code>R</code>-package is to use <code>RStudio</code>.</p>
+<div id="fig-packagefolder" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-packagefolder-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p>The following gif outlines this procedure:</p>
+-
 <center>
-<img src="images/wk6/packagefolder.gif" class="img-fluid" style="width:90.0%">
+-<img src="images/wk6/packagefolder.gif" class="img-fluid figure-img" style="width:90.0%"> -
 </center>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-packagefolder-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1
+</figcaption>
+</figure>
+</div>
 <p>We have now created the necessary structure for an <code>R</code>-package. We can see this structure and the generated package files in the <code>File Pane</code> in <code>RStudio</code>.</p>
 <center>
 <img src="images/wk6/filepane.png" class="img-fluid" style="width:90.0%">
@@ -382,9 +393,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <img src="images/wk6/hellofile.png" class="img-fluid" style="width:90.0%">
 </center>
 <p>As a matter of fact, the skeleton <code>R</code>-package is already a fully functional <code>R</code>-package. Try installing the package in the <code>build</code> pane.</p>
+<div id="fig-build" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-build-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/build.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/build.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-build-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.2
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="add-the-description" class="level4" data-number="6.4.1.3">
 <h4 data-number="6.4.1.3" class="anchored" data-anchor-id="add-the-description"><span class="header-section-number">6.4.1.3</span> Add the description</h4>
@@ -420,10 +440,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_r</span>(<span class="st">"rounder"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>The <code>use_r()</code> function from the <code>usethis</code> package is very convenient, because it creates the necessary file in the correct location and opens the file in the editor pane.</p>
+<div id="fig-user" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-user-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/use_r.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/use_r.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
-<p><br></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-user-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.3: <br>
+</figcaption>
+</figure>
+</div>
 <p>Now that we have created the file for our functional code, we can start building the code file. The most flexible approach to creating and maintaining a package is to use <code>roxygen2</code>. The <code>roxygen2</code> package is a convenient in-line documentation convention that generates your <code>Rd</code> documentation, <code>NAMESPACE</code> file, and much more for you. Remember that <code>man</code> folder in our package root? That contains all documentation files. However, you can imagine if we have two seperate locations for our <code>R</code>-code and our <code>Rd</code> help files, that at some point the code and documentation might get out of sync. For example, if we update the code, but forget to reflect changes in our manual, the usability of our package may be at stake and documentation to end-users might get confusing. Most of all, it would be a lot of work for us to maintain multiple linked files in multiple locations. <code>roxygen2</code> solves this for us by extracting the documentation from our <code>R</code>-code file. The only thing we need to do is maintain a single file.</p>
 <p>To start with <code>roxygen2</code> in our package, we need to instruct the package to use <code>roxygen2</code> from now on:</p>
 <div class="cell">
@@ -476,10 +504,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">document</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<div id="fig-devtools" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-devtools-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/devtools.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/devtools.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
-<p><br></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-devtools-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.4: <br>
+</figcaption>
+</figure>
+</div>
 <p>The <code>document()</code> function from the <code>devtools</code> package will build all documentation for all files that use <code>roxygen2</code> and it will build the <code>NAMESPACE</code> of your package accordingly. If you encounter the following message:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>Skipping NAMESPACE</span>
@@ -491,10 +527,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="building-and-checking" class="level4" data-number="6.4.1.5">
 <h4 data-number="6.4.1.5" class="anchored" data-anchor-id="building-and-checking"><span class="header-section-number">6.4.1.5</span> Building and checking</h4>
 <p>Let’s check the functionality of our package.</p>
+<div id="fig-check" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-check-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/check.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/check.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
-<p><br></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-check-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.5: <br>
+</figcaption>
+</figure>
+</div>
 <p>We can see under <code>build &gt; check</code> that our current package yields 1 error, 1 warning and 1 note.</p>
 <section id="error" class="level5" data-number="6.4.1.5.1">
 <h5 data-number="6.4.1.5.1" class="anchored" data-anchor-id="error"><span class="header-section-number">6.4.1.5.1</span> Error</h5>
@@ -668,10 +712,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb33-19"><a href="#cb33-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">expect_false</span>(<span class="fu">identical</span>(C, D))</span>
 <span id="cb33-20"><a href="#cb33-20" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Click the <code>Test</code> button in the <code>build</code> pane:</p>
+<p>Click the <code>Test</code> button in the <code>build</code> pane.</p>
+<div id="fig-test" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-test-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/test.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/test.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-test-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.6
+</figcaption>
+</figure>
+</div>
 <p>All test should pass, meaning that your <code>rounder()</code> function yields correct results (test 1) that differ fundamentally from the results obtained with <code>round()</code> (test 2).</p>
 <p>If test would fail, you’d be notified. For example</p>
 <div class="cell">
@@ -689,47 +742,119 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h4 data-number="6.4.1.8" class="anchored" data-anchor-id="publishing-to-github"><span class="header-section-number">6.4.1.8</span> Publishing to GitHub</h4>
 <p><strong>This section assumes that you are logged into your GitHub account. If you have trouble realizing this, <a href="https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop">GitHub has a great step-by-step walkthrough</a></strong>.</p>
 <p>Let’s publish our <code>R</code>-package to <code>GitHub</code>. To do so, we need to perform two steps. First, we must log (commit) our changes to the <code>Git</code> distributed version control system. This stores the file changes to our own machine. Next we must link our local <code>Git</code> to a remote online repository on <code>GitHub</code>. Luckily, with <code>GitHub Desktop</code>, we can perform all these steps in a single window interface.</p>
-Let’s start by adding our <code>R</code>-package to <code>GitHub desktop</code>. Remember that we already started the package in <code>RStudio</code> as a <code>Git</code> repository, so we only have to point <code>GitHub desktop</code> to the correct directory.
+<p>Let’s start by adding our <code>R</code>-package to <code>GitHub desktop</code>. Remember that we already started the package in <code>RStudio</code> as a <code>Git</code> repository, so we only have to point <code>GitHub desktop</code> to the correct directory.</p>
+<div id="fig-addgitrepo" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-addgitrepo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/addgitrepo.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/addgitrepo.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
-Next, we commit the changes. This means that we save the state of files for a moment in time, so that we can always revert to that state and see how the files changed with respect to the previous state.
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-addgitrepo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.7
+</figcaption>
+</figure>
+</div>
+<p>Next, we commit the changes. This means that we save the state of files for a moment in time, so that we can always revert to that state and see how the files changed with respect to the previous state.</p>
+<div id="fig-commit" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-commit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/commit.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/commit.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-commit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.8
+</figcaption>
+</figure>
+</div>
 <p>Naturally, you would not only do this at the start (when <code>RStudio</code> created the <code>Git</code> repository) and end (when we have a working package), but at regular and informative intervals. For example, when you add a function, a test, a help file, a license, etcetera.</p>
-Now that we have commited our package, we can publish it on <code>GitHub</code>.
+<p>Now that we have commited our package, we can publish it on <code>GitHub</code>.</p>
+<div id="fig-publish" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-publish-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/publish_gh.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/publish_gh.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
-Try your online <code>GitHub</code> repositories at <a href="https://github.com">https://github.com</a>. You will see your package there and that the license is automatically recognized. You will also see that you are in the <code>main</code> branch. By default, that will be the live version of your package. Now that your package is live, it would be nice to add a <code>Readme</code> file that informs visitors to your repository. But we will extend our workflow with a good behaviour: not working in the <code>main</code> branch. We would not want to accidentally overwrite or break the functionality of our package, just because we were working in the same branch. So let’s add a <code>Readme</code> to a new <code>development</code> branch.
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-publish-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.9
+</figcaption>
+</figure>
+</div>
+<p>Try your online <code>GitHub</code> repositories at <a href="https://github.com">https://github.com</a>. You will see your package there and that the license is automatically recognized. You will also see that you are in the <code>main</code> branch. By default, that will be the live version of your package. Now that your package is live, it would be nice to add a <code>Readme</code> file that informs visitors to your repository. But we will extend our workflow with a good behaviour: not working in the <code>main</code> branch. We would not want to accidentally overwrite or break the functionality of our package, just because we were working in the same branch. So let’s add a <code>Readme</code> to a new <code>development</code> branch.</p>
+<div id="fig-addreadme" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-addreadme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/addreadme.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/addreadme.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
-When we commit the new <code>Readme</code> file to the <code>development</code> branch, a new window opens to propose the <code>pull request</code> (PR). The PR is nothing more than a request to the package developers to pull your proposed changes into (usually) the <code>main</code> branch of the software. Since we are the developers, we have to both create and accept the PR.
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-addreadme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.10
+</figcaption>
+</figure>
+</div>
+<p>When we commit the new <code>Readme</code> file to the <code>development</code> branch, a new window opens to propose the <code>pull request</code> (PR). The PR is nothing more than a request to the package developers to pull your proposed changes into (usually) the <code>main</code> branch of the software. Since we are the developers, we have to both create and accept the PR.</p>
+<div id="fig-openpr" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-openpr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/openpr.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/openpr.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-openpr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.11
+</figcaption>
+</figure>
+</div>
 <p>It is good procedure to write an informative PR message, usually outlining the nature and rationale of the changes. I also demonstrate how to accept a PR, thereby approving the changes per file (only one now) and signing it with my initials. I cannot formally <em>approve</em> my own PR, since that would leave great opportunity for subjectivity or error. Proper procedure would be to have someone else check and approve your changes.</p>
+<div id="fig-pullrequest" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pullrequest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/pullrequest.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/pullrequest.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-pullrequest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.12
+</figcaption>
+</figure>
+</div>
 <p>When you go back to <code>GitHub desktop</code> and <code>fetch</code> the changes on teh remote (that would be GitHub online), you will see that you have now access to the <code>readme</code> file and the <code>development</code> branch.</p>
 </section>
 <section id="registering-a-doi" class="level4" data-number="6.4.1.9">
 <h4 data-number="6.4.1.9" class="anchored" data-anchor-id="registering-a-doi"><span class="header-section-number">6.4.1.9</span> Registering a <code>DOI</code></h4>
 <p>Now that we have a proper and open source package online and the world as our user base, it would be wise to allow for proper referencing of our package.</p>
 <p><code>GitHub</code> and <code>Zenodo</code> have paired to facilitate this procedure. If you link your <code>Zenodo</code> account to <code>GitHub</code>, <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">as outlined here</a>, you only have to click, copy and paste to fully make your <code>GitHub</code> repo citeable.</p>
+<div id="fig-doi" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-doi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/doi.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/doi.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-doi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.13
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="add-citation" class="level4" data-number="6.4.1.10">
 <h4 data-number="6.4.1.10" class="anchored" data-anchor-id="add-citation"><span class="header-section-number">6.4.1.10</span> Add citation</h4>
 <p><code>Zenodo</code> prepares the repository citation for us. We can simply grab the info, change our personal information and submit it to <code>GitHub</code>.</p>
+<div id="fig-citation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-citation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/citation.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/citation.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-citation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.14
+</figcaption>
+</figure>
+</div>
 <p>The final step before we would put our package <em>out there</em> is to notify how users can refer to our package. Run the following code:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_citation</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -757,9 +882,18 @@ When we commit the new <code>Readme</code> file to the <code>development</code> 
 <span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Modify this to your name, DOI and repository url and paste it into the <code>CITATION</code> file.</p>
+<div id="fig-usecitation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-usecitation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/use_citation.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/use_citation.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-usecitation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.15
+</figcaption>
+</figure>
+</div>
 </section>
 </section>
 </section>
@@ -770,9 +904,18 @@ When we commit the new <code>Readme</code> file to the <code>development</code> 
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"gerkovink/roundR"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>where you replace <code>"gerkovink/roundR"</code> with your <code>GitHub</code> handle and repository name.</p>
+<div id="fig-installgithub" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-installgithub-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <center>
-<img src="images/wk6/install_github.gif" class="img-fluid" style="width:90.0%">
+<img src="images/wk6/install_github.gif" class="img-fluid figure-img" style="width:90.0%">
 </center>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-installgithub-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.16
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="advanced-topics" class="level2" data-number="6.6">
 <h2 data-number="6.6" class="anchored" data-anchor-id="advanced-topics"><span class="header-section-number">6.6</span> Advanced topics</h2>
