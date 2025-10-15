@@ -14,4 +14,4 @@ Here is a list of contributors that helped to make this story possible.
 - [Gerko Vink](https:/wwww.github.com/gerkovink)
 - [Quinty Boer](https://github.com/quintyboer)
 - [Pablo Mosteiro](https://www.uu.nl/staff/PJMosteiroRomero)
-- [add your name here]
+- [Loesje Ubbink](https://github.com/lodewijn)
