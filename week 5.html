@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -199,8 +234,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#render-on-push-to-main" id="toc-render-on-push-to-main" class="nav-link" data-scroll-target="#render-on-push-to-main"><span class="header-section-number">5.1.2</span> Render on <code>push to main</code></a></li>
   </ul></li>
   <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">5.2</span> Further reading</a></li>
-  <li><a href="#safe-and-compliant-cloud-storage" id="toc-safe-and-compliant-cloud-storage" class="nav-link" data-scroll-target="#safe-and-compliant-cloud-storage"><span class="header-section-number">5.3</span> Safe and compliant cloud storage</a></li>
-  <li><a href="#nothing-to-show-for" id="toc-nothing-to-show-for" class="nav-link" data-scroll-target="#nothing-to-show-for"><span class="header-section-number">5.4</span> Nothing to show for?</a></li>
+  <li><a href="#other-means-of-publishing" id="toc-other-means-of-publishing" class="nav-link" data-scroll-target="#other-means-of-publishing"><span class="header-section-number">5.3</span> Other means of publishing</a></li>
+  <li><a href="#safe-and-compliant-cloud-storage" id="toc-safe-and-compliant-cloud-storage" class="nav-link" data-scroll-target="#safe-and-compliant-cloud-storage"><span class="header-section-number">5.4</span> Safe and compliant cloud storage</a></li>
+  <li><a href="#nothing-to-show-for" id="toc-nothing-to-show-for" class="nav-link" data-scroll-target="#nothing-to-show-for"><span class="header-section-number">5.5</span> Nothing to show for?</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/mlarpis/markup/edit/main/week 5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mlarpis/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -236,30 +272,27 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This week has no lecture slides. We discuss the flow of creating a website with <code>Git</code>, <code>Quarto</code> and <code>GitHub pages</code>.</p>
+<p>This week has no lecture slides. We discussed the flow of creating a website with <code>Git</code>, <code>Quarto</code> and <code>GitHub pages</code>.</p>
 </div>
 </div>
-<p>What follows is an exercise that will help you set up your own website. Some of the steps can be confusing and/or complicated. When in doubt, you can consult <a href="https://pablomosuu.github.io/">my website</a>, which is served by <a href="https://github.com/PabloMosUU/pablomosuu.github.io">this repository</a>.</p>
 <section id="exercise" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="exercise"><span class="header-section-number">5.1</span> Exercise</h2>
 <p>Do the following:</p>
 <ol type="1">
-<li><p>Create a new repository on GitHub called <code>yourname.github.io</code>, where <code>yourname</code> is your GitHub username.</p>
+<li>Create a new repository on GitHub called <code>developer-portfolio</code> or <code>yourname.github.io</code> (where <code>yourname</code> is your GitHub username).</li>
+<li>Build a website using <code>Quarto</code> and <code>GitHub pages</code> that showcases your work. Pay attention to e.g.</li>
+</ol>
 <ul>
-<li>Select the option “Add README”</li>
-<li>Select the option “Add license”. I suggest you choose “GNU General Public License v3.0”.</li>
-</ul></li>
-<li><p>Build a website using <code>Quarto</code> and <a href="https://docs.github.com/en/pages"><code>GitHub pages</code></a> that showcases your work. You may include, e.g.,</p>
-<ul>
-<li>who you are</li>
-<li>what you do (e.g.&nbsp;expertise, service, product)</li>
-<li>where people may find you (GitHub, company page, Facebook, X, etc.)</li>
+<li>who are you</li>
+<li>what do you do (e.g.&nbsp;expertise, service, product)</li>
+<li>where people may find you (GitHub, Company page, facebook, G+, twitter, etc.)</li>
 <li>accomplishments/publications/qualifications/skills etc.</li>
 <li>detailed curriculum vitae</li>
-</ul></li>
-<li><p>Add a link to your website to the <code>README.md</code> file of your repository.</p></li>
-<li><p>Make your website into a <code>GitHub</code> template</p></li>
-<li><p>Hand in the link to your hosted personal website as well as a link to your template on <code>GitHub</code> - they are deliverables for this course. Also add a zip of the repo at the time of handing in - on your <code>GitHub</code> repo click the green <code>Code</code> button and choose <code>Download ZIP</code>.</p></li>
+</ul>
+<ol start="3" type="1">
+<li>Add a link to your website to the <code>README.md</code> file of your repository.</li>
+<li>Make your website into a <code>GitHub</code> template</li>
+<li>Hand in the link to your hosted personal repository as well as a link to your template on <code>GitHub</code> - it is a deliverable for this course. Also add a zip of the repo at the time of handing in - on your <code>GitHub</code> repo click the green <code>Code</code> button and choose <code>Download ZIP</code>.</li>
 </ol>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -280,25 +313,67 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="render-on-push-to-main" class="level3" data-number="5.1.2">
 <h3 data-number="5.1.2" class="anchored" data-anchor-id="render-on-push-to-main"><span class="header-section-number">5.1.2</span> Render on <code>push to main</code></h3>
-<p>If you’d like your site to render when you push changes to the <code>main</code> branch, you must</p>
+<p>If you’d like your site to render when you push changes to the <code>main</code> branch, while your site is deployed from the <code>gh-pages</code> branch, you must</p>
 <ol type="1">
-<li>create a file called <code>.github/workflows/quarto-publish.yml</code></li>
-<li>add <a href="https://github.com/PabloMosUU/pablomosuu.github.io/blob/599b1ad74c3edd69d9045907ba4b2b243b37676d/.github/workflows/quarto-publish.yml">these contents</a> to the file</li>
-<li>go to Settings, then select Pages on the left-hand side, and under “Build and deployment” select “GitHub Actions”</li>
+<li>follow the flow outlined in the lecture</li>
+<li>create an empty <code>gh-pages</code> branch by running the following commands in your terminal:</li>
 </ol>
-<p><code>GitHub</code> will automatically deploy webpages with an action.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">--orphan</span> gh-pages</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reset <span class="at">--hard</span> <span class="co"># make sure all changes are committed before running this!</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">--allow-empty</span> <span class="at">-m</span> <span class="st">"Initialising gh-pages branch"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin gh-pages</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><code>GitHub</code> will automatically deploy webpages with an action. To also build your <code>Quarto</code> project, add the following action to a file in the path <code>.github/workflows/publish.yml</code>:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>.github/workflows/publish.yml</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-filename=".github/workflows/publish.yml"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> main</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Quarto Publish</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">build-deploy</span><span class="kw">:</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">permissions</span><span class="kw">:</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> write</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Check out repository</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Quarto</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/setup@v2</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="at">        </span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Render and Publish</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/publish@v2</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">target</span><span class="kw">:</span><span class="at"> gh-pages</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">GITHUB_TOKEN</span><span class="kw">:</span><span class="at"> ${{ secrets.GITHUB_TOKEN }}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </section>
 </section>
 <section id="further-reading" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">5.2</span> Further reading</h2>
 <p>All details to set this up smoothly can be found in the <a href="https://quarto.org/docs/publishing/github-pages.html">Quarto GitHub pages documentation</a>. More information about building websites with <code>Quarto</code> can be found in the <a href="https://quarto.org/docs/websites/">Quarto websites documentation</a>.</p>
 </section>
-<section id="safe-and-compliant-cloud-storage" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="safe-and-compliant-cloud-storage"><span class="header-section-number">5.3</span> Safe and compliant cloud storage</h2>
+<section id="other-means-of-publishing" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="other-means-of-publishing"><span class="header-section-number">5.3</span> Other means of publishing</h2>
+<p>More routes of creating and publishing websites with GitHub pages are discussed in <a href="https://www.gerkovink.com/oldmarkup/#week-6">a previous year’s markup exercise</a>. That said; <code>Quarto</code> is now by far the easiest means of realizing this week’s goal. That is why we only focus on <code>Quarto</code> in this year’s course iteration.</p>
+</section>
+<section id="safe-and-compliant-cloud-storage" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="safe-and-compliant-cloud-storage"><span class="header-section-number">5.4</span> Safe and compliant cloud storage</h2>
 <p>If you need some secure (GDPR or HIPAA compliant) file sharing, open up a free 5GB account on <a href="https://www.sync.com/?_sync_refer=d609f9a50">Sync.com</a>. If you use <a href="https://www.sync.com/?_sync_refer=d609f9a50">this link</a> you’ll get a free additional 1GB - so 6GB of super-secure storage. Don’t lose your 2FA recovery keys, though!</p>
 </section>
-<section id="nothing-to-show-for" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="nothing-to-show-for"><span class="header-section-number">5.4</span> Nothing to show for?</h2>
+<section id="nothing-to-show-for" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="nothing-to-show-for"><span class="header-section-number">5.5</span> Nothing to show for?</h2>
 <p>Have a look at <a href="https://adventofcode.com">Advent of Code</a>. It is a yearly event where you can solve programming puzzles. You can use any language you like. It is a great way to learn a new language or to practice your skills. Plus you can use your solutions as a portfolio.</p>
 
 
