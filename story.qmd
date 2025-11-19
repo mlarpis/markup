@@ -4,8 +4,9 @@ The following story is written together with students from the course. The story
 
 ---
 
-I opened the door to the beautiful pink Lamborghini that my son paid for entirely yet stole from Adele
-I opened the door to the beautiful pink Lamborghini that my son paid for entirely yet stole from Adele, who honestly was happy to see her own son
+# I opened the door to the beautiful pink Lamborghini… [add three more words here]
+
+I opened the door to the beautiful pink Lamborghini that my son paid for entirely yet stole from Adele, who honestly was happy to see her own son given the prolonged
 
 Lidiya Mishieva
 
@@ -20,3 +21,4 @@ Here is a list of contributors that helped to make this story possible.
 - [Axel Zweistra](https://github.com/AxelZweistra)
 - [Mano van Holten](https://github.com/EmmaDirk)
 - [Timo van Ommeren](https://github.com/timovanommeren)
+- [Leo Welma](https://github.com/leowelma)
