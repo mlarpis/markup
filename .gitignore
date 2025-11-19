@@ -51,3 +51,5 @@ index.aux
 index.log
 index.tex
 index.toc
+
+**/*.quarto_ipynb

@@ -722,7 +722,7 @@ After that, we can stage the changes and commit them in the `Exercise_wk4` branc
 5.  Commit the changes with a custom message
 6.  Publish your branch on GitHub
 7.  Do a pull request that can be automatically merged.
-8.  Post an issue in your forked template (remember @sec-deliv), wherein you properly [reference](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls) your PR to the old course repo.
+8.  Post an issue in your forked template (remember [What to hand in](#sec-deliv)), wherein you properly [reference](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls) your PR to the old course repo.
 
 You should now have all the skills to fill your template with the course deliverables and exercises. Now would be a good time to update your deliverables repository. If you have any questions, please post them [as an issue to the course repository](https://github.com/mlarpis/markup/issues).
 

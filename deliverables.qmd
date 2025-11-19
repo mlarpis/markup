@@ -1,6 +1,6 @@
 # Deliverables {.unnumbered}
 
-In this course, students gradually build a developer portfolio: a folder with items showcasing their proficiency with markup languages and reproducible programming. A template portfolio is available on https://github.com/mlarpis/markup_portfolio. The portfolio is handed in after the course ends for summative assessment. All individual elements must be completed, submitted, and passed or be graded ≥ 5.5 to pass the course. No compensation is allowed between the different graded elements. 
+In this course, students gradually build a developer portfolio: a folder with items showcasing their proficiency with markup languages and reproducible programming. A template portfolio is available on [https://github.com/mlarpis/portfolio](https://github.com/mlarpis/portfolio). The portfolio is handed in after the course ends for summative assessment. 
 
 The three deliverables (graded assignments) are:
 

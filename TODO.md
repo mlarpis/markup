@@ -11,9 +11,6 @@
 - add how to cite R packages
 - maybe add resources https://github.com/ianhussey/simulation-workshop, https://github.com/ianhussey/simulation-course
 
-### wk 5
-- check if exercise includes instruction to launch username.github.io page
-
 ### wk 6
 - add debugging/browser()
 - add code style/linting/automatic formatting
@@ -34,3 +31,16 @@
 - add resources to wk 2: https://quarto.org/docs/visual-editor/technical.html, https://biostats-r.github.io/biostats/quarto/, https://datavizf23.classes.andrewheiss.com/resource/markdown.html, https://daringfireball.net/projects/markdown/basics, https://learn.getgrav.org/16/advanced/yaml
 - add slide about conditional output/parameterized reports in qmd: https://quarto.org/docs/projects/profiles.html
 - add exercise with reprex
+
+### wk 3
+- add resources to exercise: https://ohshitgit.com/, https://github.com/maelle/saperlipopette, https://maelle.github.io/saperlipopette/
+- add https://gitmoji.dev/
+
+### wk 4
+- add more content (max 60 min)
+- add slides to wk 4 about: writing functions, vectorization (purrr), targets package
+- add how to cite R packages
+- maybe add resources https://github.com/ianhussey/simulation-workshop, https://github.com/ianhussey/simulation-course
+- add here::here()
+- add source() and file naming convention (01_..., 02_..., etc.)
+- add functional programming and paralellization and parameterization?

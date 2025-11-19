@@ -4,25 +4,31 @@
 ::: callout-tip
 ## Lecture Week 5
 
-This week has no lecture slides. We discussed the flow of creating a website with `Git`, `Quarto` and `GitHub pages`. 
+This week has no lecture slides. We discuss the flow of creating a website with `Git`, `Quarto` and `GitHub pages`. 
 :::
+
+What follows is an exercise that will help you set up your own website. Some of the steps can be confusing and/or complicated. When in doubt, you can consult [my website](https://pablomosuu.github.io/), which is served by [this repository](https://github.com/PabloMosUU/pablomosuu.github.io).
 
 ## Exercise
 
 Do the following:
 
-1. Create a new repository on GitHub called `developer-portfolio` or `yourname.github.io` (where `yourname` is your GitHub username). 
-2. Build a website using `Quarto` and `GitHub pages` that showcases your work. Pay attention to e.g.
+1. Create a new repository on GitHub called `yourname.github.io`, where `yourname` is your GitHub username.
+    - Select the option "Add README"
+    - Select the option "Add license". I suggest you choose "GNU General Public License v3.0".
+2. Build a website using `Quarto` and [`GitHub pages`](https://docs.github.com/en/pages) that showcases your work. You may include, e.g.,
 
-- who are you
-- what do you do (e.g. expertise, service, product)
-- where people may find you (GitHub, Company page, facebook, G+, twitter, etc.)
-- accomplishments/publications/qualifications/skills etc.
--  detailed curriculum vitae
+    - who you are
+    - what you do (e.g. expertise, service, product)
+    - where people may find you (GitHub, company page, social media platforms, etc.)
+    - accomplishments/publications/qualifications/skills etc.
+    - detailed curriculum vitae
+
+Note that this page will be public, so think carefully before adding any personal information at all.
 
 3. Add a link to your website to the `README.md` file of your repository.
 4. Make your website into a `GitHub` template
-5. Hand in the link to your hosted personal repository as well as a link to your template on `GitHub` - it is a deliverable for this course. Also add a zip of the repo at the time of handing in - on your `GitHub` repo click the green `Code` button and choose `Download ZIP`. 
+5. Hand in the link to your hosted personal website as well as a link to your template on `GitHub` - they are deliverables for this course. Also add a zip of the repo at the time of handing in - on your `GitHub` repo click the green `Code` button and choose `Download ZIP`. 
 
 ::: callout-warning
 ### Alternative
@@ -35,55 +41,18 @@ If you already know how to build a webpage with any other means, you can also us
 If you want to use a custom domain name, you need to buy one. You can do this on many websites. To use a custom domain with Github pages, you need to add a `CNAME` file to your repository. You can read more about this [here](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site). After addition of the `CNAME`, your website will be available at the custom domain. For example, where Gerko Vink's website is available at [https://gerkovink.github.io](https://gerkovink.github.io), he can also access it at [https://www.gerkovink.com](https://www.gerkovink.com). Any repository converted to a `GitHub` pages website (such as this course webpage) will then not only be available at `https://username.github.io/repositoryname`, but also at and `https://www.customdomain.com/repositoryname`. 
 
 ### Render on `push to main`
-If you'd like your site to render when you push changes to the `main` branch, while your site is deployed from the `gh-pages` branch, you must 
+If you'd like your site to render when you push changes to the `main` branch, you must 
 
-1. follow the flow outlined in the lecture
-2. create an empty `gh-pages` branch by running the following commands in your terminal:
+1. create a file called `.github/workflows/quarto-publish.yml`
+2. add [these contents](https://github.com/PabloMosUU/pablomosuu.github.io/blob/599b1ad74c3edd69d9045907ba4b2b243b37676d/.github/workflows/quarto-publish.yml) to the file
+3. go to Settings, then select Pages on the left-hand side, and under "Build and deployment" select "GitHub Actions"
 
-``` {.bash filename="Terminal"}
-git checkout --orphan gh-pages
-git reset --hard # make sure all changes are committed before running this!
-git commit --allow-empty -m "Initialising gh-pages branch"
-git push origin gh-pages
-```
-
-`GitHub` will automatically deploy webpages with an action. To also build your  `Quarto` project, add the following action to a file in the path `.github/workflows/publish.yml`: 
-
-``` {.yaml filename=".github/workflows/publish.yml"}
-on:
-  workflow_dispatch:
-  push:
-    branches: main
-
-name: Quarto Publish
-
-jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
+`GitHub` will automatically deploy webpages with an action.
 
 
 ## Further reading
 
 All details to set this up smoothly can be found in the [Quarto GitHub pages documentation](https://quarto.org/docs/publishing/github-pages.html). More information about building websites with `Quarto` can be found in the [Quarto websites documentation](https://quarto.org/docs/websites/).
-
-## Other means of publishing
-More routes of creating and publishing websites with GitHub pages are discussed in [a previous year's markup exercise](https://www.gerkovink.com/oldmarkup/#week-6). That said; `Quarto` is now by far the easiest means of realizing this week's goal. That is why we only focus on `Quarto` in this year's course iteration.
 
 ## Safe and compliant cloud storage
 If you need some secure (GDPR or HIPAA compliant) file sharing, open up a free 5GB account on [Sync.com](https://www.sync.com/?_sync_refer=d609f9a50). If you use [this link](https://www.sync.com/?_sync_refer=d609f9a50) you'll get a free additional 1GB - so 6GB of super-secure storage. Don't lose your 2FA recovery keys, though!
