@@ -11,7 +11,7 @@ You can see a previous year's recording [here](https://www.dropbox.com/scl/fi/hs
 :::
 
 ## `R` packages
-It is much easier to create, manage and co-develop an `R` package when you incorporate it into a distributed version control system like [Git](https://git-scm.com). The extension to a software development hosting service like [GitHub](https://github.com) is then a natural one. Although there are other procedures, devops systems and hosting services that may lend itself for package development, we outline the workflow with `Git` and `GitHub`. We also assume that you have [`RStudio`](https://posit.co/products/open-source/rstudio/) installed. 
+It is much easier to create, manage and co-develop an `R` package when you incorporate it into a distributed version control system like [Git](https://git-scm.com). The extension to a software development hosting service like [GitHub](https://github.com) is then a natural one. Although there are other procedures and [DevOps](https://en.wiktionary.org/wiki/DevOps#Noun) systems and hosting services that may lend itself for package development, we outline the workflow with `Git` and `GitHub`. We also assume that you have [`RStudio`](https://posit.co/products/open-source/rstudio/) installed. 
 
 ### Recap on `Git`
 `Git` is a free and open source version control system for text files. It can handle extensive change logging for you, no matter the size of the project. `Git` is fast and efficient, but its effectiveness depends also on the frequency you instruct it to log your project's changes. 
