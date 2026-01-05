@@ -5,7 +5,7 @@
 ::: callout-tip
 ## Lecture Week 6
 
-We discussed the flow of creating [`R` packages](https://r-pkgs.org/){target="_blank"} and [`Shiny` apps](https://shiny.posit.co){target="_blank"}. Along the way, we touched upon the importance of version control, testing and documentation. A static version of the Shiny slides can be found [here](slides/shiny/lec-shiny.pdf){target="_blank"}. Our tutorial for R package development can be found [here](documents/wk6/pkg-dev.html){target="_blank"}, and you can see a previous year's recording [here](https://www.dropbox.com/scl/fi/hscfsrh30slk23k7z6d1d/wk6_recording.mp4?rlkey=yhy7wt8ldfmsybbb3000z1hl0&dl=0) (download for the 1h+ recording)
+We discussed the flow of creating [`R` packages](https://r-pkgs.org/){target="_blank"} and [`Shiny` apps](https://shiny.posit.co){target="_blank"}. Along the way, we touched upon the importance of version control, testing and documentation. A static version of the Shiny slides can be found [[here](slides/lec-shiny.pdf){target="_blank"} (the full materials are available [in the course's GitHub reo](https://github.com/mlarpis/markup/tree/main/slides/shiny)). Our tutorial for R package development can be found [here](documents/wk6/pkg-dev.html){target="_blank"}, and you can see a previous year's recording [here](https://www.dropbox.com/scl/fi/hscfsrh30slk23k7z6d1d/wk6_recording.mp4?rlkey=yhy7wt8ldfmsybbb3000z1hl0&dl=0) (download for the 1h+ recording)
 :::
 
 ## Exercise 1
