@@ -10,7 +10,7 @@ format:
   html:
     toc: true
     number-sections: true
-    # embed-resources: true
+    embed-resources: true
 ---
 
 ---

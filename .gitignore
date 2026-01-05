@@ -53,3 +53,4 @@ index.tex
 index.toc
 
 **/*.quarto_ipynb
+*.html
