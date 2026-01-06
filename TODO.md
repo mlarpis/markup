@@ -17,6 +17,12 @@
 
 ## Next year (2026-2027)
 
+### general
+- fix broken links on main website with deadlinkchecker.com
+- merge pull request "Make repository smaller". See the pull request comments for what still needs to be done
+- consider Codeberg (alternative to GitHub). Only if Osiris does not say "GitHub" anywhere
+- Considere changing the AI-index (and, if we change it, change the rules on the course website). Make sure it does not conflict with Osiris
+
 ### assignments
 - make weekly assignments pass/fail?
 - create peer-review assignment? or AI code review?
