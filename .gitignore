@@ -52,4 +52,7 @@ index.log
 index.tex
 index.toc
 
+# files generated when rendering
 **/*.quarto_ipynb
+*.html
+docs/*
