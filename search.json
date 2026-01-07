@@ -434,7 +434,7 @@
     "href": "week 6.html#real-title-packages-code-robustness-and-unit-testing",
     "title": "6  Packages",
     "section": "",
-    "text": "TipLecture Week 6\n\n\n\nWe discussed the flow of creating R packages and Shiny apps. Along the way, we touched upon the importance of version control, testing and documentation. A static version of the Shiny slides can be found here. Our tutorial for R package development can be found here, and you can see a previous year’s recording here (download for the 1h+ recording)",
+    "text": "TipLecture Week 6\n\n\n\nWe discussed the flow of creating R packages and Shiny apps. Along the way, we touched upon the importance of version control, testing and documentation. A static version of the Shiny slides can be found [here (the full materials are available in the course’s GitHub reo). Our tutorial for R package development can be found here, and you can see a previous year’s recording here (download for the 1h+ recording)",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Packages</span>"
     ]
