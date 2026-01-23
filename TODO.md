@@ -24,6 +24,7 @@
 - add exercise with reprex
 - add R chunk shortcut: command option i
 - add slides about reference management (moving the theme from wk 1)
+- add Quarto extensions such as https://closeread.dev/
 
 ### wk 3
 - add resources to exercise: https://ohshitgit.com/, https://github.com/maelle/saperlipopette, https://maelle.github.io/saperlipopette/
