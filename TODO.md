@@ -35,7 +35,7 @@
 - add slides to wk 4 about: writing functions, vectorization (purrr), targets package
 - add how to cite R packages
 - maybe add resources https://github.com/ianhussey/simulation-workshop, https://github.com/ianhussey/simulation-course
-- add here::here()
+- add `here::here()`, mention `rm(list = ls())`
 - add source() and file naming convention (01_..., 02_..., etc.)
 - add functional programming and paralellization?
 
@@ -45,9 +45,9 @@
 - manage time division Shiny/R packages (now: 90 min Shiny, 30 min R packages)
 - add shinylive to lecture Shiny
 - create slides R packages?
-- add usethis::create_package()
-- add debugging/browser()
+- add `usethis::create_package()`
+- add debugging/`browser()`
 - add code style/linting/automatic formatting
 - add pkgdown explicitly, not as 'Advanced'
 - use git and dir_tree (https://fs.r-lib.org/reference/dir_tree.html) in live demo
-- add load_all() shortcut: command option L
+- add `load_all()` shortcut: command option L
