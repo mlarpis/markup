@@ -7,6 +7,7 @@
 - merge pull request "Make repository smaller". See the pull request comments for what still needs to be done
 - consider Codeberg (alternative to GitHub). Only if Osiris does not say "GitHub" anywhere
 - Considere changing the AI-index (and, if we change it, change the rules on the course website). Make sure it does not conflict with Osiris
+- check out similar course: https://psyteachr.github.io/reprores-v5/
 
 ### assignments
 - make weekly assignments pass/fail throughout the semester?
