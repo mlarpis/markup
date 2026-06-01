@@ -5,6 +5,8 @@ Exam: XX\%
 Portfolio: XX\%  
 The midterm exam will be administered on Remindo. No cell phones or other electronic devices during exams.
 
+The midterm exam tests the Dublin descriptors *Knowledge and understanding* and *Applying knowledge and understanding*. The portfolio additionally tests *Communication*.
+
 ## What to hand in {#sec-deliv}
 
 Fork this template portfolio: [https://github.com/mlarpis/portfolio](https://github.com/mlarpis/portfolio). 
