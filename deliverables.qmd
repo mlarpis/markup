@@ -1,19 +1,21 @@
 # Deliverables {.unnumbered}
 
-In this course, students gradually build a developer portfolio: a folder with items showcasing their proficiency with markup languages and reproducible programming. A template portfolio is available on [https://github.com/mlarpis/portfolio](https://github.com/mlarpis/portfolio). The portfolio is handed in after the course ends for summative assessment. 
+## What to hand in {#sec-deliv}
+
+In this course, students gradually build a developer portfolio: a folder with items showcasing their proficiency with markup languages and reproducible programming. Fork this template portfolio: [https://github.com/mlarpis/portfolio](https://github.com/mlarpis/portfolio). 
+You'll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure. The full rationale about GitHub and branching will be explained in more detail in this course.
+Your portfolio is handed in after the course ends for summative assessment. 
 
 The three deliverables (graded assignments) are:
 
-1. Developing and publishing a reproducible research compendium that contains a) reproducible markdown code and b) a typeset manuscript following a markup language;
+1. Developing and publishing a reproducible research compendium that contains 
+  a) reproducible markdown code and 
+  b) a typeset manuscript following a markup language;
 2. Developing and publishing a reproducible, referenceable and version-controlled development repository that clearly outlines the development cycle and origin;
 3. Developing and publishing a personal repository page.
 
-
-## What to hand in {#sec-deliv}
-Fork [this template repository](https://github.com/mlarpis/portfolio). You'll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure. The full rationale about GitHub and branching will be explained in more detail in this course. 
-
 ## Grading {#sec-grade}
-The following list represents the rubric categories for the deliverables in this course. It will tell you exactly what you will be graded on. All individual deliverables must be completed, submitted, passed or be graded $\geq 5.5$ to pass the course. No compensation is allowed between the different graded deliverables. 
+The following list represents the rubric categories for the deliverables in this course. It will tell you exactly what you will be graded on. All individual deliverables must be completed, submitted, passed or be graded at least 5.5 to pass the course. No compensation is allowed between the different graded deliverables. 
 
 - **1. Presentation of the portfolio (Pass/Fail)**  
   - All necessary links AND code are presented
