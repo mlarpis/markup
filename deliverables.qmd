@@ -1,8 +1,13 @@
 # Deliverables {.unnumbered}
 
+In this course, students gradually build a developer portfolio: a folder with items showcasing their proficiency with markup languages and reproducible programming. The grade for the course is based on a midterm exam and the final portfolio. Grading:  
+Exam: XX\%  
+Portfolio: XX\%  
+The midterm exam will be administered on Remindo. No cell phones or other electronic devices during exams.
+
 ## What to hand in {#sec-deliv}
 
-In this course, students gradually build a developer portfolio: a folder with items showcasing their proficiency with markup languages and reproducible programming. Fork this template portfolio: [https://github.com/mlarpis/portfolio](https://github.com/mlarpis/portfolio). 
+Fork this template portfolio: [https://github.com/mlarpis/portfolio](https://github.com/mlarpis/portfolio). 
 You'll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure. The full rationale about GitHub and branching will be explained in more detail in this course.
 Your portfolio is handed in after the course ends for summative assessment. 
 
