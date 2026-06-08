@@ -84,7 +84,7 @@
     "href": "deliverables.html",
     "title": "Deliverables",
     "section": "",
-    "text": "What to hand in\nIn this course, students gradually build a developer portfolio: a folder with items showcasing their proficiency with markup languages and reproducible programming. The grade for the course is based on a midterm exam and the final portfolio. Grading:\nExam: XX%\nPortfolio: XX%\nThe midterm exam will be administered on Remindo. No cell phones or other electronic devices during exams.\nThe midterm exam tests the Dublin descriptors Knowledge and understanding and Applying knowledge and understanding. The portfolio additionally tests Communication.\nFork this template portfolio: https://github.com/mlarpis/portfolio. You’ll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure. The full rationale about GitHub and branching will be explained in more detail in this course. Your portfolio is handed in after the course ends for summative assessment.\nThe specifics of the deliverables within the portfolio will be announced shortly before the beginning of the course.",
+    "text": "What to hand in\nIn this course, students gradually build a developer portfolio: a folder with items showcasing their proficiency with markup languages and reproducible programming. The grade for the course is based on regular checks of the progress on the portfolio and the final portfolio. Grading:\nIntermediate checks on the portfolio: XX%\nPortfolio: XX%\nThe portfolio and its intermediate checks test the Dublin descriptors Knowledge and understanding, Applying knowledge and understanding, and Communication.\nFork this template portfolio: https://github.com/mlarpis/portfolio. You’ll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure. The full rationale about GitHub and branching will be explained in more detail in this course. Your portfolio is handed in after the course ends for summative assessment.\nThe specifics of the deliverables within the portfolio will be announced shortly before the beginning of the course.",
     "crumbs": [
       "Deliverables"
     ]
@@ -94,7 +94,7 @@
     "href": "deliverables.html#sec-grade",
     "title": "Deliverables",
     "section": "Grading",
-    "text": "Grading\nDetails regarding the grading of the portfolio will be announced shortly before the beginning of the course.\nThe Remindo exam will be graded on Remindo. Where appropriate, Remindo will adjust scores to account for the possibility of random guessing in multiple-choice questions.\nYou must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the exam and the portfolio.",
+    "text": "Grading\nDetails regarding the grading of the portfolio will be announced shortly before the beginning of the course.\nYou must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the intermediate checks and the portfolio.",
     "crumbs": [
       "Deliverables"
     ]
