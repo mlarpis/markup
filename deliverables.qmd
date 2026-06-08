@@ -1,11 +1,11 @@
 # Deliverables {.unnumbered}
 
-In this course, students gradually build a developer portfolio: a folder with items showcasing their proficiency with markup languages and reproducible programming. The grade for the course is based on a midterm exam and the final portfolio. Grading:  
-Exam: XX\%  
-Portfolio: XX\%  
-The midterm exam will be administered on Remindo. No cell phones or other electronic devices during exams.
+In this course, students gradually build a developer portfolio: a folder with items showcasing their proficiency with markup languages and reproducible programming. The grade for the course is based on regular checks of the progress on the portfolio and the final portfolio. Grading:  
 
-The midterm exam tests the Dublin descriptors *Knowledge and understanding* and *Applying knowledge and understanding*. The portfolio additionally tests *Communication*.
+Intermediate checks on the portfolio: XX\%  
+Portfolio: XX\%  
+
+The portfolio and its intermediate checks test the [Dublin descriptors](https://nl.wikipedia.org/wiki/Dublin-descriptoren) *Knowledge and understanding*, *Applying knowledge and understanding*, and *Communication*.
 
 ## What to hand in {#sec-deliv}
 
@@ -18,6 +18,4 @@ The specifics of the deliverables within the portfolio will be announced shortly
 ## Grading {#sec-grade}
 Details regarding the grading of the portfolio will be announced shortly before the beginning of the course.
 
-The Remindo exam will be graded on Remindo. Where appropriate, Remindo will adjust scores to account for the possibility of random guessing in multiple-choice questions.
-
-You must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the exam and the portfolio.
+You must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the intermediate checks and the portfolio.
