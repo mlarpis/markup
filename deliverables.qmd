@@ -9,11 +9,19 @@ The portfolio and its intermediate checks test the [Dublin descriptors](https://
 
 ## What to hand in {#sec-deliv}
 
+### Portfolio
+
 Fork this template portfolio: [https://github.com/mlarpis/portfolio](https://github.com/mlarpis/portfolio). 
 You'll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure. The full rationale about GitHub and branching will be explained in more detail in this course.
 Your portfolio is handed in after the course ends for summative assessment. 
 
 The specifics of the deliverables within the portfolio will be announced shortly before the beginning of the course.
+
+### Intermediate checks
+
+Each week, you have to complete some exercises. These are listed on the website for the corresponding week. The results of these exercises must be uploaded to your portfolio. There are self-explanatory folders for this in the folder `00_exercises` in the portfolio.
+
+The deadline for handing in the exercises is **one week after the end time of the corresponding class**.
 
 ## Grading {#sec-grade}
 Details regarding the grading of the portfolio will be announced shortly before the beginning of the course.
