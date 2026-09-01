@@ -1,35 +1,36 @@
 # Deliverables {.unnumbered}
 
-In this course, students gradually build a developer portfolio: a folder with items showcasing their proficiency with markup languages and reproducible programming. The grade for the course is based on regular checks of the progress on the portfolio and the final portfolio. Grading:  
+You will gradually build a developer portfolio: a folder with items showcasing your proficiency with markup languages and reproducible programming. 
+
+## Grading {#sec-grade}
+
+The grade for the course is based on regular checks of the progress on the portfolio and the final portfolio. Grading:  
 
 Intermediate checks on the portfolio: XX\%  
 Portfolio: XX\%  
 
 The portfolio and its intermediate checks test the [Dublin descriptors](https://nl.wikipedia.org/wiki/Dublin-descriptoren) *Knowledge and understanding*, *Applying knowledge and understanding*, and *Communication*.
 
+You must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the intermediate checks and the portfolio.
+
 ## What to hand in {#sec-deliv}
 
 ### Portfolio
 
-Fork this template portfolio: [https://github.com/mlarpis/portfolio](https://github.com/mlarpis/portfolio). 
+Fork [this template portfolio](https://github.com/mlarpis/portfolio). 
 You'll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure. The full rationale about GitHub and branching will be explained in more detail in this course.
-Your portfolio is handed in after the course ends for summative assessment. 
+Your portfolio is handed in after the course ends for summative assessment (**the deadline will be announced by e-mail**). 
 
-The three deliverables (graded assignments) are:
+The parts of the portfolio that are graded are:
 
-1. Developing and publishing a reproducible research compendium that contains 
-  a) reproducible markdown code and 
-  b) a typeset manuscript following a markup language;
-2. Developing and publishing a reproducible, referenceable and version-controlled development repository that clearly outlines the development cycle and origin;
-3. Developing and publishing a personal repository page.
+1. Developing and publishing a reproducible, referenceable and version-controlled development repository that clearly outlines the development cycle and origin (your forked version of the portfolio);
+2. Developing and publishing a reproducible research compendium that contains 
+  a) reproducible markdown code (`01_research_compendium`) and 
+  b) a typeset manuscript following a markup language (`02_formatted_manuscript`);
+3. Developing and publishing a personal repository page (linked from your portfolio).
 
 ### Intermediate checks
 
 Each week, you have to complete some exercises. These are listed on the website for the corresponding week. The results of these exercises must be uploaded to your portfolio. There are self-explanatory folders for this in the folder `00_exercises` in the portfolio.
 
 The deadline for handing in the exercises is **one week after the end time of the corresponding class**.
-
-## Grading {#sec-grade}
-Details regarding the grading of the portfolio will be announced shortly before the beginning of the course.
-
-You must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the intermediate checks and the portfolio.
