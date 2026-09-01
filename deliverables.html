@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-48abc47ddc2cbc14860ddec9e9fdb395.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3d497cff885f6278d37568d0ef0763f8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -195,8 +198,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-deliv" id="toc-sec-deliv" class="nav-link active" data-scroll-target="#sec-deliv">What to hand in</a></li>
-  <li><a href="#sec-grade" id="toc-sec-grade" class="nav-link" data-scroll-target="#sec-grade">Grading</a></li>
+  <li><a href="#sec-grade" id="toc-sec-grade" class="nav-link active" data-scroll-target="#sec-grade">Grading</a></li>
+  <li><a href="#sec-deliv" id="toc-sec-deliv" class="nav-link" data-scroll-target="#sec-deliv">What to hand in</a>
+  <ul class="collapse">
+  <li><a href="#portfolio" id="toc-portfolio" class="nav-link" data-scroll-target="#portfolio">Portfolio</a></li>
+  <li><a href="#intermediate-checks" id="toc-intermediate-checks" class="nav-link" data-scroll-target="#intermediate-checks">Intermediate checks</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/mlarpis/markup/edit/main/deliverables.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mlarpis/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -222,21 +229,40 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In this course, students gradually build a developer portfolio: a folder with items showcasing their proficiency with markup languages and reproducible programming. The grade for the course is based on regular checks of the progress on the portfolio and the final portfolio. Grading:</p>
+<p>You will gradually build a developer portfolio: a folder with items showcasing your proficiency with markup languages and reproducible programming.</p>
+<section id="sec-grade" class="level2">
+<h2 class="anchored" data-anchor-id="sec-grade">Grading</h2>
+<p>The grade for the course is based on regular checks of the progress on the portfolio and the final portfolio. Grading:</p>
 <p>Intermediate checks on the portfolio: XX%<br>
 Portfolio: XX%</p>
 <p>The portfolio and its intermediate checks test the <a href="https://nl.wikipedia.org/wiki/Dublin-descriptoren">Dublin descriptors</a> <em>Knowledge and understanding</em>, <em>Applying knowledge and understanding</em>, and <em>Communication</em>.</p>
+<p>You must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the intermediate checks and the portfolio.</p>
+</section>
 <section id="sec-deliv" class="level2">
 <h2 class="anchored" data-anchor-id="sec-deliv">What to hand in</h2>
-<p>Fork this template portfolio: <a href="https://github.com/mlarpis/portfolio">https://github.com/mlarpis/portfolio</a>. You’ll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure. The full rationale about GitHub and branching will be explained in more detail in this course. Your portfolio is handed in after the course ends for summative assessment.</p>
-<p>The specifics of the deliverables within the portfolio will be announced shortly before the beginning of the course.</p>
+<section id="portfolio" class="level3">
+<h3 class="anchored" data-anchor-id="portfolio">Portfolio</h3>
+<p>Fork <a href="https://github.com/mlarpis/portfolio">this template portfolio</a>. You’ll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure. The full rationale about GitHub and branching will be explained in more detail in this course. Your portfolio is handed in after the course ends for summative assessment (<strong>the deadline will be announced by e-mail</strong>).</p>
+<p>The parts of the portfolio that are graded are:</p>
+<ol type="1">
+<li>Developing and publishing a reproducible, referenceable and version-controlled development repository that clearly outlines the development cycle and origin (your forked version of the portfolio);</li>
+<li>Developing and publishing a reproducible research compendium that contains</li>
+</ol>
+<ol type="a">
+<li>reproducible markdown code (<code>01_research_compendium</code>) and</li>
+<li>a typeset manuscript following a markup language (<code>02_formatted_manuscript</code>);</li>
+</ol>
+<ol start="3" type="1">
+<li>Developing and publishing a personal repository page (linked from your portfolio).</li>
+</ol>
 </section>
-<section id="sec-grade" class="level2">
-<h2 class="anchored" data-anchor-id="sec-grade">Grading</h2>
-<p>Details regarding the grading of the portfolio will be announced shortly before the beginning of the course.</p>
-<p>You must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the intermediate checks and the portfolio.</p>
+<section id="intermediate-checks" class="level3">
+<h3 class="anchored" data-anchor-id="intermediate-checks">Intermediate checks</h3>
+<p>Each week, you have to complete some exercises. These are listed on the website for the corresponding week. The results of these exercises must be uploaded to your portfolio. There are self-explanatory folders for this in the folder <code>00_exercises</code> in the portfolio.</p>
+<p>The deadline for handing in the exercises is <strong>one week after the end time of the corresponding class</strong>.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
