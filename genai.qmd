@@ -33,4 +33,4 @@ The [AI index](https://www.uu.nl/en/organisation/ai-policy/students/ai-index) fo
 
 ## Our advice
 
-Mastering a new language requires practice, and becoming dependent on genAI will hinder your progress in the long run. Therefore we advice you to also interact with your instructors, peers and other resources around the web. If you can explain to others what and why you are doing, you have transformed from student to master. 
+Mastering a new language requires practice, and becoming dependent on genAI will hinder your progress in the long run. One of the essential skills of a developer is to be able to explain and debug their code; blindly relying on genAI will not teach you that. Therefore we advice you to also interact with your instructors, peers and other resources around the web. If you can explain to others what and why you are doing, you have transformed from student to master. 
