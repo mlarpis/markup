@@ -1,6 +1,10 @@
 project:
   type: book
   output-dir: docs
+  render:
+    - "*.qmd"
+  resources:
+    - "documents/wk6/"
 
 book:
   title: "Markup Languages and Reproducible Programming in Statistics"

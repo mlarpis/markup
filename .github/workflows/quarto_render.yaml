@@ -1,8 +1,10 @@
 on:
   push:
-    branches: main
+    branches:
+      - main
   pull_request:
-    branches: main
+    branches: 
+      - main
   workflow_dispatch:
     
 permissions:
@@ -44,14 +46,15 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html
-          
+
       # - name: Render slides
       #   uses: quarto-dev/quarto-actions/render@v2
       #   with:
       #     to: revealjs # If set, it will be equivalent to `quarto render --to html`
       #     path: slides/lec-1.qmd # By default, the current working dir is used i.e `quarto render .`
-
+ 
       - name: Publish to GitHub Pages (and render)
+        if: github.event_name != 'pull_request'   # prevents PR-based deployments
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages

@@ -53,6 +53,8 @@ A. **Reproducibility is one of the pillars of science**
   - It is the standard by which to judge scientific claims
   - It helps the cumulative growth of knowledge - no duplication of effort
 
+. . . 
+
 B. **Reproducibility may greatly benefit you**
 
   - You'll develop better work habits
@@ -169,9 +171,39 @@ library(tidyverse)
 ## Making research reproducible
 
 - reproducible documents
+- FAIR & TADA
 - research compendiums
 
-![](images/lec-4/quarto.png)
+. . . 
+
+![](images/lec-4/quarto.png){width=80%}
+
+## FAIR
+
+![](images/lec-4/FAIR.jpeg)
+<!-- https://digiresacademy.kit.com/posts/how-to-fair-make-your-data-findable-accessible-interoperable-and-reusable -->
+
+## TADA
+
+<!-- - Transferable -->
+<!-- Transferability refers to the ability for anyone to open the file, view the code, and run the script without conversion or alteration -->
+<!-- - Accessible -->
+<!-- Accessibility refers to the act of publicly archiving the code in a way that provides access to any external user -->
+<!-- - Documented -->
+<!-- Documentation refers to providing accurate and detailed metadata files that describe the code files and their usage -->
+<!-- - Annotated -->
+<!-- Annotation refers to the addition of comments within each script, or embedding code within an RMarkdown or Quarto document alongside descriptive text -->
+
+
+::: footer
+[Ivimey-Cook et al. (2025)](https://doi.org/10.32942/X2D93K)
+:::
+
+<!-- Ivimey-Cook, E. R., Culina, A., Dimri, S., Grainger, M., Kar, F., Lagisz, M., Moran, N. P., Nakagawa, S., Roche, D. G., Sanchez-Tojar, A., Windecker, S. M., & Pick, J. L. (2025). TADA! Simple guidelines to improve code sharing. https://ecoevorxiv.org/repository/view/9806/ -->
+
+
+
+![](images/lec-4/TADA.png)
 
 ---
 
@@ -268,12 +300,38 @@ compendium/
 ```
 ![](images/lec-4/targets.png){width=30%}
 
-## (Not so) basic compendium{.build}
+::: footer
+e.g. with the `targets` package or `Make` files
+:::
+
+## Gold standard?
 
 ![](images/lec-4/spectrum.jpeg)
 
 ::: footer
 [Peng (2011)](https://doi.org/10.1126/science.1213847)
+:::
+
+## Random number generation
+
+```{r}
+set.seed(1L)
+sample(1:10)
+sample(1:10)
+set.seed(1L)
+sample(1:10)
+```
+
+::: footer
+[Navarro (2025)](https://blog.djnavarro.net/posts/2025-05-18_multivariate-normal-sampling-floating-point)
+:::
+
+## Reproducible environment or containerized
+
+![](images/lec-4/renv.png)
+
+::: footer
+e.g. with the `renv` package or a `Docker` container
 :::
 
 ## Guidelines
@@ -312,7 +370,7 @@ Research Data Management Support workshop:
 
 [**Writing Reproducible Manuscripts in R and Python**](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html)
 
-## How to
+## Steps
 
 - Think about a good folder structure 
   - Split up 'read-only', 'human-generated', and 'project-generated' files
@@ -329,6 +387,18 @@ Research Data Management Support workshop:
 
 ::: footer
 Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/compendia#checklist)
+::: 
+
+## Bonus: Preregister your simulation study
+
+![](images/lec-4/replisims.png)
+
+<!-- Siepe, B. S., Bartoš, F., Morris, T. P., Boulesteix, A.-L., Heck, D. W., & Pawel, S. (2024). Simulation studies for methodological research in psychology: A standardized template for planning, preregistration, and reporting. Psychological Methods. https://doi.org/10.1037/met0000695 -->
+
+::: footer
+[Siepe et al. (2024)](https://doi.org/10.1037/met0000695)
+
+[RepliSims](https://replisims.org)
 ::: 
 
 
@@ -395,6 +465,8 @@ Drost, N., Spaaks, J. H., Andela, B., Veen, L., Zwaan, J. M., Verhoeven, S., Bos
 
 Gentleman, R., & Temple Lang, D. (2007). Statistical Analyses and Reproducible Research. Journal of Computational and Graphical Statistics, 16(1), 1–23. [https://doi.org/10.1198/106186007X178663](https://doi.org/10.1198/106186007X178663)
 
+Ivimey-Cook, E. R., Culina, A., Dimri, S., Grainger, M., Kar, F., Lagisz, M., Moran, N. P., Nakagawa, S., Roche, D. G., Sanchez-Tojar, A., Windecker, S. M., & Pick, J. L. (2025). TADA! Simple guidelines to improve code sharing. https://ecoevorxiv.org/repository/view/9806/
+
 Jiménez, R. C., Kuzak, M., Alhamdoosh, M., Barker, M., Batut, B., Borg, M., Capella-Gutierrez, S., Hong, N. C., Cook, M., Corpas, M., Flannery, M., Garcia, L., Gelpí, J. L., Gladman, S., Goble, C., Ferreiro, M. G., Gonzalez-Beltran, A., Griffin, P. C., Grüning, B., … Crouch, S. (2017). Four simple recommendations to encourage best practices in research software (6:876). F1000Research. [https://doi.org/10.12688/f1000research.11407.1](https://doi.org/10.12688/f1000research.11407.1)
 
 Knuth, D. E. (1984). Literate Programming. The Computer Journal, 27(2), 97–111. [https://doi.org/10.1093/comjnl/27.2.97](https://doi.org/10.1093/comjnl/27.2.97)
@@ -402,6 +474,8 @@ Knuth, D. E. (1984). Literate Programming. The Computer Journal, 27(2), 97–111
 Marwick, B., Boettiger, C., & Mullen, L. (2018). Packaging Data Analytical Work Reproducibly Using R (and Friends). The American Statistician, 72(1), 80–88. [https://doi.org/10.1080/00031305.2017.1375986](https://doi.org/10.1080/00031305.2017.1375986)
 
 Morris, T. P., White, I. R., & Crowther, M. J. (2019). Using simulation studies to evaluate statistical methods. Statistics in Medicine, 38(11), 2074–2102. [https://doi.org/10.1002/sim.8086](https://doi.org/10.1002/sim.8086)
+
+  Navarro, D. (2025, May 18). When good pseudorandom numbers go bad. Notes from a Data Witch. https://blog.djnavarro.net/posts/2025-05-18_multivariate-normal-sampling-floating-point/
 
 NHANES Questionnaires, Datasets, and Related Documentation. (n.d.). Retrieved October 30, 2023, from [https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015)
 
