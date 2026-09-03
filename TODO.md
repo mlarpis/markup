@@ -9,9 +9,12 @@
 - Considere changing the AI-index (and, if we change it, change the rules on the course website). Make sure it does not conflict with Osiris
 - check out similar course: https://psyteachr.github.io/reprores-v5/
 
-### assignments
+### grading
 - make weekly assignments pass/fail throughout the semester?
-- create peer-review assignment? or AI code review?
+- create peer-review assignment? or AI code review to check reproducibility
+- create in-class graded assignment (e.g. replication study)?
+- less complex rubric
+- no portfolio? then edit Osiris text soon!
 
 ### wk 1
 - add slide about course aims (writing, publicizing, development/dissemination)
