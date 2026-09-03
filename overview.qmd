@@ -15,27 +15,27 @@ This course gives an overview of the state-of-the-art in statistical markup, rep
 We will not use Brightspace. Instead, all course materials can be found here on the course website, [https://mlarpis.github.io/markup](https://mlarpis.github.io/markup).
 
 - For handing in assignments and deliverables, you can fork [this template repository](https://github.com/mlarpis/portfolio) following the flow outlined in @sec-deliv.
-  - If you regularly update your fork, we can keep track of your progress.
 - Please post your content-related questions as [an issue in the course repository](https://github.com/mlarpis/markup/issues).
+  - *Assign* the issue to one of the teachers so they get notified.
 
 Questions regarding personal circumstances may be shared through e-mail with the teaching team. Please don't use e-mail for other questions unless it cannot be avoided - we'd prefer if you ask us in class or open an issue in the course repo. 
 
-## Syllabus
-This course website serves as syllabus. Background information, e.g. about course aims, can be found on [Osiris](https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&taal=en&collegejaar=huidig)
+## Course manual
+This course website serves as course manual. Background information, e.g. about course aims, can be found on [Osiris](https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&taal=en&collegejaar=huidig).
 
 ## Teaching methods
 
 The learning activities in this course include lectures/seminars, supervised labs with exercises/tutorials, and throughout the course students will work on a portfolio with deliverables. 
 
-There are six topics discussed in this course (see [the course landing page](https://mlarpis.github.io/markup/)). Each topic includes a lecture with tutorial elements (or a seminar) and one or more exercises. Some topics have an associated deliverable (graded assignment). 
+There are six topics discussed in this course (see [the course landing page](https://mlarpis.github.io/markup/)). Each topic includes a lecture with tutorial elements (or a seminar) and one or more exercises. Some topics have an associated [deliverable](https://mlarpis.github.io/markup/deliverables.html). 
 
 For example, for the topic of reproducible research, the lecture slides discuss the definition of reproducibility, what reproducibility can look like in the context of statistical research, and the requirements for reproducible research compendiums. The exercise is a tutorial on developing research compendiums with R and Quarto. And the deliverable is a complete and reproducible research compendium for a statistical research project.
 
 ### Lectures
-Depending on the topic, the lecture contains some interactive elements, or will have a showcase/walkthrough of a development workflow (e.g. R package development). The lectures contribute to learning objective a: ‘Students develop fundamental knowledge and understanding in the state of the art in statistical markup languages and reproducible programming and development’ (see [the Osiris course text](https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&taal=en&collegejaar=huidig)).
+Depending on the topic, the lecture contains some interactive elements, or will have a showcase/walkthrough of a development workflow (e.g. R package development). The lectures contribute to learning objective *a*: ‘Students develop fundamental knowledge and understanding in the state of the art in statistical markup languages and reproducible programming and development’ (see [the Osiris course text](https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&taal=en&collegejaar=huidig)).
 
 ### Exercises
-The exercises associated with each topic allow students to gain experience with the skills in this course. The exercises are not assessed summatively (i.e., with a grade), but they may provide formative feedback to the students (i.e., self-test). After completing the exercises, students are equipped to start working on the course deliverables (graded assignments). The exercises are aimed for students to practice learning objectives c and d: ‘They can efficiently organize a reproducible programming and development process’ and ‘They can produce repositories up to the standards of international programming and coding conventions and initiatives’ (see [the Osiris course text](https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&taal=en&collegejaar=huidig)).
+The exercises associated with each topic allow students to gain experience with the skills in this course. The exercises are checked after each session by one of the teachers to monitor your progress and they count towards a percentage of the grade (see [Deliverables](https://mlarpis.github.io/markup/deliverables.html)). The exercises are aimed for students to practice learning objectives *c* and *d*: ‘They can efficiently organize a reproducible programming and development process’ and ‘They can produce repositories up to the standards of international programming and coding conventions and initiatives’ (see [the Osiris course text](https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&taal=en&collegejaar=huidig)).
 
 ### Procedure
-The lectures in this course have mandatory attendance. After each lecture, students make exercises, which are handed in week-by-week. Throughout the course, starting after some of the topics, students work on deliverables, which are handed in in a portfolio after the course ends. Students combine all exercises and deliverables into a portfolio, which is handed in after course ends. Students are allowed to make use of generative AI in this course, see [the GenAI rules](https://mlarpis.github.io/markup/genai.html).
+The lectures in this course have **mandatory attendance**. Students are allowed to make use of generative AI in this course, see [the GenAI rules](https://mlarpis.github.io/markup/genai.html).

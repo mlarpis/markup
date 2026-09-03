@@ -1,21 +1,36 @@
 # Deliverables {.unnumbered}
 
-In this course, students gradually build a developer portfolio: a folder with items showcasing their proficiency with markup languages and reproducible programming. The grade for the course is based on regular checks of the progress on the portfolio and the final portfolio. Grading:  
-
-Intermediate checks on the portfolio: XX\%  
-Portfolio: XX\%  
-
-The portfolio and its intermediate checks test the [Dublin descriptors](https://nl.wikipedia.org/wiki/Dublin-descriptoren) *Knowledge and understanding*, *Applying knowledge and understanding*, and *Communication*.
+You will gradually build a developer portfolio: a folder with items showcasing your proficiency with markup languages and reproducible programming. 
 
 ## What to hand in {#sec-deliv}
 
 Fork this template portfolio: [https://github.com/mlarpis/portfolio](https://github.com/mlarpis/portfolio). 
 You'll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure. The full rationale about GitHub and branching will be explained in more detail in this course.
-Your portfolio is handed in after the course ends for summative assessment. 
 
-The specifics of the deliverables within the portfolio will be announced shortly before the beginning of the course.
+The parts of the portfolio are:
+
+- `00_exercises`: see [Intermediate checks](#Intermediate checks)
+- `01_research_compendium`: reproducible markdown code and all items necessary for reproduction
+- `02_formatted_manuscript`: a typeset manuscript following a markup language
+- `03_reusable_code`: Shiny app or R package
+
+In addition, you will create a personal repository page (see week 5).
+
+The deadline for handing in the portfolio and the personal repository page **will be announced by e-mail and/or in class**.
+
+### Intermediate checks
+
+Exercises for each week are listed on the website for the corresponding week. The results of these exercises must be uploaded to your portfolio. There are self-explanatory folders for this in the folder `00_exercises` in the portfolio.
+
+The deadline for handing in the exercises is **one week after the end time of the corresponding class**.
 
 ## Grading {#sec-grade}
-Details regarding the grading of the portfolio will be announced shortly before the beginning of the course.
+
+Intermediate checks on the portfolio: 10\%  
+Portfolio: 90\%  
 
 You must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the intermediate checks and the portfolio.
+
+The portfolio and its intermediate checks test the [Dublin descriptors](https://nl.wikipedia.org/wiki/Dublin-descriptoren) *Knowledge and understanding*, *Applying knowledge and understanding*, and *Communication*.
+
+Your grade on the portfolio will be based on our assessment of the combination of the research compendium, the formatted manuscript, and your personal repository page.
