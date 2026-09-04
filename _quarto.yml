@@ -4,7 +4,7 @@ project:
   render:
     - "*.qmd"
   resources:
-    - "documents/wk6/"
+    - "documents/**"
 
 book:
   title: "Markup Languages and Reproducible Programming in Statistics"
