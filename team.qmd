@@ -3,7 +3,7 @@
 ## Instructors
 ![](images/team/pablo.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Pablo" width="200"}
 
-Pablo Mosteiro is an Assistant Professor and a member of the [Natural Language and Text Processing](https://nlp.sites.uu.nl/) group. His research focuses on [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing) (NLP), specifically on [language change](https://en.wikipedia.org/wiki/Language_change) and [information-theoretic](https://en.wikipedia.org/wiki/Information_theory) approaches to [linguistics](https://en.wikipedia.org/wiki/Linguistics). He investigates the evolution of synonyms and the relationship between morphology and syntax in numerous languages worldwide. 
+Pablo Mosteiro is an Assistant Professor and a member of the Natural Language and Text Processing group. His research focuses on [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing) (NLP), specifically on [language change](https://en.wikipedia.org/wiki/Language_change) and [information-theoretic](https://en.wikipedia.org/wiki/Information_theory) approaches to [linguistics](https://en.wikipedia.org/wiki/Linguistics). He investigates the evolution of synonyms and the relationship between morphology and syntax in numerous languages worldwide. 
 For a more extensive description of his research and teaching, see [his university profile](https://www.uu.nl/staff/PJMosteiroRomero).
 Pablo has previously worked as an experimental particle physicist and as a commercial software developer. You can reach Pablo at [p.mosteiro\@uu.nl](mailto:p.mosteiro@uu.nl)
 
