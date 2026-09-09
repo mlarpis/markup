@@ -11,7 +11,7 @@ I opened the door to the beautiful pink Lamborghini that my son paid for entirel
 
 Here is a list of contributors that helped to make this story possible.
 
-- [Gerko Vink](https:/wwww.github.com/gerkovink)
+- [Gerko Vink](https:/www.github.com/gerkovink)
 - [Quinty Boer](https://github.com/quintyboer)
 - [Pablo Mosteiro](https://www.uu.nl/staff/PJMosteiroRomero)
 - [Anna Vijlbrief](https://github.com/AJV304)
