@@ -44,17 +44,17 @@
     "href": "overview.html#support",
     "title": "Course overview",
     "section": "Support",
-    "text": "Support\nWe will not use Brightspace. Instead, all course materials can be found here on the course website, https://mlarpis.github.io/markup.\n\nFor handing in assignments and deliverables, you can fork this template repository following the flow outlined in What to hand in.\n\nIf you regularly update your fork, we can keep track of your progress.\n\nPlease post your content-related questions as an issue in the course repository.\n\nQuestions regarding personal circumstances may be shared through e-mail with the teaching team. Please don’t use e-mail for other questions unless it cannot be avoided - we’d prefer if you ask us in class or open an issue in the course repo.",
+    "text": "Support\nWe will not use Brightspace. Instead, all course materials can be found here on the course website, https://mlarpis.github.io/markup.\n\nFor handing in assignments and deliverables, you can fork this template repository following the flow outlined in What to hand in.\nPlease post your content-related questions as an issue in the course repository.\n\nAssign the issue to one of the teachers so they get notified.\n\n\nQuestions regarding personal circumstances may be shared through e-mail with the teaching team. Please don’t use e-mail for other questions unless it cannot be avoided - we’d prefer if you ask us in class or open an issue in the course repo.",
     "crumbs": [
       "Course overview"
     ]
   },
   {
-    "objectID": "overview.html#syllabus",
-    "href": "overview.html#syllabus",
+    "objectID": "overview.html#course-manual",
+    "href": "overview.html#course-manual",
     "title": "Course overview",
-    "section": "Syllabus",
-    "text": "Syllabus\nThis course website serves as syllabus. Background information, e.g. about course aims, can be found on Osiris",
+    "section": "Course manual",
+    "text": "Course manual\nThis course website serves as course manual. Background information, e.g. about course aims, can be found on Osiris.",
     "crumbs": [
       "Course overview"
     ]
@@ -64,7 +64,7 @@
     "href": "overview.html#teaching-methods",
     "title": "Course overview",
     "section": "Teaching methods",
-    "text": "Teaching methods\nThe learning activities in this course include lectures/seminars, supervised labs with exercises/tutorials, and throughout the course students will work on a portfolio with deliverables.\nThere are six topics discussed in this course (see the course landing page). Each topic includes a lecture with tutorial elements (or a seminar) and one or more exercises. Some topics have an associated deliverable (graded assignment).\nFor example, for the topic of reproducible research, the lecture slides discuss the definition of reproducibility, what reproducibility can look like in the context of statistical research, and the requirements for reproducible research compendiums. The exercise is a tutorial on developing research compendiums with R and Quarto. And the deliverable is a complete and reproducible research compendium for a statistical research project.\n\nLectures\nDepending on the topic, the lecture contains some interactive elements, or will have a showcase/walkthrough of a development workflow (e.g. R package development). The lectures contribute to learning objective a: ‘Students develop fundamental knowledge and understanding in the state of the art in statistical markup languages and reproducible programming and development’ (see the Osiris course text).\n\n\nExercises\nThe exercises associated with each topic allow students to gain experience with the skills in this course. The exercises are not assessed summatively (i.e., with a grade), but they may provide formative feedback to the students (i.e., self-test). After completing the exercises, students are equipped to start working on the course deliverables (graded assignments). The exercises are aimed for students to practice learning objectives c and d: ‘They can efficiently organize a reproducible programming and development process’ and ‘They can produce repositories up to the standards of international programming and coding conventions and initiatives’ (see the Osiris course text).\n\n\nProcedure\nThe lectures in this course have mandatory attendance. After each lecture, students make exercises, which are handed in week-by-week. Throughout the course, starting after some of the topics, students work on deliverables, which are handed in in a portfolio after the course ends. Students combine all exercises and deliverables into a portfolio, which is handed in after course ends. Students are allowed to make use of generative AI in this course, see the GenAI rules.",
+    "text": "Teaching methods\nThe learning activities in this course include lectures/seminars, supervised labs with exercises/tutorials, and throughout the course students will work on a portfolio with deliverables.\nThere are six topics discussed in this course (see the course landing page). Each topic includes a lecture with tutorial elements (or a seminar) and one or more exercises. Some topics have an associated deliverable.\nFor example, for the topic of reproducible research, the lecture slides discuss the definition of reproducibility, what reproducibility can look like in the context of statistical research, and the requirements for reproducible research compendiums. The exercise is a tutorial on developing research compendiums with R and Quarto. And the deliverable is a complete and reproducible research compendium for a statistical research project.\n\nLectures\nDepending on the topic, the lecture contains some interactive elements, or will have a showcase/walkthrough of a development workflow (e.g. R package development). The lectures contribute to learning objective a: ‘Students develop fundamental knowledge and understanding in the state of the art in statistical markup languages and reproducible programming and development’ (see the Osiris course text).\n\n\nExercises\nThe exercises associated with each topic allow students to gain experience with the skills in this course. The exercises are checked after each session by one of the teachers to monitor your progress and they count towards a percentage of the grade (see Deliverables). The exercises are aimed for students to practice learning objectives c and d: ‘They can efficiently organize a reproducible programming and development process’ and ‘They can produce repositories up to the standards of international programming and coding conventions and initiatives’ (see the Osiris course text).\n\n\nProcedure\nThe lectures in this course have mandatory attendance. Students are allowed to make use of generative AI in this course, see the GenAI rules.",
     "crumbs": [
       "Course overview"
     ]
@@ -74,7 +74,7 @@
     "href": "team.html",
     "title": "Teaching team",
     "section": "",
-    "text": "Instructors\nPablo Mosteiro is an Assistant Professor and a member of the Natural Language and Text Processing group. His research focuses on Natural Language Processing (NLP), specifically on language change and information-theoretic approaches to linguistics. He investigates the evolution of synonyms and the relationship between morphology and syntax in numerous languages worldwide. For a more extensive description of his research and teaching, see his university profile. Pablo has previously worked as an experimental particle physicist and as a commercial software developer. You can reach Pablo at p.mosteiro@uu.nl\nHanne Oberman is a Junior Assistant Professor and develops cool computational evaluation applications. Hanne is a key figure in Utrecht’s Open Science Community and has a knack for new developments in creating and maintaining robust software. Hanne is a contributor and developer to multiple R-packages, some of which are in the top 10 packages developed at Utrecht University. Oh, and Hanne is much too polite, which is why Gerko wrote this text on Hanne’s behalf. You can reach Hanne at h.i.oberman@uu.nl",
+    "text": "Instructors\nPablo Mosteiro is an Assistant Professor and a member of the Natural Language and Text Processing group. His research focuses on Natural Language Processing (NLP), specifically on language change and information-theoretic approaches to linguistics. He investigates the evolution of synonyms and the relationship between morphology and syntax in numerous languages worldwide. For a more extensive description of his research and teaching, see his university profile. Pablo has previously worked as an experimental particle physicist and as a commercial software developer. You can reach Pablo at p.mosteiro@uu.nl.\nHanne Oberman is a Junior Assistant Professor and develops cool computational evaluation applications. Hanne is a key figure in Utrecht’s Open Science Community and has a knack for new developments in creating and maintaining robust software. Hanne is a contributor and developer to multiple R-packages, some of which are in the top 10 packages developed at Utrecht University. Oh, and Hanne is much too polite, which is why Gerko wrote this text on Hanne’s behalf. You can reach Hanne at h.i.oberman@uu.nl.",
     "crumbs": [
       "Teaching team"
     ]
@@ -84,7 +84,7 @@
     "href": "deliverables.html",
     "title": "Deliverables",
     "section": "",
-    "text": "Grading\nYou will gradually build a developer portfolio: a folder with items showcasing your proficiency with markup languages and reproducible programming.\nThe grade for the course is based on regular checks of the progress on the portfolio and the final portfolio. Grading:\nIntermediate checks on the portfolio: XX%\nPortfolio: XX%\nThe portfolio and its intermediate checks test the Dublin descriptors Knowledge and understanding, Applying knowledge and understanding, and Communication.\nYou must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the intermediate checks and the portfolio.",
+    "text": "What to hand in\nYou will gradually build a developer portfolio: a folder with items showcasing your proficiency with markup languages and reproducible programming.\nYou must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the intermediate checks and the portfolio.",
     "crumbs": [
       "Deliverables"
     ]
@@ -93,8 +93,18 @@
     "objectID": "deliverables.html#sec-deliv",
     "href": "deliverables.html#sec-deliv",
     "title": "Deliverables",
-    "section": "What to hand in",
-    "text": "What to hand in\n\nPortfolio\nFork this template portfolio. You’ll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure. The full rationale about GitHub and branching will be explained in more detail in this course. Your portfolio is handed in after the course ends for summative assessment (the deadline will be announced by e-mail).\nThe parts of the portfolio that are graded are:\n\nDeveloping and publishing a reproducible, referenceable and version-controlled development repository that clearly outlines the development cycle and origin (your forked version of the portfolio);\nDeveloping and publishing a reproducible research compendium that contains\n\n\nreproducible markdown code (01_research_compendium) and\na typeset manuscript following a markup language (02_formatted_manuscript);\n\n\nDeveloping and publishing a personal repository page (linked from your portfolio).\n\n\n\nIntermediate checks\nEach week, you have to complete some exercises. These are listed on the website for the corresponding week. The results of these exercises must be uploaded to your portfolio. There are self-explanatory folders for this in the folder 00_exercises in the portfolio.\nThe deadline for handing in the exercises is one week after the end time of the corresponding class.",
+    "section": "",
+    "text": "Portfolio\nFork this template portfolio. You’ll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure. The full rationale about GitHub and branching will be explained in more detail in this course.\nThe parts of the portfolio are:\n\n00_exercises: see Intermediate checks\n01_research_compendium: reproducible markdown code and all items necessary for reproduction\n02_formatted_manuscript: a typeset manuscript following a markup language\n03_reusable_code: Shiny app or R package\n\nIn addition, you will create a personal repository page (see week 5).\nThe deadline for handing in the portfolio and the personal repository page will be announced by e-mail and/or in class.\n\n\nIntermediate checks\nEach week, you have to complete some exercises. These are listed on the website for the corresponding week. The results of these exercises must be uploaded to your portfolio. There are self-explanatory folders for this in the folder 00_exercises in the portfolio.\nThe deadline for handing in the exercises is one week after the end time of the corresponding class.",
+    "crumbs": [
+      "Deliverables"
+    ]
+  },
+  {
+    "objectID": "deliverables.html#sec-grade",
+    "href": "deliverables.html#sec-grade",
+    "title": "Deliverables",
+    "section": "Grading",
+    "text": "Grading\nIntermediate checks on the portfolio: 10%\nPortfolio: 90%\nYou must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the intermediate checks and the portfolio.\nThe portfolio and its intermediate checks test the Dublin descriptors Knowledge and understanding, Applying knowledge and understanding, and Communication.\nYour grade on the portfolio will be based on our assessment of the combination of the research compendium, the formatted manuscript, and your personal repository page.",
     "crumbs": [
       "Deliverables"
     ]
@@ -104,7 +114,7 @@
     "href": "genai.html",
     "title": "GenAI rules",
     "section": "",
-    "text": "Copyright and intellectual property\nThe AI index for this course is c: GenAI use allowed when performing subtasks. You may use generative AI in this course if and only if you read the below paragraphs.",
+    "text": "Copyright and intellectual property",
     "crumbs": [
       "GenAI rules"
     ]
@@ -114,7 +124,7 @@
     "href": "genai.html#copyright-and-intellectual-property",
     "title": "GenAI rules",
     "section": "",
-    "text": "TipDo you know your input rights?\n\n\n\nAt Methodology and Statistics we hold ethics, honesty, and the values of open science in the highest regard. These principles are the backbone of our academic community and guide our education as well as our pursuit of knowledge.\nNow that AI tools become more advanced and widespread, it is crucial to uphold these values. While much focus has been on the output of AI tools, I want to bring attention to a different concern: the unjust use of what we input into these tools.\nMany of us interact with AI in what feels like the privacy of our own devices. This perceived privacy can create a false sense of security, leading some to input information that was not theirs to share or should have remained confidential. To safeguard our integrity and respect intellectual property rights, we must be cautious about what we share with AI tools. Specifically,\n\nDo not input assignments, course materials, scientific manuscripts or any other work without explicit permission from the owners.\nAvoid using AI tools to process, summarize, grade or evaluate each other’s work unless you have the author’s consent.\n\nBy following these guidelines, we protect and respect both the creative efforts and the intellectual property in our community.",
+    "text": "TipDo you know your input rights?\n\n\n\nThe false sense of privacy associated with personal AI use often leads users to share confidential or unauthorized information. Specifically,\n\nDo not input course materials, scientific manuscripts or any other work without permission from the owners.\nAvoid using AI tools to process or evaluate each other’s work unless you have the author’s consent.",
     "crumbs": [
       "GenAI rules"
     ]
@@ -124,7 +134,7 @@
     "href": "genai.html#what-about-this-course",
     "title": "GenAI rules",
     "section": "What about this course?",
-    "text": "What about this course?\nThe materials in this course are generated by M&S teaching staff, who hold the copyright. The intellectual property belongs to Utrecht University. Images are either self-generated, directly linked, or generated with AI tools. That said, there is no information in these that exceeds legal use of copyright materials in academic settings, or that is not publicly available or should not be part of the public domain.\n\n\n\n\n\n\nWarning\n\n\n\nYou may use any and all content in this course - excluding staff names - and submit it as input to generative AI tools, with the following exception:\n\nYou must ensure that the content is not used for further training of the model",
+    "text": "What about this course?\nThe materials in this course are generated by M&S teaching staff, who hold the copyright. The intellectual property belongs to Utrecht University.\n\n\n\n\n\n\nTipAI index\n\n\n\nThe AI index for this course is C. You may use GenAI to prepare the work you hand in, and to generate ideas and content that is part of the work your hand in, for the stages/parts of the assignment stated below. This includes, but is not limited to, generating text, audio, images, video, and code.\nYou may use AI tools to assist you in generating code that results in reproducible data sets.\nYou may NOT generate data sets with GenAI.\n\n\n\n\n\n\n\n\nWarning\n\n\n\n\nYou may NOT input staff or student names to generative AI tools.\nYou must ensure that the content is not used for further training of the model.",
     "crumbs": [
       "GenAI rules"
     ]
@@ -134,7 +144,7 @@
     "href": "genai.html#our-advice",
     "title": "GenAI rules",
     "section": "Our advice",
-    "text": "Our advice\nGenerative AI can be a great assistant in generating structured language. Most of the markup and programming languages that we will consider in this course are extremely structured and generative AI can be of great help. Mastering a new language, however, requires practice and becoming dependent on genAI will hinder your progression in the long run. Therefore we advice you to also interact with your instructors, peers and other resources around the web, as it will transform you from a leecher into a seeder. Or in educational terms: if you can explain to others what and why you are doing, you have transformed from student to master.",
+    "text": "Our advice\nMastering a new language requires practice, and becoming dependent on genAI will hinder your progress in the long run. One of the essential skills of a developer is to be able to explain and debug their code; blindly relying on genAI will not teach you that. Therefore we advice you to also interact with your instructors, peers and other resources around the web. If you can explain to others what and why you are doing, you have transformed from student to master.",
     "crumbs": [
       "GenAI rules"
     ]
@@ -204,7 +214,7 @@
     "href": "week 1.html#exercise-for-this-week",
     "title": "1  Markup Languages",
     "section": "1.6 Exercise for this week",
-    "text": "1.6 Exercise for this week\nCreate a document that contains items 1 thru 5 (see below) and then change the document with item 6. Submit both documents as well as the LaTeXdiff.\n\nA titlepage\nAn equation\nA section and a subsection\nThe resulting figure and table with captions from this file to be generated by the below code:\n\n\n#load package lattice\nlibrary(lattice)\nlibrary(xtable) # generate the LaTeX code for tables\n#fix the random generator seed\nset.seed(123)\n#create data\ndata &lt;- rnorm(1000)\n#plot histogram\nhistogram(data)\n#plot density \ndensityplot(data^12 / data^10, xlab = expression(data^12/data^10))\n#plot stripplot\nstripplot(data^2, xlab = expression(data^2))\n#plot boxplot\nbwplot(exp(data))\n#matrix with all data used\ndata.all &lt;- cbind(data = data, \n                  squared1 = data^12 / data^10,\n                  squared2 = data^2,\n                  exponent = exp(data))\n\n\nThe text from this AI-generated fairytale\nAlso create another document with LaTeXdiff version where the text in fairytale is replaced by this slight variation on the same fairytale\n\n\n\n1.6.1 Handing in the exercise\n\nFork the template repository detailed in Section 2.\nAdd your files to the respective folder.\nShare your repository link as an issue in the course repository.\n\nIf you know how to use git, go ahead. If you don’t, no panic. We’ll cover that in week 3. In the meantime you can use the &gt; add file functionality on GitHub as illustrated below.",
+    "text": "1.6 Exercise for this week\nCreate a document that contains items 1 thru 5 (see below) and then change the document with item 6. Submit both documents as well as the LaTeXdiff.\n\nA titlepage\nAn equation\nA section and a subsection\nThe resulting figure and table with captions from this file to be generated by the below code:\n\n\n#load package lattice\nlibrary(lattice)\nlibrary(xtable) # generate the LaTeX code for tables\n#fix the random generator seed\nset.seed(123)\n#create data\ndata &lt;- rnorm(1000)\n#plot histogram\nhistogram(data)\n#plot density \ndensityplot(data^12 / data^10, xlab = expression(data^12/data^10))\n#plot stripplot\nstripplot(data^2, xlab = expression(data^2))\n#plot boxplot\nbwplot(exp(data))\n#matrix with all data used\ndata.all &lt;- cbind(data = data, \n                  squared1 = data^12 / data^10,\n                  squared2 = data^2,\n                  exponent = exp(data))\n\n\nThe text from this AI-generated fairytale\nAlso create another document with LaTeXdiff version where the text in fairytale is replaced by this slight variation on the same fairytale\n\n\n\n1.6.1 Handing in the exercise\n\nFork the template repository detailed in Section 1.\nAdd your files to the respective folder.\nShare your repository link as an issue in the course repository.\n\nIf you know how to use git, go ahead. If you don’t, no panic. We’ll cover that in week 3. In the meantime you can use the &gt; add file functionality on GitHub as illustrated below.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Markup Languages</span>"
     ]
@@ -244,7 +254,7 @@
     "href": "week 2.html#exercise-2",
     "title": "2  Quarto",
     "section": "2.4 Exercise 2",
-    "text": "2.4 Exercise 2\nCreate a presentation about any topic you like that consists of at least 7 slides and includes all of the following:\n\na logo\na centered still figure\nan interactive table\na moving figure, interactive figure or movie\na 2-column slide\nan aligned multi-row equation\na citation and reference list\na bibliographic reference\nr-code, displayed but not executed\ncached and labeled r-code (may overlap with the next requirement)\nr-code, executed, but not displayed (e.g. a figure generation)\nan renv reproducible enviroment\n\nOf course this presentation may serve as the basis for presentations that you may have to create for other courses. Submit the presentation to your fork of the deliverables template. If you have not yet forked the template, do so now. See Section 2 for more information.",
+    "text": "2.4 Exercise 2\nCreate a presentation about any topic you like that consists of at least 7 slides and includes all of the following:\n\na logo\na centered still figure\nan interactive table\na moving figure, interactive figure or movie\na 2-column slide\nan aligned multi-row equation\na citation and reference list\na bibliographic reference\nr-code, displayed but not executed\ncached and labeled r-code (may overlap with the next requirement)\nr-code, executed, but not displayed (e.g. a figure generation)\nan renv reproducible enviroment\n\nOf course this presentation may serve as the basis for presentations that you may have to create for other courses. Submit the presentation to your fork of the deliverables template. If you have not yet forked the template, do so now. See Section 1 for more information.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Quarto</span>"
     ]
