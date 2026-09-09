@@ -10,7 +10,7 @@ We discussed the flow of creating [`R` packages](https://r-pkgs.org/){target="_b
 
 ## Exercise 1
 
-Follow the guided tutorial on R package development from [this page](documents/wk6/pkg-dev.html){target="_blank"}.
+Follow the guided tutorial on R package development from [this page](https://mlarpis.github.io/pkg-dev/){target="_blank"}.
 
 ## Exercise 2
 
