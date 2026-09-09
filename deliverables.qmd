@@ -2,9 +2,13 @@
 
 You will gradually build a developer portfolio: a folder with items showcasing your proficiency with markup languages and reproducible programming. 
 
+You must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the intermediate checks and the portfolio.
+
 ## What to hand in {#sec-deliv}
 
-Fork this template portfolio: [https://github.com/mlarpis/portfolio](https://github.com/mlarpis/portfolio). 
+### Portfolio
+
+Fork [this template portfolio](https://github.com/mlarpis/portfolio). 
 You'll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure. The full rationale about GitHub and branching will be explained in more detail in this course.
 
 The parts of the portfolio are:
@@ -20,7 +24,7 @@ The deadline for handing in the portfolio and the personal repository page **wil
 
 ### Intermediate checks
 
-Exercises for each week are listed on the website for the corresponding week. The results of these exercises must be uploaded to your portfolio. There are self-explanatory folders for this in the folder `00_exercises` in the portfolio.
+Each week, you have to complete some exercises. These are listed on the website for the corresponding week. The results of these exercises must be uploaded to your portfolio. There are self-explanatory folders for this in the folder `00_exercises` in the portfolio.
 
 The deadline for handing in the exercises is **one week after the end time of the corresponding class**.
 
