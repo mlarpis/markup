@@ -44,9 +44,16 @@ Just like with `R`, `TeX` is a software implementation that requires an editor t
 ---
 
 ### Installing a `TeX` framework
-If you are on Windows or Linux, I suggest you install the [TexLive distribution](http://www.tug.org/texlive/); you can also use RStudio or Overleaf. Note that Overleaf requires internet access. If you are on a Mac, the [MacTex distribution](http://www.tug.org/mactex/) will give you everything you need. If you use the default installation parameters, everything you might ever need is included in these distributions. Both distributions come with an excellent (but basic) editor (`Texworks` in `Texlive` and `TexShop` in `MacTex`), but if you want to go the fancy way: there are very good alternatives. See [this page](https://en.wikipedia.org/wiki/Comparison_of_TeX_editors) for a comprehensive overview of all `TeX` editors and code editors with `TeX` capabilities. 
 
-Alternatively, you can use the online `TeX` editor [Overleaf](https://www.overleaf.com). Please pay attention to any data privacy regulations. It may not be an option for all your research endeavors. 
+I suggest you use RStudio or [Overleaf](https://www.overleaf.com). Note that Overleaf requires internet access. 
+RStudio comes with an excellent (but basic) editor; if you want to go the fancy way, there are [very good alternatives](https://en.wikipedia.org/wiki/Comparison_of_TeX_editors). 
+If you use Overleaf, please pay attention to any data privacy regulations. It may not be an option for all your research endeavors. 
+
+#### Installing packages
+
+On Overleaf, most packages are installed by default. If you are using RStudio, you might come across packages that you want to use but are not installed by default. To install them, use this command in the RStudio console:
+
+`tinytex::tlmgr_install("package_name")`
 
 ---
 
