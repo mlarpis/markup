@@ -52,3 +52,8 @@
 - [ ] add pkgdown explicitly, not as 'Advanced'
 - [ ] use git and dir_tree (https://fs.r-lib.org/reference/dir_tree.html) in live demo
 - [ ] add `load_all()` shortcut: command option L
+
+## 2027-2028
+
+- [ ] consider Codeberg (alternative to GitHub). Only if Osiris does not say "GitHub" anywhere
+- [ ] check out similar course: https://psyteachr.github.io/reprores-v5/
