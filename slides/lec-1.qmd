@@ -63,14 +63,14 @@ Open Source:
 
 **Realistic**: Hanne and Pablo will give you a peek into our lives as opinionated developers. We will cover: <br><br>
 
-| Week                  | Date   | Focus                                       | Location                                                |
-|-----------------------|--------|---------------------------------------------|---------------------------------------------------------|
-| Week 1 | 10 Sep | Introduction to Markup Languages; and LaTeX | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
-| Week 2 | 24 Sep | Markdown in (most) Flavors                  | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
-| Week 3 | 15 Oct | Version Control and Development Flow        | [BOL 1023](https://students.uu.nl/bolognalaan-101) |
-| Week 4 | 05 Nov | Reproducible Research Repositories          | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
-| Week 5 | 19 Nov | Developer Portfolio                         | [DALTON 500 - 5.08](https://www.uu.nl/en/daltonlaan-500)      |
-| Week 6 | 03 Dec | Packages, Code Robustness and Unit Testing  | [BOL 1049](https://students.uu.nl/bolognalaan-101)      |
+| Week                  | Focus                                       | 
+|-----------------------|---------------------------------------------|
+| Week 1 | Introduction to Markup Languages; and LaTeX |
+| Week 2 | Markdown in (most) Flavors                  |
+| Week 3 | Version Control and Development Flow        |
+| Week 4 | Reproducible Research Repositories          |
+| Week 5 | Developer Portfolio                         |
+| Week 6 | Packages, Code Robustness and Unit Testing  |
 
 ## Course materials
 ::: callout-important
