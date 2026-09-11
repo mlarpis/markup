@@ -2,8 +2,6 @@
 
 You will gradually build a developer portfolio: a folder with items showcasing your proficiency with markup languages and reproducible programming. 
 
-You must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the intermediate checks and the portfolio.
-
 ## What to hand in {#sec-deliv}
 
 ### Portfolio
@@ -13,7 +11,7 @@ You'll end up with a copy of the repository template on your GitHub account, wit
 
 The parts of the portfolio are:
 
-- `00_exercises`: see [Intermediate checks](#Intermediate checks)
+- `00_exercises`: see **Intermediate checks** below
 - `01_research_compendium`: reproducible markdown code and all items necessary for reproduction
 - `02_formatted_manuscript`: a typeset manuscript following a markup language
 - `03_reusable_code`: Shiny app or R package
@@ -24,7 +22,7 @@ The deadline for handing in the portfolio and the personal repository page **wil
 
 ### Intermediate checks
 
-Each week, you have to complete some exercises. These are listed on the website for the corresponding week. The results of these exercises must be uploaded to your portfolio. There are self-explanatory folders for this in the folder `00_exercises` in the portfolio.
+Each week, you have to complete some exercises. These are listed on the website for the corresponding week. The results of these exercises must be uploaded to your portfolio. There are self-explanatory folders for this in the folder `00_exercises`.
 
 The deadline for handing in the exercises is **one week after the end time of the corresponding class**.
 
