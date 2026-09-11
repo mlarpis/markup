@@ -2,8 +2,6 @@
 
 You will gradually build a developer portfolio: a folder with items showcasing your proficiency with markup languages and reproducible programming. 
 
-You must obtain a minimum of 5,5 on each of the two graded components. No compensation is allowed between the intermediate checks and the portfolio.
-
 ## What to hand in {#sec-deliv}
 
 ### Portfolio
