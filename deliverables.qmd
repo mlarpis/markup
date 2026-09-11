@@ -22,7 +22,7 @@ The deadline for handing in the portfolio and the personal repository page **wil
 
 ### Intermediate checks
 
-Each week, you have to complete some exercises. These are listed on the website for the corresponding week. The results of these exercises must be uploaded to your portfolio. There are self-explanatory folders for this in the folder `00_exercises` in the portfolio.
+Each week, you have to complete some exercises. These are listed on the website for the corresponding week. The results of these exercises must be uploaded to your portfolio. There are self-explanatory folders for this in the folder `00_exercises`.
 
 The deadline for handing in the exercises is **one week after the end time of the corresponding class**.
 
