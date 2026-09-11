@@ -11,7 +11,7 @@ You'll end up with a copy of the repository template on your GitHub account, wit
 
 The parts of the portfolio are:
 
-- `00_exercises`: see [Intermediate checks](#Intermediate checks)
+- `00_exercises`: see **Intermediate checks** below
 - `01_research_compendium`: reproducible markdown code and all items necessary for reproduction
 - `02_formatted_manuscript`: a typeset manuscript following a markup language
 - `03_reusable_code`: Shiny app or R package
