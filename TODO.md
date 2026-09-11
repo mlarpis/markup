@@ -3,15 +3,11 @@
 ## 2026-2027
 
 ### general
-- [x] fix broken links on main website with deadlinkchecker.com
-- [x] merge pull request "Make repository smaller". See the pull request comments for what still needs to be done
 - [>] consider Codeberg (alternative to GitHub). Only if Osiris does not say "GitHub" anywhere
-- [x] Considere changing the AI-index (and, if we change it, change the rules on the course website). Make sure it does not conflict with Osiris
+website). Make sure it does not conflict with Osiris
 - [>] check out similar course: https://psyteachr.github.io/reprores-v5/
 
 ### grading
-- [x] make weekly assignments pass/fail throughout the semester?
-- [x] create peer-review assignment? or AI code review?
 - [ ] create in-class graded assignment (e.g. replication study)?
 - [ ] less complex rubric
 - [ ] no portfolio? then edit Osiris text soon!
