@@ -2,11 +2,6 @@
 
 ## 2026-2027
 
-### general
-- [>] consider Codeberg (alternative to GitHub). Only if Osiris does not say "GitHub" anywhere
-website). Make sure it does not conflict with Osiris
-- [>] check out similar course: https://psyteachr.github.io/reprores-v5/
-
 ### grading
 - [ ] create in-class graded assignment (e.g. replication study)?
 - [ ] less complex rubric
