@@ -2,16 +2,7 @@
 
 ## 2026-2027
 
-### general
-- fix broken links on main website with deadlinkchecker.com
-- merge pull request "Make repository smaller". See the pull request comments for what still needs to be done
-- consider Codeberg (alternative to GitHub). Only if Osiris does not say "GitHub" anywhere
-- Considere changing the AI-index (and, if we change it, change the rules on the course website). Make sure it does not conflict with Osiris
-- check out similar course: https://psyteachr.github.io/reprores-v5/
-
 ### grading
-- make weekly assignments pass/fail throughout the semester?
-- create peer-review assignment? or AI code review to check reproducibility
 - create in-class graded assignment (e.g. replication study)?
 - less complex rubric
 - no portfolio? then edit Osiris text soon!
@@ -55,3 +46,8 @@
 - add pkgdown explicitly, not as 'Advanced'
 - use git and dir_tree (https://fs.r-lib.org/reference/dir_tree.html) in live demo
 - add `load_all()` shortcut: command option L
+
+## 2027-2028
+
+- consider Codeberg (alternative to GitHub). Only if Osiris does not say "GitHub" anywhere
+- check out similar course: https://psyteachr.github.io/reprores-v5/

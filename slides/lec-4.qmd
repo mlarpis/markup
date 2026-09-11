@@ -438,7 +438,7 @@ set.seed(3)
 
 ## Next meeting
 
-November 22nd: **Developer Portfolio** + hand in the exercise in [this week's lab](../weeks/week-4.qmd)
+November 22nd: **Developer Portfolio** + hand in the exercise in this week's lab
 
 <center>
 ![](https://www.adamhammond.com/wp-content/uploads/2016/02/uglywebsitemontage.jpg)
