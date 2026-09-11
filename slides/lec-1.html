@@ -1127,7 +1127,7 @@ View this post on Instagram
 </p>
 </div>
 </blockquote>
-<script>/*1789120816,,JIT Construction: v1047293780,en_US*/
+<script>/*1789122610,,JIT Construction: v1047299150,en_US*/
 
 /**
  * Copyright (c) 2017-present, Facebook, Inc. All rights reserved.
@@ -1255,7 +1255,7 @@ __d("setTimeout",["cr:4344"],(function(t,n,r,o,a,i,l){"use strict";l.default=n("
 __d("vulture",["ExecutionEnvironment","FBLogger","JSResource","VultureJSGating","VultureJSServerHits","asyncToGeneratorRuntime","clearTimeout","objectEntries","requireDeferred","setTimeout"],function(t,n,r,o,a,i,l){"use strict";var e,s=0,u=1e4,c=null;r("requireDeferred")("bumpVultureJSHash").__setRef("vulture").onReadyImmediately(function(e){c=e,b()});var d=!1,m=!1,p=null,_=new Map,f=[],g=12e4;function h(e){var t=_.get(e);t===s||c==null||(t==null?c(e,1):Math.floor(Math.random()*t)===0&&c(e,t))}function y(e){f.push(e)}function C(){p!=null&&(r("clearTimeout")(p),p=null),m=!1,d=!0,b()}function b(){if(d&&c!=null)for(;f.length>0;){var e=f.pop();e!=null&&h(e)}}function v(){r("JSResource")("VultureJSSampleRatesLoader").__setRef("vulture").load().then((function(){var e=n("asyncToGeneratorRuntime").asyncToGenerator(function*(e){var t=yield e.loadSampleRates();for(var n of r("objectEntries")(t)){var o=n[0],a=n[1];_.set(o,a)}});return function(t){return e.apply(this,arguments)}})()).catch(function(e){r("FBLogger")("vulture_js","sample_rate_load_timeout").catching(e).mustfix("Failed to fetch sample rates:  %s",e.getMessage())}).finally(C)}function S(){m||(m=!0,(e||(e=r("ExecutionEnvironment"))).canUseDOM?(p=r("setTimeout")(function(){C(),r("FBLogger")("vulture_js","sample_rate_load_timeout").warn("Timed out attemping to fetch VultureJS sample rates")},g),r("setTimeout")(v,u)):v())}function R(e){if(o("VultureJSGating").isLoggingEnabled()){if(o("VultureJSServerHits").collectServerHit(e))return;d&&c!=null?h(e):(y(e),S())}}l.default=R},98);
 __d("PolarisEmbedSDKImpl",["invariant","CometEventListener","IGIframeableMessageTypes","PolarisEmbedSDKContext","polarisOnDOMReady","vulture"],(function(t,n,r,o,a,i,l,s){"use strict";function e(e){return!isNaN(Number(e))}function u(e,t){e.className+=" "+t}function c(e,t){e.className=e.className.replace(t,"")}var d=["instagram\\.com","instagr\\.am"],m="data-instgrm-captioned",p="instagram-embed-",_=1e4,f="\n  background-color: white;\n  border-radius: 3px;\n  border: 1px solid #dbdbdb;\n  box-shadow: none;\n  display: block;\n  margin: 0;\n  min-width: 326px;\n  padding: 0;\n",g=/^https?:\/\//,h="https://",y=/^(.*?)\/?(\?.*|#|$)/,C=3,b="instagram-media",v=b+"-registered",S=b+"-rendered",R=new RegExp("^https?://([\\w-]+\\.)*("+d.join("|")+")$"),L="data-instgrm-payload-id",E="instagram-media-payload-",k="data-instgrm-permalink",I=new RegExp("^("+R.source.replace(/^\^/,"").replace(/\$$/,"")+"/p/[^/]+)"),T="data-instgrm-preserve-position",D=new RegExp("^("+R.source.replace(/^\^/,"").replace(/\$$/,"")+"/embed\\.js)"),x="data-instgrm-version",$=new RegExp("__d=(www|dis)"),P={},N=!1,M={},w=0,A=!1,F={};function O(e){for(var t=document.getElementsByTagName("iframe"),n,r=t.length-1;r>=0;r--){var o=t[r];if(o.contentWindow===e.source){n=o;break}}return n}function B(e){var t=e.clientWidth,n=window.devicePixelRatio;return t&&n?parseInt(t*n,10):0}function W(e){var t=e.match(I);return t?t[1].replace(/^https?:\/\/(www.)?/,"https://www.")+"/":null}function q(e){if(e.hasAttribute(k))return e.getAttribute(k);for(var t=e.getElementsByTagName("a"),n=t.length-1;n>=0;n--){var r=W(t[n].href);if(r!=null)return r}return null}function U(e){"performance"in window&&window.performance!=null&&typeof window.performance=="object"&&typeof window.performance.now=="function"&&e(window.performance.now())}function V(e){if("performance"in window&&window.performance!=null&&typeof window.performance=="object"&&typeof window.performance.getEntries=="function"){var t=window.performance.getEntries().filter(function(e){return e.name.match(D)}),n=t[0];n instanceof PerformanceResourceTiming&&e(n.fetchStart,n.responseEnd)}}function H(t,n){var r=w++,o=p+r,a={};t.id||(t.id=E+r);var i=n.replace(y,"$1/");if(i+="embed/",t.hasAttribute(m)&&(i+="captioned/"),i+="?cr=1",t.hasAttribute(x)){var l=parseInt(t.getAttribute(x),10);e(l)&&(i+="&v="+l)}var s=B(t);s&&(i+="&wp="+s.toString()),i+="&rd="+encodeURIComponent(window.location.origin);var d=window.location.pathname;if(d){var C=window.location.search||"",S=d+C;i+="&rp="+encodeURIComponent(S.substring(0,200))}var R=n.match($);R&&(i+="&"+R[0]),i=i.replace(g,h),a.ci=r,U(function(e){a.os=e}),V(function(e,t){a.ls=e,a.le=t});var k=encodeURIComponent(JSON.stringify(a)),I=document.createElement("iframe");I.className=t.className,I.id=o,I.src=i+"#"+k,I.setAttribute("allowTransparency","true"),I.setAttribute("allowfullscreen","true");var D=t.style.position;D&&I.setAttribute(T,D),I.setAttribute("frameBorder","0"),I.setAttribute("height","0"),I.setAttribute(L,t.id),I.setAttribute("scrolling","no"),I.setAttribute("style",t.style.cssText+";"+f),I.style.position="absolute",t.parentNode.insertBefore(I,t),u(t,v),c(t,b),M[o]=!0,U(function(e){F[o]={frameLoading:e}}),window.setTimeout(function(){G(o)},_)}function G(e){Object.prototype.hasOwnProperty.call(M,e)&&(delete M[e],j())}function z(e){if(R.test(e.origin)){var t=O(e);if(t){var n=t.id,o;try{o=JSON.parse(e.data)}catch(e){}if(!(typeof o!="object"||typeof o.type!="string"||typeof o.details!="object")){var a=o,i=a.details,l=a.type,c=r("IGIframeableMessageTypes").cast(l);if(c!=null){var d=null;switch(c){case r("IGIframeableMessageTypes").MOUNTED:{var m=document.getElementById(t.getAttribute(L));if(m||s(0,4412,n),d=m.clientHeight,t.style.position=t.hasAttribute(T)?t.getAttribute(T):"",typeof i.styles=="object"&&i.styles.length)try{for(var p=0;p<i.styles.length;p++){var _=i.styles[p][0],f=i.styles[p][1];t.style[_]=f}}catch(e){}u(t,S),m.parentNode&&m.parentNode.removeChild(m),G(n),U(function(e){F[n]&&(F[n].contentLoaded=e,window.__igEmbedLoaded&&window.__igEmbedLoaded({frameId:n,stats:F[n]}))});break}case r("IGIframeableMessageTypes").LOADING:U(function(e){F[n]&&(F[n].contentLoading=e)});break;case r("IGIframeableMessageTypes").MEASURE:{var g=i.height;P[n]!==g&&(d=g);break}case r("IGIframeableMessageTypes").UNMOUNTING:r("vulture")("tiG0z2uUwyWVTy8fMs10vaTxl_o="),delete P[n];break}d!==null&&(t.height=P[n]=d)}}}}}function j(){for(var e=document.getElementsByClassName(b),t=0;t<e.length;t++){var n=Object.keys(M).length;if(n>=C)break;var r=e[t];if(r.tagName==="BLOCKQUOTE"){var o=q(r);o!=null&&H(r,o)}}}function K(){if(!N){if(A)return;A=!0}r("polarisOnDOMReady")(function(){j(),N||(r("CometEventListener").listen(window,"message",function(e){z(e)}),N=!0)})}function Q(){o("PolarisEmbedSDKContext").registerEmbedSDK("instagram",K)}l.init=Q}),98);
 __d("legacy:ig.polaris.embed",["PolarisEmbedSDKImpl"],(function(t,n,r,o,a,i,l){"use strict";o("PolarisEmbedSDKImpl").init()}),35);
-    }  }).call(global);})();} catch (__fb_err) {var __fb_i = new Image();__fb_i.crossOrigin = 'anonymous';__fb_i.dataset.testid = 'fbSDKErrorReport';__fb_i.src='https://www.facebook.com/platform/scribe_endpoint.php/?c=jssdk_error&m='+encodeURIComponent('{"error":"LOAD", "extra": {"name":"'+__fb_err.name+'","line":"'+(__fb_err.lineNumber||__fb_err.line)+'","script":"'+(__fb_err.fileName||__fb_err.sourceURL||__fb_err.script||"embed.js")+'","stack":"'+(__fb_err.stackTrace||__fb_err.stack)+'","revision":"1047293780","namespace":"FB","message":"'+__fb_err.message+'"}}');document.body.appendChild(__fb_i);}</script>
+    }  }).call(global);})();} catch (__fb_err) {var __fb_i = new Image();__fb_i.crossOrigin = 'anonymous';__fb_i.dataset.testid = 'fbSDKErrorReport';__fb_i.src='https://www.facebook.com/platform/scribe_endpoint.php/?c=jssdk_error&m='+encodeURIComponent('{"error":"LOAD", "extra": {"name":"'+__fb_err.name+'","line":"'+(__fb_err.lineNumber||__fb_err.line)+'","script":"'+(__fb_err.fileName||__fb_err.sourceURL||__fb_err.script||"embed.js")+'","stack":"'+(__fb_err.stackTrace||__fb_err.stack)+'","revision":"1047299150","namespace":"FB","message":"'+__fb_err.message+'"}}');document.body.appendChild(__fb_i);}</script>
 </center>
 </section>
 <section>
@@ -1271,47 +1271,33 @@ __d("legacy:ig.polaris.embed",["PolarisEmbedSDKImpl"],(function(t,n,r,o,a,i,l){"
 <thead>
 <tr class="header">
 <th>Week</th>
-<th>Date</th>
 <th>Focus</th>
-<th>Location</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Week 1</td>
-<td>10 Sep</td>
 <td>Introduction to Markup Languages; and LaTeX</td>
-<td><a href="https://students.uu.nl/bolognalaan-101">BOL 1025</a></td>
 </tr>
 <tr class="even">
 <td>Week 2</td>
-<td>24 Sep</td>
 <td>Markdown in (most) Flavors</td>
-<td><a href="https://students.uu.nl/bolognalaan-101">BOL 1025</a></td>
 </tr>
 <tr class="odd">
 <td>Week 3</td>
-<td>15 Oct</td>
 <td>Version Control and Development Flow</td>
-<td><a href="https://students.uu.nl/bolognalaan-101">BOL 1023</a></td>
 </tr>
 <tr class="even">
 <td>Week 4</td>
-<td>05 Nov</td>
 <td>Reproducible Research Repositories</td>
-<td><a href="https://students.uu.nl/bolognalaan-101">BOL 1025</a></td>
 </tr>
 <tr class="odd">
 <td>Week 5</td>
-<td>19 Nov</td>
 <td>Developer Portfolio</td>
-<td><a href="https://www.uu.nl/en/daltonlaan-500">DALTON 500 - 5.08</a></td>
 </tr>
 <tr class="even">
 <td>Week 6</td>
-<td>03 Dec</td>
 <td>Packages, Code Robustness and Unit Testing</td>
-<td><a href="https://students.uu.nl/bolognalaan-101">BOL 1049</a></td>
 </tr>
 </tbody>
 </table>
