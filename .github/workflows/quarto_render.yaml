@@ -32,7 +32,7 @@ jobs:
 
       - name: Render slides
         run: |
-          install.packages(c("mice", "DT", "dygraphs", "ggplot2", "curl", "httr", "plotly", "gtsummary", "purrr", "renv", "magrittr", "countdown")))
+          install.packages(c("mice", "DT", "dygraphs", "ggplot2", "curl", "httr", "plotly", "gtsummary", "purrr", "renv", "magrittr", "countdown"))
           quarto::quarto_render("slides/lec-1.qmd", output_format = "revealjs")
           quarto::quarto_render("slides/lec-2.qmd", output_format = "revealjs")
           quarto::quarto_render("slides/lec-3.qmd", output_format = "revealjs")
