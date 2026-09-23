@@ -13,9 +13,8 @@
 - move reference management to wk 2
 
 ### wk 2
-- add more content? (max 30 min)
 - add resources to wk 2: https://quarto.org/docs/visual-editor/technical.html, https://biostats-r.github.io/biostats/quarto/, https://datavizf23.classes.andrewheiss.com/resource/markdown.html, https://daringfireball.net/projects/markdown/basics, https://learn.getgrav.org/16/advanced/yaml
-- add slide about conditional output/parameterized reports in qmd: https://quarto.org/docs/projects/profiles.html
+- add an example of conditional output/parameterized reports in qmd: https://quarto.org/docs/projects/profiles.html
 - add exercise with reprex
 - add R chunk shortcut: command option i
 - add slides about reference management (moving the theme from wk 1)
