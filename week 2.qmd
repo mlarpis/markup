@@ -11,7 +11,7 @@ Now that we have learned LaTeX we'll consider Quarto. The slides for this week c
 
 Dear all, 
 
-Welcome to `Quarto` - If you already know `rMarkdown`, it will be a breeze. If you don't know `rMarkdown` yet or if you feel that you need a refresher, please follow [this `Get Started`](https://quarto.org/docs/get-started/) guide.  For all others, we have outlined a couple of relevant links and videos to get a quick grasp on reproducible academic publishing with `Quarto`. 
+Welcome to `Quarto`. You have most likely already installed and used Quarto. If not, or if you feel that you need a refresher, please follow [this `Get Started`](https://quarto.org/docs/get-started/) guide. For all others, we have outlined a couple of relevant links and videos to get a quick grasp on reproducible academic publishing with `Quarto`. 
 
 All the best, 
 
@@ -36,7 +36,7 @@ The people at `Posit` have designed [this awesome companion website](https://qua
 Create a quarto presentation with 3 slides and a logo
 
 - a title slide with at least your name and ORCID
-- a slide with your favourite equation
+- a slide with your favorite equation
 - a slide with some source of information about you that (most of) your classmates do not know
 
 Bring this presentation to the next class.
@@ -55,9 +55,9 @@ Create a presentation about any topic you like that consists of at least 7 slide
 - an aligned multi-row equation
 - a citation and reference list
 - a bibliographic reference
-- r-code, displayed but not executed
-- cached and labeled r-code (may overlap with the next requirement)
-- r-code, executed, but not displayed (e.g. a figure generation)
-- an `renv` reproducible enviroment
+- R code, displayed but not executed
+- cached and labeled R code (may overlap with the next requirement)
+- R code, executed, but not displayed (e.g. a figure generation)
+- an `renv` reproducible environment
 
-Of course this presentation may serve as the basis for presentations that you may have to create for other courses. Submit the presentation to your fork of [the deliverables template](https://github.com/hanneoberman/markup_deliverables/tree/dev). If you have not yet forked the template, do so now. See @sec-deliv for more information.
+Of course this presentation may serve as the basis for presentations that you may have to create for other courses. Submit the presentation to your fork of [the deliverables template](https://github.com/mlarpis/portfolio). If you have not yet forked the template, do so now. See @sec-deliv for more information.
