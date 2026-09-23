@@ -224,7 +224,7 @@
     "href": "week 2.html",
     "title": "2  Quarto",
     "section": "",
-    "text": "2.1 Introduction\nDear all,\nWelcome to Quarto - If you already know rMarkdown, it will be a breeze. If you don’t know rMarkdown yet or if you feel that you need a refresher, please follow this Get Started guide. For all others, we have outlined a couple of relevant links and videos to get a quick grasp on reproducible academic publishing with Quarto.\nAll the best,\nThe teaching team",
+    "text": "2.1 Introduction\nDear all,\nWelcome to Quarto. You have most likely already installed and used Quarto. If not, or if you feel that you need a refresher, please follow this Get Started guide. For all others, we have outlined a couple of relevant links and videos to get a quick grasp on reproducible academic publishing with Quarto.\nAll the best,\nThe teaching team",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Quarto</span>"
     ]
@@ -244,7 +244,7 @@
     "href": "week 2.html#exercise-1",
     "title": "2  Quarto",
     "section": "2.3 Exercise 1",
-    "text": "2.3 Exercise 1\nCreate a quarto presentation with 3 slides and a logo\n\na title slide with at least your name and ORCID\na slide with your favourite equation\na slide with some source of information about you that (most of) your classmates do not know\n\nBring this presentation to the next class.",
+    "text": "2.3 Exercise 1\nCreate a quarto presentation with 3 slides and a logo\n\na title slide with at least your name and ORCID\na slide with your favorite equation\na slide with some source of information about you that (most of) your classmates do not know\n\nBring this presentation to the next class.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Quarto</span>"
     ]
@@ -254,7 +254,7 @@
     "href": "week 2.html#exercise-2",
     "title": "2  Quarto",
     "section": "2.4 Exercise 2",
-    "text": "2.4 Exercise 2\nCreate a presentation about any topic you like that consists of at least 7 slides and includes all of the following:\n\na logo\na centered still figure\nan interactive table\na moving figure, interactive figure or movie\na 2-column slide\nan aligned multi-row equation\na citation and reference list\na bibliographic reference\nr-code, displayed but not executed\ncached and labeled r-code (may overlap with the next requirement)\nr-code, executed, but not displayed (e.g. a figure generation)\nan renv reproducible enviroment\n\nOf course this presentation may serve as the basis for presentations that you may have to create for other courses. Submit the presentation to your fork of the deliverables template. If you have not yet forked the template, do so now. See Section 1 for more information.",
+    "text": "2.4 Exercise 2\nCreate a presentation about any topic you like that consists of at least 7 slides and includes all of the following:\n\na logo\na centered still figure\nan interactive table\na moving figure, interactive figure or movie\na 2-column slide\nan aligned multi-row equation\na citation and reference list\na bibliographic reference\nR code, displayed but not executed\ncached and labeled R code (may overlap with the next requirement)\nR code, executed, but not displayed (e.g. a figure generation)\nan renv reproducible environment\n\nOf course this presentation may serve as the basis for presentations that you may have to create for other courses. Submit the presentation to your fork of the deliverables template. If you have not yet forked the template, do so now. See Section 1 for more information.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Quarto</span>"
     ]
