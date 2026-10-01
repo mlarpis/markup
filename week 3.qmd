@@ -155,18 +155,18 @@ To learn more about maintaining a package as `GitHub` repository within `RStudio
 
 ### SSH keys
 
-With an SSH key you can identify yourself to an online server (in this case the `GitHub` server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes *hash code* is communicated every time. You can use an SSH key to link `RStudio` to your `GitHub` repository, but it is better to use a personal access token for this. See below.
+With an SSH key you can identify yourself to an online server (in this case the `GitHub` server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes *hash code* is communicated every time. You can use an SSH key to link `RStudio` to your `GitHub` repository, but it is better to use a personal access token for this.
 
 ------------------------------------------------------------------------
 
 ### Personal access tokens
 
-Because `GitHub` requires Two-Factor Authentication (2FA), your username and password are not sufficient to `push` `commits` to `GitHub` through `RStudio`. To solve this follow these steps on [github.com](https://github.com) as detailed in [this walkthrough video](https://www.gerkovink.com/oldmarkup/Wk1/Link%20Git%20and%20RStudio.mp4):
+Because `GitHub` requires Two-Factor Authentication (2FA), your username and password are not sufficient to `push` `commits` to `GitHub` through `RStudio`. To solve this, follow these steps on [github.com](https://github.com) as detailed in [this walkthrough video](https://www.gerkovink.com/oldmarkup/Wk1/Link%20Git%20and%20RStudio.mp4):
 
 1.  Log in to your account
 2.  Click on your profile photo (upper right corner) and select `Settings`
 3.  Go to `Developer settings`
-4.  Select `Personal access tokens` in the left sidebar. The classic token as it is now called is sufficient
+4.  Select `Personal access tokens` in the left sidebar. The classic token is sufficient
 5.  Click `Generate new token`
 6.  Give the token a name
 7.  Select at least the `repo` scope; you'll need these permissions to access repositories. Also choose a relevant expiration: the longer the more convenient, the shorter the safer. You can always generate a new token if you need to.
@@ -198,24 +198,30 @@ The following links are very useful:
 
 ## Exercise 1: `Git` started with `GitHub`
 
-1.  Fork this year's course repository. You can do this by clicking the `Fork` button on the top right of the repository page. This will create a copy of the repository on your own `GitHub` account.
-2.  Clone the fork to your machine. You can do this by clicking the green `Code` button and copying the URL. Then open `RStudio` and go to `File > New Project > Version Control > Git`. Paste the URL in the `Repository URL` field and choose a directory where you want to store the repository on your machine.
+1.  Fork the [course repository](https://github.com/mlarpis/markup). You can do this by clicking the `Fork` button on the top right of the repository page. This will create a copy of the repository on your own `GitHub` account.
+2.  Clone the fork to your machine. You can do this by clicking the green `Code` button and copying the URL. Instructions on the table below.
 3.  Create a new branch called `wk3`
-4.  Update the file `story.qmd` by adding three words to the sentence and commit the changes. You can do this by clicking on the `Git` tab in `RStudio`, selecting the files you want to commit (only one in this case!), writing a commit message and clicking the `Commit` button.
-5.  Push to your `GitHub` fork. You can do this by clicking the green `Push` button in the `Git` tab in `RStudio` or by using 
+4.  Update the file `story.qmd` by adding three words to the sentence and commit the changes. Write a commit message that explains why you made those changes. Instructions on the table below.
+5.  Push to your `GitHub` fork. Instructions on the table below.
 6.  Send a pull request (PR) to incorporate your changes into the `upstream/main` branch (i.e. `mlarpis/markup@main`). You can do this by going to your fork on `GitHub` and clicking the `Pull request` button. Make sure to select the correct branches.
-7. If you're fast enough, your commit will not result in a conflict. We will merge the PR's in the order they are presented in, as long as there are no conflicts. 
-8. If need be, update your PR by simply submitting another commit and pushing it to your fork. This will update the PR automatically.
+7. We will merge the PR's in the order they are presented in, as long as there are no conflicts. 
+8. If conflicts arise and your PR can no longer be merged, update it by submitting another commit and pushing it to your fork. This will update the PR automatically.
+
+| Instruction | Terminal | RStudio |
+| ----------- | -------- | ------- |
+| Clone the fork | `git clone copied_url` (replace `copied_url` by the URL you copied) | `File > New Project > Version Control > Git`. Paste the URL in the `Repository URL` field and choose a directory where you want to store the repository on your machine |
+| Commit the changes | `git add story.qmd; git commit -m "commit_message"` (replace `commit_message` by the commit message) | Click on the `Git` tab, select `story.qmd`, write the commit message and click `Commit` |
+| Push to fork | `git push` (This will trigger a warning; read it and follow the instructions.) | Click the green `Push` button in the `Git` tab |
 
 ------------------------------------------------------------------------
 
 ## Exercise 2: `Git` it done
 
-This week we will also learn how to use `git` properly when we mess up. But let's not learn that on this year's repo ;-). Fork [this older course repository](https://github.com/mlarpis/markup2020), deselect `Copy the master branch only` in order to copy all branches.
+This week we will also learn how to use `git` properly when we mess up. But let's not learn that on this year's repo ;-). Fork [this older course repository](https://github.com/mlarpis/markup2020); deselect `Copy the master branch only` in order to copy all branches.
 
 ------------------------------------------------------------------------
 
-### Disclaimer
+### Important note
 
 I'll take you by the hand through the exercise. So if you follow this manual step by step, you'll be done at the end and you will have a good notion of troubleshooting with `Git`.
 
@@ -247,7 +253,7 @@ Switched to branch 'Exercise_wk4'
 Your branch is up to date with 'origin/Exercise_wk4'.
 ```
 
-My local `Exercise_wk4` is up to date with `origin/Exercise_wk4`, meaning that GitHub and my local copy are in sync. `origin` is a shorthand name for the remote repository that a project was originally cloned from. It is useful that `origin` is referenced instead of the original repo's URL --\> This makes referencing much more convenient.
+My local `Exercise_wk4` is up to date with `origin/Exercise_wk4`, meaning that GitHub and my local copy are in sync. `origin` is a shorthand name for the remote repository that a project was originally cloned from. It is useful that `origin` is referenced instead of the original repo's URL.
 Note that this *does not mean* that they will remain in sync automatically from now on. Only that there is a reference between the two. But you still need to `push` and `pull` to keep them in sync in the future.
 
 ------------------------------------------------------------------------
@@ -365,13 +371,13 @@ fdd923ad2b522d6e4357229ea801d23ec5b16717 update readme
 493609efa7ce659ebebf5a0d0300f23788397e68 Initial commit
 ```
 
-Please note that we only reference the short hash. There is no need to reference the longer hash as long as the sequence of the shorter reference is unique.
+*We only reference the short hash.* There is no need to reference the longer hash as long as the sequence of the shorter reference is unique. [**Fun exercise:** what if the probability that two short hashes will coincide by random chance?]
 
-From this `--pretty=oneline` view it is now easy to spot the origin of our course repository - the initial commit that initiated the `Git` goodness. You can also see that Gerko updated the `.gitignore`, a hidden file that specifies which files and directories to be ignored by `Git`. And he did some cosmetic changes and file deletions. This is very insightful because of the detailed, but concise commit messages.
+From this `--pretty=oneline` view it is now easy to spot the origin of our course repository - the initial commit that initiated the `Git` goodness. You can also see that Gerko updated the `.gitignore`, a hidden file that lists files and directories to be ignored by `Git`. And he did some cosmetic changes and file deletions. This is very insightful because of the detailed but concise commit messages.
 
 ------------------------------------------------------------------------
 
-### Checkout an old state
+### Check out an old state
 
 Go back in time to `21a3b5ac1535703f4ce0d6feb2ccf3703f95eee3 Merge pull request #2 from gerkovink/gerkodev`.
 
@@ -418,7 +424,7 @@ The useful thing about going to an old commit is that you can take this state as
 
 ------------------------------------------------------------------------
 
-#### leave the detached HEAD
+#### Leave the detached HEAD
 
 Go back to the branch HEAD
 
