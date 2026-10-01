@@ -59,7 +59,7 @@ Read [Excuse me, do you have a moment to talk about version control?](https://pe
 
 ### `Git`
 
-`Git` is a free and open source version control system for text files. It can handle extensive change logging for you, no matter the size of the project. `Git` is fast and efficient, but its effectiveness depends also on the frequency you instruct it to log your project's changes.
+`Git` is a free and open-source version control system for text files. It can handle extensive change logging for you, no matter the size of the project. `Git` is fast and efficient, but its effectiveness depends also on the frequency you instruct it to log your project's changes.
 
 You can see `Git` as a blank canvas that starts at a certain point in time. Every time you (or others) instruct `Git` to log any changes that have been made, `Git` adds the changes that are made to this canvas. We call the changes to the canvas [`commits`](https://help.github.com/articles/github-glossary/#commit). With every `commit` an extensive log is created that includes at least the following information:
 
@@ -76,7 +76,7 @@ If you'd like to know much more about `Git`, [this online book](https://git-scm.
 
 ### `GitHub`
 
-`GitHub` is the social and user interface to `Git` that allows you to work in [repositories](https://help.github.com/articles/github-glossary/#repository). These repositories can be seen as project folders in which you publish your work, but you can also use them as test sites for development, testing, etcetera. There is a distinction between [private repositories](https://help.github.com/articles/github-glossary/#private-repository) (only for you and those you grant access) and public repositories.
+`GitHub` is a social and user interface to `Git` that allows you to work in [repositories](https://help.github.com/articles/github-glossary/#repository). These repositories can be seen as project folders in which you publish your work, but you can also use them as test sites for development, testing, etcetera. There is a distinction between [private repositories](https://help.github.com/articles/github-glossary/#private-repository) (only for you and those you grant access) and public repositories.
 
 Your public repositories can be viewed and [forked](https://help.github.com/articles/github-glossary/#fork) by everyone. `Forking` is when other people create a copy of your repository on their own account. This allows them to work on a repository without affecting the [master](https://docs.github.com/en/get-started/learning-about-github/github-glossary#master). You can also do this to your own repository, but then the process is called [`branching`](https://help.github.com/articles/github-glossary/#branch) instead of forking. If you create an offline copy of a repository, the process is called [`cloning`](https://help.github.com/articles/github-glossary/#clone).
 
