@@ -55,24 +55,6 @@ Read [Excuse me, do you have a moment to talk about version control?](https://pe
 
 ------------------------------------------------------------------------
 
-## Supplementary material
-
--   [Git](https://git-scm.com) 
-
-The following links are very useful:
-
--   An [old video walkthrough](https://www.gerkovink.com/oldmarkup/Archive/2019/Wk5/Solution%20Ex6.mp4) about `Git` and `Rstudio`
-
--   [GitHub Glossary](https://help.github.com/articles/github-glossary) for all terminology
-
--   [become a `Git` Guru](https://www.atlassian.com/git/tutorials)
-
--   [this online `Git` book](https://git-scm.com/book/en/v2) is a very good resource
-
--   [This book](https://happygitwithr.com) covers pretty much everything you need to marry `Git` and `R`.
-
-------------------------------------------------------------------------
-
 ## `Git` and GitHub
 
 ### `Git`
@@ -184,6 +166,24 @@ Because `GitHub` requires Two-Factor Authentication (2FA), your username and pas
 Copy the token. The token **will not be displayed again**, so paste it directly where it is needed. Remember that you can always generate a new token if you need to.
 
 In `RStudio`, paste the generated token in the password field when `RStudio` asks for your credentials. The token will now serve as the unique authenticated link instead of your password.
+
+------------------------------------------------------------------------
+
+## Supplementary material
+
+-   [Git](https://git-scm.com) 
+
+The following links are very useful:
+
+-   An [old video walkthrough](https://www.gerkovink.com/oldmarkup/Archive/2019/Wk5/Solution%20Ex6.mp4) about `Git` and `Rstudio`
+
+-   [GitHub Glossary](https://help.github.com/articles/github-glossary) for all terminology
+
+-   [become a `Git` Guru](https://www.atlassian.com/git/tutorials)
+
+-   [this online `Git` book](https://git-scm.com/book/en/v2) is a very good resource
+
+-   [This book](https://happygitwithr.com) covers pretty much everything you need to marry `Git` and `R`.
 
 ------------------------------------------------------------------------
 
