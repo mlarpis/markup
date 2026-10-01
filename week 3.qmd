@@ -134,7 +134,7 @@ Later we'll explore in detail how to handle `Git` when things go wrong. You'll b
 
 GitHub sees every file in your repository as one of the following three:
 
--   **tracked files** that have been (previously) staged and committed;
+-   **tracked files** that have been (previously) staged (i.e., added for commit) and committed;
 -   **untracked files** that have not been staged or committed;
 -   **ignored files** that have been explicitly ignored.
 
@@ -474,15 +474,13 @@ Untracked files:
 nothing added to commit but untracked files present
 ```
 
-The commit was not succesfull, because the file `add_text_file.txt` is not yet tracked. Note that I use `-a` to specify to commit **all** changed files and folders that are tracked. I use `-m` to indicate that I would like to add the message `add text file`.
-
-You see that using a GUI to `Git` like GitHub desktop or RStudio is quite convenient if you would not like to indicate which files to track. It is also less flexible.
+The commit was not succesful, because the file `add_text_file.txt` is not yet tracked. Note that I use `-a` to specify to commit **all** changed files and folders that are tracked. I use `-m` to indicate that I would like to add the message `add text file`.
 
 ------------------------------------------------------------------------
 
 #### Add files to tracking
 
-To track all untracked files and folders
+To track all untracked files and folders (**highly** NOT recommended in real development)
 
 ```{markdown}
 git add -A
@@ -630,9 +628,9 @@ To undo it all, we can use the indicator that is referenced by the `reflog`:
 HEAD is now at 9e6c38c add two text files
 ```
 
-Using `reflog` and HEAD is in this case more flexible than using `log` and the SHA-1 hash. `reflog` yields the log of all changes in the pointer HEAD, while `log` only gives you the history of the logged commits. Once a commit is undone, it is gone from the `log`. Moreover, using `reflog` and HEAD allows you to go back into the future, like in the above example.
+Using `reflog` and HEAD is in this case better than using `log` and the SHA-1 hash. `reflog` yields the log of all changes in the pointer HEAD, while `log` only gives you the history of the logged commits. Once a commit is undone, it is gone from the `log`. Moreover, using `reflog` and HEAD allows you to go back into the future, like in the above example.
 
-**NOTE: Do not wait too long to undo your resets. After a few days/weeks garbage collection may kick in and `Git` will eventually see old commits as unreferenced. This makes them irretrievable**
+**NOTE: Do not wait too long to undo your resets. After a few days/weeks garbage collection may kick in and `Git` will eventually see old commits as unreferenced. This makes them irretrievable.**
 
 ------------------------------------------------------------------------
 
@@ -695,7 +693,7 @@ We've now effectively created a conflict. A conflict must be resolved before a m
 
 ![](images/wk3/conflict.png){width=50%}
 
-You can use the drop-down menu to choose either modified file version as the one to keep after merging (which means you'll throw out the other version from the other branch)
+You can use the drop-down menu to choose either modified file version as the one to keep after merging (which means you'll throw out the other version from the other branch).
 
 ![](images/wk3/resolve.png){width=80%}
 
@@ -730,10 +728,8 @@ After that, we can stage the changes and commit them in the `Exercise_wk4` branc
 4.  Stage the changes
 5.  Commit the changes with a custom message
 6.  Publish your branch on GitHub
-7.  Do a pull request that can be automatically merged.
-8.  Post an issue in your forked template (remember [What to hand in](#sec-deliv)), wherein you properly [reference](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls) your PR to the old course repo.
-
-You should now have all the skills to fill your template with the course deliverables and exercises. Now would be a good time to update your deliverables repository. If you have any questions, please post them [as an issue to the course repository](https://github.com/mlarpis/markup/issues).
+7.  Do a pull request that can be merged (i.e., no conflicts)
+8.  Edit the README file in week 3 of the exercises in your forked portfolio to include the URL of your PR to the old course repo
 
 ------------------------------------------------------------------------
 
