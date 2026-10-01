@@ -103,18 +103,18 @@ You can see that this process requires package `devtools` that expands the `R` f
 
 ### Installing `Git`
 
-#### Installing on Mac
+#### Mac
 
 I suggest you go full-nerd and use `Git` entirely from the terminal. All you need to do is to install [`git`](https://git-scm.com/downloads/mac). After that, you can work from the terminal using [git commands](https://git-scm.com/docs).
 
 If you're not quite ready for that, I suggest you install `Git` by downloading and installing [`GitHub Desktop`](https://desktop.github.com). `GitHub`'s desktop application is a nice GUI and, naturally, integrates well into the repository workflow on `GitHub`. When installed, you can go to `GitHub Desktop > Install Command Line Tool`. After a reboot, all should be set.
 
-#### Installing on Windows
+#### Windows
 
 Download and install [`Git for Windows`](https://gitforwindows.org). Then, download and install [`GitHub Desktop`](https://desktop.github.com). `GitHub`'s desktop application is a nice GUI and, naturally, integrates well into the repository workflow on `GitHub`.
 After a reboot, all should be set.
 
-#### Installing on Linux
+#### Linux
 
 If you're reading this, first of all, congratulations. You have my respect. I don't know any GUI-based tools for `Git`, so let's stick to the classics.
 Install [`Git`](https://git-scm.com/downloads/linux).
