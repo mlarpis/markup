@@ -78,18 +78,26 @@ If you'd like to know much more about `Git`, [this online book](https://git-scm.
 
 `GitHub` is a social and user interface to `Git` that allows you to work in [repositories](https://help.github.com/articles/github-glossary/#repository). These repositories can be seen as project folders in which you publish your work, but you can also use them as test sites for development, testing, etcetera. There is a distinction between [private repositories](https://help.github.com/articles/github-glossary/#private-repository) (only for you and those you grant access) and public repositories.
 
-Your public repositories can be viewed and [forked](https://help.github.com/articles/github-glossary/#fork) by everyone. `Forking` is when other people create a copy of your repository on their own account. This allows them to work on a repository without affecting the [master](https://docs.github.com/en/get-started/learning-about-github/github-glossary#master). You can also do this to your own repository, but then the process is called [`branching`](https://help.github.com/articles/github-glossary/#branch) instead of forking. If you create an offline copy of a repository, the process is called [`cloning`](https://help.github.com/articles/github-glossary/#clone).
+Your public repositories can be viewed and [forked](https://help.github.com/articles/github-glossary/#fork) (i.e., copied) by everyone on their own accounts. This allows them to work on a repository without affecting the [master](https://docs.github.com/en/get-started/learning-about-github/github-glossary#master). You can also do this to your own repository, but then the process is called [`branching`](https://help.github.com/articles/github-glossary/#branch) instead of forking. If you create an offline copy of a repository, the process is called [`cloning`](https://help.github.com/articles/github-glossary/#clone).
+The goals are also slightly different:
+
+- **Forking**: continue development of a repository without altering the original repository
+- **Branching**: create a *parallel world* within a repository to implement some specific change
+- **Cloning**: develop a repository locally before syncing it with GitHub
 
 `GitHub`'s ability to branch, fork and clone is very useful as it allows other people and yourself to experiment on a repository before any definitive changes are [`merged`](https://help.github.com/articles/github-glossary/#merge) with the `master`. If you're working in a forked repository, you can submit a [`pull request`](https://help.github.com/articles/github-glossary/#pull-request) to the repository collaborators to accept or reject any suggested changes.
 
-For now, this may be confusing, but I hope you recognize the benefits `GitHub` can have on the process of development and bug-fixing. For example, the most up-to-date version of the `mice` package in `R` can be directly installed from the `mice` repository with the following code:
+For now, this may be confusing, but I hope you recognize the benefits `GitHub` can have on the process of development and bug-fixing. 
+
+You can download certain GitHub repositories directly in R.
+For example, the most up-to-date version of the `mice` package in `R` can be directly installed from the `mice` repository with the following code:
 
 ```{markdown}
 install.packages("devtools")
 devtools::install_github(repo = "stefvanbuuren/mice")
 ```
 
-You can see that this process requires package `devtools` that expands the `R` functionality with essential development tools. Loading packages in `R` directly from their respective `GitHub` repositories, allows you to obtain the latest - often improved and less buggy - iteration of that software even before it is published on [`CRAN`](https://cran.r-project.org).
+You can see that this process requires package `devtools` that expands the `R` functionality with essential development tools. Loading packages in `R` directly from their respective `GitHub` repositories allows you to obtain the latest - often improved and less buggy - iteration of that software even before it is published on [`CRAN`](https://cran.r-project.org).
 
 ------------------------------------------------------------------------
 
