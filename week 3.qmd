@@ -14,29 +14,23 @@ This week has no slides. We discuss the flow of development with `Git` in class.
 ## Introduction
 
 ::: columns
-::: {.column width="65%"}
-Dear all,
-
-As a statistician / data scientist / developer you'll need to master many skills. Some of these skills are made simple with tools. This week we'll bite the bullet by learning about a massively important tool for your toolset: **version controlling**.
+::: {.column width="55%"}
+As a statistician / data scientist / developer you'll need to master many skills. Some of these skills are made simple with tools. This week we'll learn about a massively important tool for your tool kit: **version controlling**.
 
 To document our activity and our changes in detail, we'll use [`Git`](https://git-scm.com). You can view `Git` as the ability to go back in time. Back to the very beginning of your project. A bonus: `Git` integrates nicely with `RStudio`. In this series of exercises we will learn
 
 1.  How to integrate `Git` within our projects.
-2.  How to publish our projects as `GitHub` repositories
-3.  How to go about development with `Git` and `GitHub`
-4.  How to solve scenarios where `Git` hits the fan.
+2.  How to publish our projects as `GitHub` repositories.
+3.  How to go about development with `Git` and `GitHub`.
+4.  How to solve chaotic scenarios caused by `Git` (and by you).
 
-Use the appropriate channels to ask questions and hand in your work.
-
-All the best,
-
-The teaching team
+Use the appropriate channels to [ask questions](overview.html#support) and [hand in your work](deliverables.html#intermediate-checks).
 :::
 
 ::: {.column width="5%"}
 :::
 
-::: {.column width="30%"}
+::: {.column width="40%"}
 ![](https://www.gerkovink.com/oldmarkup/Wk1/forfun.png){width="100%"}
 :::
 :::
