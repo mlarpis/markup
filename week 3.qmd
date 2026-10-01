@@ -112,6 +112,7 @@ If you don't want that, you can install `Git` by downloading and installing [`Gi
 #### Windows
 
 Download and install [`Git for Windows`](https://gitforwindows.org). Then, download and install [`GitHub Desktop`](https://desktop.github.com). `GitHub`'s desktop application is a nice GUI and, naturally, integrates well into the repository workflow on `GitHub`.
+When installed, you can go to `GitHub Desktop > Install Command Line Tool`. 
 After a reboot, all should be set.
 
 #### Linux
