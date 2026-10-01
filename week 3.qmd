@@ -117,7 +117,7 @@ After a reboot, all should be set.
 
 #### Linux
 
-If you're reading this, first of all, congratulations. You have my respect. I don't know any GUI-based tools for `Git`, so let's stick to the classics.
+I don't know any GUI-based tools for `Git`.
 Install [`Git`](https://git-scm.com/downloads/linux).
 After that, you can work from the terminal using [git commands](https://git-scm.com/docs).
 
@@ -132,14 +132,14 @@ Later we'll explore in detail how to handle `Git` when things go wrong. You'll b
 
 ### .gitignore
 
-GitHub sees every file in your repository as one of the following three
+GitHub sees every file in your repository as one of the following three:
 
--   **tracked files** that have been (previously) staged and committed
--   **untracked files** that have not been staged or committed
--   **ignored files** that have been explicitly ignored
+-   **tracked files** that have been (previously) staged and committed;
+-   **untracked files** that have not been staged or committed;
+-   **ignored files** that have been explicitly ignored.
 
 It may be wise to instruct `Git` to ignore changes in some files. For example, compiled files (think about `.com`, `.exe`, `.o`, `.so`, etc), archives (e.g. `.zip`, `.tar`, `.rar`), logs (`.log`) and files generated in runtime (`.temp`) do not have to be tracked by `Git`. The same holds for hidden system files (e.g. `.DS_Store` or `Thumbs.db`). Adding such filetypes to a file named `.gitignore` and placing that file in the root of your repository will take care of focusing `Git`'s energy on useful files only. For common `.gitignore` examples, see [this repository](https://github.com/github/gitignore). There are many examples inside, such as [this `.gitignore` example for `R`](https://github.com/github/gitignore/blob/master/R.gitignore).
-When you create a new repository on GitHub, you have the option of creating a default .gitignore file for your language of choice.
+When you create a new repository on GitHub, you have the option of creating a default .gitignore file for your programming language of choice.
 
 ------------------------------------------------------------------------
 
@@ -147,7 +147,7 @@ When you create a new repository on GitHub, you have the option of creating a de
 
 **Securely** linking your local machine to the remote repository is vital when collaborating with other people. You would not want a potential hacker to have contributor access to any of your projects. [This walkthrough video](https://www.gerkovink.com/oldmarkup/Wk1/Link%20Git%20and%20RStudio.mp4) details the process of linking `GitHub` to your machine and `RStudio`. Below we explain the rationale of using both an SSH key and a personal access token.
 
-If you still experience problems after following the aforementioned walkthrough, check [this chapter](https://happygitwithr.com/troubleshooting.html)
+If you still experience problems after following the aforementioned walkthrough, check [this chapter](https://happygitwithr.com/troubleshooting.html).
 
 To learn more about maintaining a package as `GitHub` repository within `RStudio`, have a look at [this guide](http://r-pkgs.had.co.nz/git.html) by [Hadley Wickham](http://hadley.nz).
 
