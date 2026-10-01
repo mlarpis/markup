@@ -39,7 +39,7 @@ Use the appropriate channels to [ask questions](overview.html#support) and [hand
 
 ## Preparation
 
-Read [Excuse me, do you have a moment to talk about version control?](https://peerj.com/preprints/3159/) by [Jennifer Bryan](https://jennybryan.org) and watch the following clip where Linus Torvalds explains that he merely created `Git` to manage his [*other project*](https://github.com/torvalds/linux)
+Read [Excuse me, do you have a moment to talk about version control?](https://peerj.com/preprints/3159/) by [Jenny Bryan](https://jennybryan.org) and watch the following clip where Linus Torvalds explains that he merely created `Git` to manage his [*other project*](https://github.com/torvalds/linux).
 
 <center>
 
