@@ -21,10 +21,6 @@
 - add slides about reference management (moving the theme from wk 1)
 - add Quarto extensions such as https://closeread.dev/
 
-### wk 3
-- add resources to exercise: https://ohshitgit.com/, https://github.com/maelle/saperlipopette, https://maelle.github.io/saperlipopette/
-- add https://gitmoji.dev/
-
 ### wk 4
 - add more content (max 60 min, incl topics below)
 - add slides to wk 4 about: writing functions, vectorization (purrr), targets package

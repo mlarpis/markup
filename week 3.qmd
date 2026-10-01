@@ -201,7 +201,7 @@ The following links are very useful:
 1.  Fork the [course repository](https://github.com/mlarpis/markup). You can do this by clicking the `Fork` button on the top right of the repository page. This will create a copy of the repository on your own `GitHub` account.
 2.  Clone the fork to your machine. You can do this by clicking the green `Code` button and copying the URL. Instructions on the table below.
 3.  Create a new branch called `wk3`
-4.  Update the file `story.qmd` by adding three words to the sentence and commit the changes. Write a commit message that explains why you made those changes. Instructions on the table below.
+4.  Update the file `story.qmd` by adding three words to the sentence and commit the changes. Write a commit message that explains why you made those changes (see [gitmoji](https://gitmoji.dev/) for emoji ideas). Instructions on the table below.
 5.  Push to your `GitHub` fork. Instructions on the table below.
 6.  Send a pull request (PR) to incorporate your changes into the `upstream/main` branch (i.e. `mlarpis/markup@main`). You can do this by going to your fork on `GitHub` and clicking the `Pull request` button. Make sure to select the correct branches.
 7. We will merge the PR's in the order they are presented in, as long as there are no conflicts. 
@@ -717,6 +717,15 @@ After that, we can stage the changes and commit them in the `Exercise_wk4` branc
 % git add -A
 % git commit -m 'conflict resolved'
 ```
+
+------------------------------------------------------------------------
+
+### Some more resources
+
+If you're still struggling, you can consult some of these resources:
+
+- [Oh Shit, Git!?!](https://ohshitgit.com/)
+- [saperlipopette](https://docs.ropensci.org/saperlipopette/)
 
 ------------------------------------------------------------------------
 
