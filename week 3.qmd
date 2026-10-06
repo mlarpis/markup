@@ -93,9 +93,9 @@ You can download certain GitHub repositories directly in R.
 For example, the most up-to-date version of the `mice` package in `R` can be directly installed from the `mice` repository with the following code:
 
 ```{markdown}
-install.packages("devtools")
-devtools::install_github(repo = "stefvanbuuren/mice")
+pak::pak("stefvanbuuren/mice")
 ```
+(Note: this requires installing [pak](https://pak.r-lib.org/#arrow_down-installation) first.)
 
 You can see that this process requires package `devtools` that expands the `R` functionality with essential development tools. Loading packages in `R` directly from their respective `GitHub` repositories allows you to obtain the latest - often improved and less buggy - iteration of that software even before it is published on [`CRAN`](https://cran.r-project.org).
 
