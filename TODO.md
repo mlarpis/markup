@@ -28,6 +28,7 @@
 - add `here::here()`, mention `rm(list = ls())`
 - add source() and file naming convention (01_..., 02_..., etc.)
 - add functional programming and paralellization?
+- add parameterized reports? https://book.rfortherestofus.com/parameterized-reporting.html
 
 ### wk 5
 

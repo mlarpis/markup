@@ -60,4 +60,8 @@ Create a presentation about any topic you like that consists of at least 7 slide
 - R code, executed, but not displayed (e.g. a figure generation)
 - an `renv` reproducible environment
 
-Of course this presentation may serve as the basis for presentations that you may have to create for other courses. Submit the presentation to your fork of [the deliverables template](https://github.com/mlarpis/portfolio). If you have not yet forked the template, do so now. See @sec-deliv for more information.
+Of course this presentation may serve as the basis for presentations that you may have to create for other courses. 
+
+Submit the presentation and all necessary files to your fork of [the deliverables template](https://github.com/mlarpis/portfolio) within one week. 
+
+If you have not yet forked the template, do so now. See @sec-deliv for more information.
