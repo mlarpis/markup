@@ -11,7 +11,7 @@ author:
     email: h.i.oberman@uu.nl
     affiliations:
       - name: Methodology & Statistics @ UU
-date: "5 Nov 2025"
+date: "4 Nov 2026"
 date-format: "D MMM YYYY"
 execute: 
   echo: true
@@ -124,6 +124,33 @@ Reproducible research is not the norm:
 [Trisovic, Lau, Pasquier, et al., 2022](https://doi.org/10.1038/s41597-022-01143-6) 
 :::
 
+## Reproducibility of simulation studies
+
+> Code was not available for almost two-thirds of the simulation studies (64%)
+
+<br><br>
+
+![](images/lec-4/lit_stats.jpg){fig-align="right"}
+
+::: footer
+[Siepe et al., 2024](https://doi.org/10.1037/met0000695) (open access version via https://pmc.ncbi.nlm.nih.gov/articles/PMC7616844/)
+:::
+
+
+## Reproducibility of simulation studies
+
+> Of the 36% of studies in our review in which code was provided, 21% also provided a seed in their code.
+
+::: fragment
+> Full information on the computational environment was only reported in 2% of the studies, while 24% did not report on their computational environment at all.
+
+:::
+
+![](images/lec-4/lit_stats.jpg){fig-align="right"}
+
+::: footer
+[Siepe et al., 2024](https://doi.org/10.1037/met0000695) (open access version via https://pmc.ncbi.nlm.nih.gov/articles/PMC7616844/)
+:::
 
 ## Reproducibility spectrum
 
@@ -131,41 +158,6 @@ Reproducible research is not the norm:
 
 ::: footer
 [Peng (2011)](https://doi.org/10.1126/science.1213847)
-:::
-
-
-## Case study
-
-![](images/lec-4/casestudy.jpg)
-
-::: footer
-[Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921)
-:::
-
-## Case study
-
-> Our study is completely reproducible using the R code provided in [online supplemental file 1](https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf), which uses freely available data. 
-
-```
-
-
-
-
-
-# ====================================================================
-# R CODE
-# small scale simulation study to investigate impact of measurement error
-# measurement error on (continuous) exposure and/or (continuous) confounding variable
-# ====================================================================
-# ====================================================================
-# libraries:
-library(Hmisc)
-library(mice)
-library(tidyverse)
-```
-
-::: footer
-[Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921)
 :::
 
 ## Making research reproducible
@@ -194,13 +186,11 @@ library(tidyverse)
 <!-- - Annotated -->
 <!-- Annotation refers to the addition of comments within each script, or embedding code within an RMarkdown or Quarto document alongside descriptive text -->
 
-
 ::: footer
 [Ivimey-Cook et al. (2025)](https://doi.org/10.32942/X2D93K)
 :::
 
 <!-- Ivimey-Cook, E. R., Culina, A., Dimri, S., Grainger, M., Kar, F., Lagisz, M., Moran, N. P., Nakagawa, S., Roche, D. G., Sanchez-Tojar, A., Windecker, S. M., & Pick, J. L. (2025). TADA! Simple guidelines to improve code sharing. https://ecoevorxiv.org/repository/view/9806/ -->
-
 
 
 ![](images/lec-4/TADA.png)
@@ -223,13 +213,14 @@ library(tidyverse)
 
 ## Definition
 
-::: {.incremental}
 
-> A research compendium is a collection of all digital parts of a research project including data, code, texts...
+> A research compendium is a collection of **all digital parts** of a research project including data, code, texts...
 > 
-> The collection is created in such a way that reproducing all results is straightforward[^1]
+> The collection is created in such a way that **reproducing all results** is straightforward[^1]
 
 <br>
+
+::: fragment
 
 > The compendium serves as a means for distributing, managing, and updating the collection[^2]
 
@@ -334,7 +325,7 @@ sample(1:10)
 e.g. with the `renv` package or a `Docker` container
 :::
 
-## Guidelines
+## Principles
 
 - Completeness
 - Organization
@@ -362,15 +353,7 @@ e.g. with the `renv` package or a `Docker` container
 <!-- - Automation: As much as possible, the computational workflow is script- or workflow-based so that the workflow can be re-executed using minimal actions. -->
 <!-- - Review: A series of managed activities needed to ensure continued access to and functionality of the research compendium and its components for as long as necessary. -->
 
-
-## In practice
-
-![](images/lec-4/rdm.jpeg)
-Research Data Management Support workshop: 
-
-[**Writing Reproducible Manuscripts in R and Python**](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html)
-
-## Steps
+## How-to
 
 - Think about a good folder structure 
   - Split up 'read-only', 'human-generated', and 'project-generated' files
@@ -388,6 +371,48 @@ Research Data Management Support workshop:
 ::: footer
 Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/compendia#checklist)
 ::: 
+
+## In practice
+
+![](images/lec-4/rdm.jpeg)
+Research Data Management Support workshop: 
+
+[**Writing Reproducible Manuscripts in R and Python**](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html)
+
+## Case study
+
+![](images/lec-4/casestudy.jpg)
+
+::: footer
+[Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921)
+:::
+
+## Case study
+
+> Our study is completely reproducible using the R code provided in [online supplemental file 1](https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf), which uses freely available data. 
+
+```
+
+
+
+
+
+# ====================================================================
+# R CODE
+# small scale simulation study to investigate impact of measurement error
+# measurement error on (continuous) exposure and/or (continuous) confounding variable
+# ====================================================================
+# ====================================================================
+# libraries:
+library(Hmisc)
+library(mice)
+library(tidyverse)
+```
+
+::: footer
+[Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921)
+:::
+
 
 ## Bonus: Preregister your simulation study
 
