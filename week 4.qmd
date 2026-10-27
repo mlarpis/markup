@@ -45,12 +45,35 @@ The interested reader may also consider reading the original [Morris, White, & C
 
 ## Exercise 1
 
-In this exercise you will follow the Utrecht University tutorial on creating reproducible manuscripts: [https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html). The link intentionally refers to the section named 'Introduction'; previous sections are not relevant for you. 
-Follow the instructions in the sections 'Introduction', 'Getting Started', 'Writing', and 'Code'. 
+In this exercise you will follow the Utrecht University tutorial on creating reproducible manuscripts: [https://mlarpis.github.io/quarto/](https://mlarpis.github.io/quarto/). 
+Follow the exercise instructions labeled in bold face with **Step 0** through **Step 6**. 
 
-In the section 'Rendering', you may skip the instructions for creating `docx` documents, using the terminal, and managing multiple file outputs. We will only need the `pdf` output.
+In the optional section 'Rendering', you may skip most of the instructions. Within this course, there is no need for creating `docx` documents, using the terminal, and managing multiple file outputs. Still, these might be relevant later in your thesis or future career.
+
+For now, we will only need `pdf` output, which can be generated with the 'Render' button after changing the YAML header:
+
+```yaml
+format:
+  pdf: default
+```
 
 Save the research compendium in the dedicated folder in your deliverables folder.
+
+<!-- <style> -->
+<!-- .slide-deck { -->
+<!--     border: 3px solid #dee2e6; -->
+<!--     width: 100%; -->
+<!--     height: 475px; -->
+<!-- } -->
+<!-- </style> -->
+
+<!-- <div> -->
+<!-- ```{=html} -->
+<!-- <iframe class="slide-deck" src="./2026/MSMR/Teaching_Open_Science_and_Reproducibility.html"></iframe> -->
+<!-- ``` -->
+<!-- </div> -->
+
+::: {.callout-note collapse="true"}
 
 ### Hint
 
@@ -65,6 +88,7 @@ After this exercise, the YAML header for your Quarto document might look somethi
   bibliography: references.bib
   ---
   ```
+:::
 
 <!-- The contents of the compendium will consist of the simulation study performed by Boulesteix et al. (2020), see the next exercise for more information. -->
 <!-- Bring this presentation to the next class -->
@@ -73,20 +97,29 @@ After this exercise, the YAML header for your Quarto document might look somethi
 
 ## Exercise 2
 
-In this exercise, you will substitute the contents of the research compendium you've just created with a replication of Boulesteix et al.'s simulation study. Start with the same code as the original study (see below), but then make the research fully reproducible with Quarto and `renv`.
+In this exercise, you will substitute the contents of the research compendium you've just created with a replication of Boulesteix et al.'s simulation study. We will start with the same code as the original study, but then make the research fully reproducible with Quarto and `renv`.
 
 The original simulation script was supplemented as a `pdf` file. Lucky for you, we've already copied all of the `R` code from their `pdf` supplement for you. The resulting `R` script is available from [https://github.com/mlarpis/markup/blob/main/documents/week-4/original_script.R](https://github.com/mlarpis/markup/blob/main/documents/week-4/original_script.R). 
 
-Likewise, we've retrieved the necessary data for you. The complete database can be accessed through  [https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015), whereas the relevant data files for this exercise can be downloaded directly from [https://github.com/mlarpis/markup/blob/main/documents/week-4/raw_data](https://github.com/mlarpis/markup/blob/main/documents/week-4/raw_data). 
+Likewise, we've retrieved the necessary data for you. While the complete database can be accessed through [https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015),  the relevant data files for this exercise can be downloaded directly from [https://github.com/mlarpis/markup/blob/main/documents/week-4/raw_data](https://github.com/mlarpis/markup/blob/main/documents/week-4/raw_data). 
 
 Now it's up to you! Create a reproducible document that contains the **simulation study** and **results**. Make sure that this document is part of a fully reproducible research compendium. 
 
-Hand-in the research compendium by adding it to the dedicated folder in your deliverables repository on GitHub within onbe week.
+1. Start with the materials from Exercise 1.
+2. Add the data from the original study to the repository.
+3. Read the script from the original study.
+4. Divide the code from the script into clear and concise chunks in the Quarto document. Create helper function script(s) whenever appropriate.
+5. Make the code as reproducible as possible, then run the simulation study.
+5. In Quarto, add some textual description and interpretation of the simulation study.
+6. Add anything else needed to make the research compendium reproducible (e.g. `renv`).
 
+Hand-in the research compendium by adding it to the dedicated folder in your deliverables repository on GitHub within one week.
+
+::: {.callout-note collapse="true"}
 ### Hint
 
 Exchange research compendiums with a classmate to make sure that your work is indeed completely reproducible.
-
+:::
 <!-- The document should include the following statistics: -->
 
 <!--  - absolute bias -->
