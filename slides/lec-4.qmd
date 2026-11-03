@@ -152,6 +152,15 @@ Reproducible research is not the norm:
 [Siepe et al., 2024](https://doi.org/10.1037/met0000695) (open access version via https://pmc.ncbi.nlm.nih.gov/articles/PMC7616844/)
 :::
 
+## Computational environment
+
+- `sessionInfo()`
+- `renv`
+- `rig`
+- `rix`
+
+![](images/lec-4/rig.webp){fig-align="right" width=20%}
+
 ## Reproducibility spectrum
 
 ![](images/lec-4/spectrum.jpeg)
@@ -306,10 +315,29 @@ e.g. with the `targets` package or `Make` files
 ## Random number generation
 
 ```{r}
+#| output-location: fragment
 set.seed(1L)
+```
+
+
+```{r}
+#| output-location: fragment
 sample(1:10)
+```
+
+
+```{r}
+#| output-location: fragment
 sample(1:10)
+```
+
+```{r}
+#| output-location: fragment
 set.seed(1L)
+```
+
+```{r}
+#| output-location: fragment
 sample(1:10)
 ```
 
@@ -319,7 +347,14 @@ sample(1:10)
 
 ## Reproducible environment or containerized
 
-![](images/lec-4/renv.png)
+::: columns
+::: {.column width="50%"}
+![](images/lec-4/renv.png){width=85%}
+:::
+
+::: {.column width="50%"}
+![](images/lec-4/rix.png)
+:::
 
 ::: footer
 e.g. with the `renv` package or a `Docker` container
