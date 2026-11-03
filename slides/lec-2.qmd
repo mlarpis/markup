@@ -37,7 +37,7 @@ format:
 #    chalkboard: true
 ---
 
-<!-- For 2026-2027: this lecture takes only 1.5h -->
+<!-- For 2027-2028: this lecture takes 2h, including a live demo in Zotero -->
 
 ## Disclaimer {.smaller}
 ::: {.nonincremental}
@@ -1618,6 +1618,13 @@ imp |>
 ```
 
 with corresponding cache structure relative to the root and format of the output file: ![](images/lec-2/cache.png)
+
+## Reproducibility
+
+$\rightarrow$ topic lecture 4
+
+- Reproducible examples
+- Reproducible environments
 
 ## `reprex` and `renv`
 
