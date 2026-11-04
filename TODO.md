@@ -24,7 +24,7 @@
 - add more content (max 20 min, incl topics below)
 - add slides to wk 4 about: writing functions, vectorization (purrr), targets package
 - add how to cite R packages
-- maybe add resources https://github.com/ianhussey/simulation-workshop, https://github.com/ianhussey/simulation-course
+- maybe add resources https://github.com/ianhussey/simulation-workshop, https://github.com/ianhussey/simulation-course, and/or https://github.com/gerkovink/R/blob/master/Contents/Material/Part%20E%20-%20Functions%20apply%20and%20looping/Lecture_E_handout.Rmd
 - add `here::here()`, mention `rm(list = ls())`
 - add source() and file naming convention (01_..., 02_..., etc.)
 - add functional programming and paralellization?
