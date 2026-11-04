@@ -7,7 +7,7 @@
 ## Lecture 4
 This week's slides can be found [here](slides/lec-4.html). 
 
-I also promised the slides of the MSDS year 1 lectures on [debugging](slides/MSDS_R_yr1/debugging.html) and [version control](slides/MSDS_R_yr1/version_control.html).
+I also promised the slides of the MSDS year 1 lectures on [debugging](documents/Wk4/debugging.html) and [version control](documents/Wk4/version_control.html).
 :::
 
 ---
