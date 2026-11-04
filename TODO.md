@@ -21,7 +21,7 @@
 - add Quarto extensions such as https://closeread.dev/
 
 ### wk 4
-- add more content (max 60 min, incl topics below)
+- add more content (max 20 min, incl topics below)
 - add slides to wk 4 about: writing functions, vectorization (purrr), targets package
 - add how to cite R packages
 - maybe add resources https://github.com/ianhussey/simulation-workshop, https://github.com/ianhussey/simulation-course
